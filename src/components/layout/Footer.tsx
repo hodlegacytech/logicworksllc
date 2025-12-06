@@ -85,12 +85,11 @@ export const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-accent-gradient flex items-center justify-center">
-                <span className="text-primary font-bold text-xl">L</span>
-              </div>
-              <span className="font-bold text-xl">
-                Logic<span className="text-teal">Works</span>
-              </span>
+              <img 
+                src="/logo.png" 
+                alt="LogicWorks Logo" 
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
               Building AI-powered and future-ready digital solutions that transform businesses and drive growth.

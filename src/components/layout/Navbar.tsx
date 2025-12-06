@@ -57,15 +57,11 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="relative w-10 h-10 rounded-xl bg-accent-gradient flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <span className="text-primary font-bold text-xl">L</span>
-            </div>
-            <span className={cn(
-              "font-bold text-xl transition-colors duration-300",
-              isScrolled ? "text-foreground" : "text-primary-foreground"
-            )}>
-              Logic<span className="gradient-text">Works</span>
-            </span>
+            <img 
+              src="/logo.png" 
+              alt="LogicWorks Logo" 
+              className="h-10 w-auto group-hover:scale-110 transition-transform duration-300"
+            />
           </Link>
 
           {/* Desktop Navigation */}

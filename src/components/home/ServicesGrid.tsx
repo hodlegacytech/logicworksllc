@@ -48,7 +48,7 @@ const services = [
   },
   {
     icon: Palette,
-    title: "Branding & Design",
+    title: "Branding & Web Design",
     description: "Logo design, brand identity, UI/UX design, and creative graphics that stand out.",
     href: "/services/branding-design",
     gradient: "from-pink-500 to-secondary",

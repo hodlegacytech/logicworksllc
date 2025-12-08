@@ -11,7 +11,7 @@ const services = [
   { name: "Digital Marketing", href: "/services/digital-marketing" },
   { name: "Cloud Services", href: "/services/cloud-services" },
   { name: "Cybersecurity", href: "/services/cybersecurity" },
-  { name: "Branding & Design", href: "/services/branding-design" },
+  { name: "Branding & Web Design", href: "/services/branding-design" },
 ];
 
 const navLinks = [
@@ -47,7 +47,7 @@ export const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-[30px]",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
           ? "bg-card/95 backdrop-blur-xl shadow-lg  border-border/50"
           : "bg-transparent"

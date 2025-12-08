@@ -89,11 +89,11 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold gradient-text leading-tight mb-6"
           >
             Building{" "}
             <span className="relative">
-              <span className="gradient-text">AI-Powered</span>
+              <span className="text-primary-foreground">AI-Powered</span>
               <motion.svg
                 className="absolute -bottom-2 left-0 w-full"
                 viewBox="0 0 300 12"
@@ -110,8 +110,8 @@ export const HeroSection = () => {
                 />
                 <defs>
                   <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="hsl(213, 93%, 57%)" />
-                    <stop offset="100%" stopColor="hsl(174, 100%, 41%)" />
+                    <stop offset="0%" stopColor="hsl(180, 100.00%, 99.80%)" />
+                    <stop offset="100%" stopColor="hsl(180, 33.30%, 98.80%)" />
                   </linearGradient>
                 </defs>
               </motion.svg>

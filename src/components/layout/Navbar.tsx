@@ -47,21 +47,29 @@ export const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-[30px]",
         isScrolled
-          ? "bg-card/95 backdrop-blur-xl shadow-lg border-b border-border/50"
+          ? "bg-card/95 backdrop-blur-xl shadow-lg  border-border/50"
           : "bg-transparent"
       )}
     >
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
+          <Link to="/" className="flex flex-grow-1  items-center gap-2 group">
+            {isScrolled ? (
             <img 
-              src="/logo.png" 
+              src="/logo-dark.png" 
               alt="LogicWorks Logo" 
-              className="h-10 w-auto group-hover:scale-110 transition-transform duration-300"
+              className="w-auto max-w-[200px] group-hover:scale-110 transition-transform duration-300"
             />
+            ) : (
+              <img 
+                src="/logo.png" 
+                alt="LogicWorks Logo" 
+                className="w-auto max-w-[200px] group-hover:scale-110 transition-transform duration-300"
+              />
+            )}
           </Link>
 
           {/* Desktop Navigation */}

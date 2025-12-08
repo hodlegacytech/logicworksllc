@@ -88,7 +88,7 @@ export const Footer = () => {
               <img 
                 src="/logo.png" 
                 alt="LogicWorks Logo" 
-                className="h-10 w-auto"
+                className="w-auto max-w-[200px]"
               />
             </Link>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">

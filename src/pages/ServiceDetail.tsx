@@ -138,7 +138,7 @@ const serviceData: Record<string, {
     gradient: "from-red-500 to-rose-500",
   },
   "branding-design": {
-    title: "Branding & Design",
+    title: "Branding & Web Design",
     subtitle: "Create a Memorable Brand Identity",
     description: "Strategic branding and creative design that helps your business stand out and connect with audiences.",
     icon: Palette,
@@ -153,6 +153,7 @@ const serviceData: Record<string, {
       { title: "Brand Guidelines", description: "Comprehensive style guides for consistent branding" },
       { title: "UI/UX Design", description: "User-centered design for digital products" },
       { title: "Marketing Collateral", description: "Brochures, presentations, and marketing materials" },
+      { title: "Web Design", description: "Responsive, modern, and user-friendly website designs" },
     ],
     tools: ["Figma", "Adobe Creative Suite", "Sketch", "InVision", "Principle", "Framer"],
     gradient: "from-pink-500 to-rose-500",

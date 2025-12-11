@@ -24,8 +24,6 @@ const footerLinks = {
   company: [
     { name: "About Us", href: "/about" },
     { name: "Portfolio", href: "/portfolio" },
-    { name: "Case Studies", href: "/case-studies" },
-    { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },
   ],
   support: [
@@ -40,7 +38,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Facebook, href: "https://www.facebook.com/logicworksllc", label: "Facebook" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
 ];
 

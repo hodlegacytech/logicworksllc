@@ -94,6 +94,10 @@ export const Footer = () => {
                 <Mail className="w-5 h-5" />
                  info@logicworksllc.com
               </a>
+              <a href="tel:+13109575211" className="flex items-center gap-3 text-primary-foreground/70 hover:text-teal transition-colors">
+                <Phone className="w-5 h-5" />
+                (310) 957-5211
+              </a>
             </div>
           </div>
 

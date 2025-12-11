@@ -19,8 +19,14 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    details: "support@logicworksllc.com",
+    details: "info@logicworksllc.com",
     subtext: "We'll respond within 24 hours",
+  },
+  {
+    icon: Phone,
+    title: "Call Us",
+    details: "(310) 957-5211",
+    subtext: "We're available 24/7",
   }
 ];
 

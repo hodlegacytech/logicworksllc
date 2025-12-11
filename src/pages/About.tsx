@@ -204,65 +204,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="section-padding bg-muted">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-teal/10 text-teal text-sm font-medium mb-4">
-              Our Team
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Meet the Experts
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Our leadership team brings decades of combined experience in technology, 
-              business, and innovation.
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group"
-              >
-                <div className="bg-card rounded-2xl overflow-hidden border border-border hover:border-secondary/50 transition-all duration-300 hover-lift">
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-                      <div className="flex gap-3">
-                        <a href={member.linkedin} className="w-10 h-10 rounded-full bg-primary-foreground/20 flex items-center justify-center text-primary-foreground hover:bg-teal transition-colors">
-                          <Linkedin className="w-5 h-5" />
-                        </a>
-                        <a href={member.twitter} className="w-10 h-10 rounded-full bg-primary-foreground/20 flex items-center justify-center text-primary-foreground hover:bg-teal transition-colors">
-                          <Twitter className="w-5 h-5" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-lg font-bold text-foreground mb-1">{member.name}</h3>
-                    <p className="text-muted-foreground text-sm">{member.role}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </main>

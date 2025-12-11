@@ -36,17 +36,12 @@ const footerLinks = {
   legal: [
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms & Conditions", href: "/terms" },
-    { name: "Refund Policy", href: "/refund" },
-    { name: "Disclaimer", href: "/disclaimer" },
   ],
 };
 
 const socialLinks = [
   { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Twitter, href: "#", label: "Twitter" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
 ];
 
 export const Footer = () => {
@@ -95,9 +90,9 @@ export const Footer = () => {
               Building AI-powered and future-ready digital solutions that transform businesses and drive growth.
             </p>
             <div className="space-y-3">
-              <a href="mailto:support@logicworksllc.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-teal transition-colors">
+              <a href="mailto: info@logicworksllc.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-teal transition-colors">
                 <Mail className="w-5 h-5" />
-                support@logicworksllc.com
+                 info@logicworksllc.com
               </a>
             </div>
           </div>

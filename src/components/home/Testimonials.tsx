@@ -77,7 +77,7 @@ export const Testimonials = () => {
             What Our Clients Say
           </h2>
           <p className="text-muted-foreground text-lg">
-            Don't just take our word for it — hear from the businesses we've helped transform.
+            Don't just take our word for it hear from the businesses we've helped transform.
           </p>
         </motion.div>
 

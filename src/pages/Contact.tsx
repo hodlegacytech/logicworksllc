@@ -240,16 +240,16 @@ const Contact = () => {
             >
               {/* Map Placeholder */}
               <div className="h-80 rounded-2xl overflow-hidden border border-border bg-card">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50766.82986869065!2d-122.08563874502555!3d37.38605019172855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sSilicon%20Valley%2C%20CA!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="LogicWorks Location"
-                />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255897.39646567114!2d-77.6802338!3d37.5407246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b113ef29a5fb8f%3A0xdea9e52a5f9756c5!2sVirginia!5e0!3m2!1sen!2sus!4v100000000001!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="LogicWorks Location"
+              />
               </div>
 
               {/* Quick Links */}

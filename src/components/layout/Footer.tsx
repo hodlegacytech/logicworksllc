@@ -38,7 +38,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "https://www.facebook.com/logicworksllc", label: "Facebook" },
+  { icon: Facebook, href: "https://www.facebook.com/logicworkllc/", label: "Facebook" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/logic-works-llc", label: "LinkedIn" },
 ];
 

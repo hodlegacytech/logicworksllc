@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -64,11 +64,11 @@ export default function UiUxDesign() {
 
   return (
     <div ref={pageRef} className="svc-page">
-      <Helmet>
-        <title>UI/UX Design | LogicWorks — User-Research-Driven Product Design</title>
-        <meta name="description" content="LogicWorks UI/UX design — user research, wireframing, prototyping, design systems, and accessibility. Every pixel placed with purpose to drive engagement and conversion." />
-        <link rel="canonical" href="https://logicworks.com/ui-ux-design" />
-      </Helmet>
+      <Head>
+        <title head-key="title">UI/UX Design | LogicWorks — User-Research-Driven Product Design</title>
+        <meta head-key="description" name="description" content="LogicWorks UI/UX design — user research, wireframing, prototyping, design systems, and accessibility. Every pixel placed with purpose to drive engagement and conversion." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ui-ux-design" />
+      </Head>
 
       <section className="inner-hero" aria-labelledby="uiux-title" style={{ background: `linear-gradient(135deg, #060d1f 0%, #3a0a10 60%, ${HERO_COLOR} 100%)` }}>
         <div className="inner-hero-orb" aria-hidden="true" />

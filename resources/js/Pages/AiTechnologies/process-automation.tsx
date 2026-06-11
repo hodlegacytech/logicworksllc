@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useAiTechPage, checkIcon, arrowIcon, AiTechFaq, AiTechCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function ProcessAutomation() {
 
   return (
     <div ref={pageRef} className="ai-tech-page">
-      <Helmet>
-        <title>Process Automation | LogicWorks — RPA & Intelligent Workflows</title>
-        <meta name="description" content="LogicWorks delivers process automation — RPA bots, intelligent workflows, document processing, and system integrations that cut operational overhead by up to 70%." />
-        <link rel="canonical" href="https://logicworks.com/process-automation" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Process Automation | LogicWorks — RPA & Intelligent Workflows</title>
+        <meta head-key="description" name="description" content="LogicWorks delivers process automation — RPA bots, intelligent workflows, document processing, and system integrations that cut operational overhead by up to 70%." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/process-automation" />
+      </Head>
 
       <section className="ai-tech-hero" aria-labelledby="automation-title">
         <div className="ai-tech-hero-mesh" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function ProcessAutomation() {
           <h1 className="ai-tech-hero-title" id="automation-title">PROCESS<br /><span>AUTOMATION</span></h1>
           <p className="ai-tech-hero-sub">RPA and intelligent workflow automation that eliminates bottlenecks, cuts operational overhead by up to 70%, and scales throughput without scaling headcount.</p>
           <div className="ai-tech-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Automate Your Processes{arrowIcon}</Link>
-            <Link to="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Automate Your Processes{arrowIcon}</Link>
+            <Link href="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
           </div>
         </div>
       </section>

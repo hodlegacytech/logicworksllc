@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useMarketingPage, checkIcon, arrowIcon, MarketingFaq, MarketingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function ContentMarketing() {
 
   return (
     <div ref={pageRef} className="mkt-page">
-      <Helmet>
-        <title>Content Marketing | LogicWorks — SEO Content That Ranks & Converts</title>
-        <meta name="description" content="LogicWorks delivers content marketing — SEO blog writing, whitepapers, video scripts, and editorial strategy that drives organic traffic and generates qualified leads." />
-        <link rel="canonical" href="https://logicworks.com/content-marketing" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Content Marketing | LogicWorks — SEO Content That Ranks & Converts</title>
+        <meta head-key="description" name="description" content="LogicWorks delivers content marketing — SEO blog writing, whitepapers, video scripts, and editorial strategy that drives organic traffic and generates qualified leads." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/content-marketing" />
+      </Head>
 
       <section className="mkt-hero" aria-labelledby="cm-title">
         <div className="mkt-hero-accent" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function ContentMarketing() {
           <h1 className="mkt-hero-title" id="cm-title">CONTENT<br /><span>MARKETING</span></h1>
           <p className="mkt-hero-sub">SEO-optimized content that ranks, resonates, and converts — blog posts, whitepapers, video scripts, and editorial strategy that compounds into organic growth.</p>
           <div className="mkt-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Content Strategy{arrowIcon}</Link>
-            <Link to="/seo-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>SEO Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Content Strategy{arrowIcon}</Link>
+            <Link href="/seo-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>SEO Services</Link>
           </div>
         </div>
       </section>

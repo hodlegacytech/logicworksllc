@@ -786,14 +786,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>LogicWorks | Elite Digital Agency — Web Design, AI, SEO & More</title>
-        <meta name="description" content="LogicWorks is America's premier digital agency delivering cutting-edge web design, AI-powered CRMs, mobile apps, SEO, AEO, branding, and automation solutions that drive measurable growth." />
-        <meta name="keywords" content="digital agency, web design, AI automation, machine learning, SEO, AEO, mobile apps, branding, PPC, social media marketing, LogicWorks" />
-        <link rel="canonical" href="https://logicworks.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="LogicWorks | Elite Digital Agency" />
-        <meta property="og:description" content="We engineer digital experiences that captivate, convert, and dominate." />
-        <script type="application/ld+json">{JSON.stringify({
+        <title head-key="title">LogicWorks | Elite Digital Agency — Web Design, AI, SEO & More</title>
+        <meta head-key="description" name="description" content="LogicWorks is America's premier digital agency delivering cutting-edge web design, AI-powered CRMs, mobile apps, SEO, AEO, branding, and automation solutions that drive measurable growth." />
+        <meta head-key="keywords" name="keywords" content="digital agency, web design, AI automation, machine learning, SEO, AEO, mobile apps, branding, PPC, social media marketing, LogicWorks" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/" />
+        <meta head-key="og:type" property="og:type" content="website" />
+        <meta head-key="og:title" property="og:title" content="LogicWorks | Elite Digital Agency" />
+        <meta head-key="og:description" property="og:description" content="We engineer digital experiences that captivate, convert, and dominate." />
+        <script head-key="schema" type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
           "name": "LogicWorks",

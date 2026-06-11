@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useCompanyPage, arrowIcon, CompanyCta } from './shared';
 
 const featured = {
@@ -115,11 +115,11 @@ export default function CaseStudies() {
 
   return (
     <div ref={pageRef} className="co-page">
-      <Helmet>
-        <title>Case Studies | LogicWorks — Real Results Across Every Vertical</title>
-        <meta name="description" content="Explore LogicWorks case studies — real businesses, measurable results across healthcare, SaaS, e-commerce, real estate, legal, FinTech, and hospitality." />
-        <link rel="canonical" href="https://logicworks.com/case-studies" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Case Studies | LogicWorks — Real Results Across Every Vertical</title>
+        <meta head-key="description" name="description" content="Explore LogicWorks case studies — real businesses, measurable results across healthcare, SaaS, e-commerce, real estate, legal, FinTech, and hospitality." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/case-studies" />
+      </Head>
 
       <section className="co-hero" aria-labelledby="cases-title">
         <div className="co-hero-glow" aria-hidden="true" />
@@ -128,8 +128,8 @@ export default function CaseStudies() {
           <h1 className="co-hero-title" id="cases-title">Real Businesses.<br /><span>Real Results.</span></h1>
           <p className="co-hero-sub">Explore how LogicWorks has transformed brands across every major vertical — with measurable outcomes, not vanity metrics.</p>
           <div className="co-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Success Story{arrowIcon}</Link>
-            <Link to="/industries" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Our Industries</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Success Story{arrowIcon}</Link>
+            <Link href="/industries" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Our Industries</Link>
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useCompanyPage, arrowIcon, CompanyCta } from './shared';
 
 const leadership = [
@@ -39,11 +39,11 @@ export default function OurTeam() {
 
   return (
     <div ref={pageRef} className="co-page">
-      <Helmet>
-        <title>Our Team | LogicWorks — Elite Designers, Engineers & Strategists</title>
-        <meta name="description" content="Meet the LogicWorks team — 130+ elite designers, engineers, AI architects, and growth strategists united by one mission: your market dominance." />
-        <link rel="canonical" href="https://logicworks.com/our-team" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Our Team | LogicWorks — Elite Designers, Engineers & Strategists</title>
+        <meta head-key="description" name="description" content="Meet the LogicWorks team — 130+ elite designers, engineers, AI architects, and growth strategists united by one mission: your market dominance." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/our-team" />
+      </Head>
 
       <section className="co-hero" aria-labelledby="team-title">
         <div className="co-hero-glow" aria-hidden="true" />
@@ -52,8 +52,8 @@ export default function OurTeam() {
           <h1 className="co-hero-title" id="team-title">The Minds Behind<br /><span>Your Dominance</span></h1>
           <p className="co-hero-sub">A collective of elite designers, engineers, AI architects, and growth strategists united by one mission — giving ambitious businesses an unfair digital advantage.</p>
           <div className="co-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Work With Our Team{arrowIcon}</Link>
-            <Link to="/careers" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Join Us</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Work With Our Team{arrowIcon}</Link>
+            <Link href="/careers" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Join Us</Link>
           </div>
         </div>
       </section>
@@ -168,8 +168,8 @@ export default function OurTeam() {
           <h2 className="co-join-title">WANT TO JOIN THE TEAM?</h2>
           <p className="co-join-sub">We are always looking for elite builders, strategists, and visionaries who share our obsession with client outcomes.</p>
           <div className="co-join-actions">
-            <Link to="/careers" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>View Open Roles{arrowIcon}</Link>
-            <Link to="/about" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>About LogicWorks</Link>
+            <Link href="/careers" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>View Open Roles{arrowIcon}</Link>
+            <Link href="/about" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>About LogicWorks</Link>
           </div>
         </div>
       </section>

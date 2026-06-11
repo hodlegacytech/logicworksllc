@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 
 const LAST_UPDATED = 'June 3, 2025';
@@ -43,14 +43,14 @@ export default function PrivacyPolicyPage() {
 
   return (
     <div ref={pageRef} className="legal-page">
-      <Helmet>
-        <title>Privacy Policy | LogicWorks — Elite Digital Agency</title>
+      <Head>
+        <title head-key="title">Privacy Policy | LogicWorks — Elite Digital Agency</title>
         <meta
           name="description"
           content="LogicWorks Privacy Policy — how we collect, use, store, and protect your personal information when you visit our website or use our digital agency services."
         />
-        <link rel="canonical" href="https://logicworks.com/privacy-policy" />
-      </Helmet>
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/privacy-policy" />
+      </Head>
 
       <section
         className="inner-hero legal-hero"
@@ -89,8 +89,8 @@ export default function PrivacyPolicyPage() {
                   </ul>
                 </nav>
                 <div className="legal-toc-links">
-                  <Link to="/terms-of-service">Terms of Service</Link>
-                  <Link to="/contact">Contact Us</Link>
+                  <Link href="/terms-of-service">Terms of Service</Link>
+                  <Link href="/contact">Contact Us</Link>
                 </div>
               </div>
             </aside>
@@ -341,7 +341,7 @@ export default function PrivacyPolicyPage() {
                   </p>
                   <p>
                     Web:{' '}
-                    <Link to="/contact">logicworks.com/contact</Link>
+                    <Link href="/contact">logicworks.com/contact</Link>
                   </p>
                 </div>
               </section>

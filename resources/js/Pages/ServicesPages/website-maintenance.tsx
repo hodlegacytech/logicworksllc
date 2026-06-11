@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -64,11 +64,11 @@ export default function WebsiteMaintenance() {
 
   return (
     <div ref={pageRef} className="svc-page">
-      <Helmet>
-        <title>Website Maintenance | LogicWorks — Ongoing Site Care & Support</title>
-        <meta name="description" content="LogicWorks website maintenance — updates, security scanning, performance optimization, backups, and content management to keep your site flawless 24/7." />
-        <link rel="canonical" href="https://logicworks.com/website-maintenance" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Website Maintenance | LogicWorks — Ongoing Site Care & Support</title>
+        <meta head-key="description" name="description" content="LogicWorks website maintenance — updates, security scanning, performance optimization, backups, and content management to keep your site flawless 24/7." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/website-maintenance" />
+      </Head>
 
       <section className="inner-hero" aria-labelledby="maint-title" style={{ background: `linear-gradient(135deg, #060d1f 0%, #091840 60%, ${HERO_COLOR} 100%)` }}>
         <div className="inner-hero-orb" aria-hidden="true" />

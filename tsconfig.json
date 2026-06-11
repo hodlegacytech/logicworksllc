@@ -9,7 +9,10 @@
       "forceConsistentCasingInFileNames": true,
       "strict": true,
       "skipLibCheck": true,
-      "baseUrl": "./resources/js"
+      "baseUrl": "./resources/js",
+      "paths": {
+        "@/*": ["./*"]
+      }
     },
     "include": ["resources/js/**/*"],
     "exclude": ["node_modules", "vendor"]

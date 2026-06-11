@@ -84,9 +84,9 @@ export default function WebPortals() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title>Web Portals | LogicWorks — Enterprise Portal Development</title>
-        <meta name="description" content="LogicWorks builds enterprise-grade web portals — employee intranets, customer portals, partner hubs, and member platforms with SSO, API integrations, and role-based access." />
-        <link rel="canonical" href="https://logicworks.com/web-portals" />
+        <title head-key="title">Web Portals | LogicWorks — Enterprise Portal Development</title>
+        <meta head-key="description" name="description" content="LogicWorks builds enterprise-grade web portals — employee intranets, customer portals, partner hubs, and member platforms with SSO, API integrations, and role-based access." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/web-portals" />
       </Head>
 
       {/* Hero */}

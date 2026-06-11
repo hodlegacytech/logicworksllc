@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useBrandingPage, checkIcon, arrowIcon, BrandingFaq, BrandingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function BrandingStrategy() {
 
   return (
     <div ref={pageRef} className="brd-page">
-      <Helmet>
-        <title>Branding Strategy | LogicWorks — Positioning & Messaging Architecture</title>
-        <meta name="description" content="LogicWorks branding strategy services deliver market positioning, messaging architecture, competitive differentiation, and brand governance that make you the only logical choice." />
-        <link rel="canonical" href="https://logicworks.com/branding-strategy" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Branding Strategy | LogicWorks — Positioning & Messaging Architecture</title>
+        <meta head-key="description" name="description" content="LogicWorks branding strategy services deliver market positioning, messaging architecture, competitive differentiation, and brand governance that make you the only logical choice." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/branding-strategy" />
+      </Head>
 
       <section className="brd-hero" aria-labelledby="branding-strategy-title">
         <div className="brd-hero-grain" aria-hidden="true" />
@@ -66,8 +66,8 @@ export default function BrandingStrategy() {
           <h1 className="brd-hero-title" id="branding-strategy-title">Branding<br /><span>Strategy</span></h1>
           <p className="brd-hero-sub">Positioning, messaging architecture, and competitive differentiation that transforms how markets perceive you — and gives every team a single, defensible story to tell.</p>
           <div className="brd-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Brand Strategy{arrowIcon}</Link>
-            <Link to="/brand-design" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Brand Design</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Brand Strategy{arrowIcon}</Link>
+            <Link href="/brand-design" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Brand Design</Link>
           </div>
         </div>
       </section>

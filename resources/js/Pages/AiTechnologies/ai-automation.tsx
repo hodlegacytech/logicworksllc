@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useAiTechPage, checkIcon, arrowIcon, AiTechFaq, AiTechCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function AiAutomation() {
 
   return (
     <div ref={pageRef} className="ai-tech-page">
-      <Helmet>
-        <title>AI Automation | LogicWorks — Intelligent Workflow & Process Automation</title>
-        <meta name="description" content="LogicWorks AI automation — replace repetitive tasks with intelligent systems that work 24/7, make zero errors, and scale without adding headcount. RPA, workflows, and document AI." />
-        <link rel="canonical" href="https://logicworks.com/ai-automation" />
-      </Helmet>
+      <Head>
+        <title head-key="title">AI Automation | LogicWorks — Intelligent Workflow & Process Automation</title>
+        <meta head-key="description" name="description" content="LogicWorks AI automation — replace repetitive tasks with intelligent systems that work 24/7, make zero errors, and scale without adding headcount. RPA, workflows, and document AI." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ai-automation" />
+      </Head>
 
       <section className="ai-tech-hero" aria-labelledby="auto-title">
         <div className="ai-tech-hero-mesh" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function AiAutomation() {
           <h1 className="ai-tech-hero-title" id="auto-title">AI<br /><span>AUTOMATION</span></h1>
           <p className="ai-tech-hero-sub">Replace repetitive tasks with intelligent systems that work 24/7, make zero errors, and scale without headcount — freeing your team for work that actually moves the needle.</p>
           <div className="ai-tech-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Automation Audit{arrowIcon}</Link>
-            <Link to="/machine-learning-systems" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>ML Systems</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Automation Audit{arrowIcon}</Link>
+            <Link href="/machine-learning-systems" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>ML Systems</Link>
           </div>
         </div>
       </section>

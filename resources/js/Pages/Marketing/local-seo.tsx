@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useMarketingPage, checkIcon, arrowIcon, MarketingFaq, MarketingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function LocalSeo() {
 
   return (
     <div ref={pageRef} className="mkt-page">
-      <Helmet>
-        <title>Local SEO | LogicWorks — Dominate Your Local Market</title>
-        <meta name="description" content="LogicWorks local SEO services optimize Google Business Profile, build citations, generate reviews, and create geo-targeted content that wins the local map pack." />
-        <link rel="canonical" href="https://logicworks.com/local-seo" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Local SEO | LogicWorks — Dominate Your Local Market</title>
+        <meta head-key="description" name="description" content="LogicWorks local SEO services optimize Google Business Profile, build citations, generate reviews, and create geo-targeted content that wins the local map pack." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/local-seo" />
+      </Head>
 
       <section className="mkt-hero" aria-labelledby="local-seo-title">
         <div className="mkt-hero-accent" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function LocalSeo() {
           <h1 className="mkt-hero-title" id="local-seo-title">Local<br /><span>SEO</span></h1>
           <p className="mkt-hero-sub">Own your local market — Google Business Profile optimization, citations, and geo-targeted content that puts you in the map pack when nearby customers search.</p>
           <div className="mkt-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get a Local SEO Audit{arrowIcon}</Link>
-            <Link to="/aeo-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>AEO Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get a Local SEO Audit{arrowIcon}</Link>
+            <Link href="/aeo-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>AEO Services</Link>
           </div>
         </div>
       </section>

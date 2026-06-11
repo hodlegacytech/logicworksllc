@@ -36,9 +36,9 @@ export default function WebDesign() {
   return (
     <>
       <Head>
-        <title>Web Design & Development | LogicWorks — Elite Digital Agency</title>
-        <meta name="description" content="Custom web design and development by LogicWorks. React, Next.js, WordPress, e-commerce, and more — pixel-perfect, blazing fast, conversion-optimized." />
-        <link rel="canonical" href="https://logicworks.com/web-design-development" />
+        <title head-key="title">Web Design & Development | LogicWorks — Elite Digital Agency</title>
+        <meta head-key="description" name="description" content="Custom web design and development by LogicWorks. React, Next.js, WordPress, e-commerce, and more — pixel-perfect, blazing fast, conversion-optimized." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/web-design-development" />
       </Head>
 
       <section

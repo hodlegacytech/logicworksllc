@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useAiTechPage, checkIcon, arrowIcon, AiTechFaq, AiTechCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function AiAssistants() {
 
   return (
     <div ref={pageRef} className="ai-tech-page">
-      <Helmet>
-        <title>AI Assistants | LogicWorks — Intelligent Virtual Agents</title>
-        <meta name="description" content="LogicWorks builds AI assistants that qualify leads, answer questions, and book appointments 24/7 — omnichannel virtual agents with CRM integration and smart human handoff." />
-        <link rel="canonical" href="https://logicworks.com/ai-assistants" />
-      </Helmet>
+      <Head>
+        <title head-key="title">AI Assistants | LogicWorks — Intelligent Virtual Agents</title>
+        <meta head-key="description" name="description" content="LogicWorks builds AI assistants that qualify leads, answer questions, and book appointments 24/7 — omnichannel virtual agents with CRM integration and smart human handoff." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ai-assistants" />
+      </Head>
 
       <section className="ai-tech-hero" aria-labelledby="assistants-title">
         <div className="ai-tech-hero-mesh" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function AiAssistants() {
           <h1 className="ai-tech-hero-title" id="assistants-title">AI<br /><span>ASSISTANTS</span></h1>
           <p className="ai-tech-hero-sub">Intelligent virtual agents that qualify leads, answer questions, and book appointments around the clock — so your team focuses on high-value conversations, not repetitive inquiries.</p>
           <div className="ai-tech-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Build Your AI Assistant{arrowIcon}</Link>
-            <Link to="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Build Your AI Assistant{arrowIcon}</Link>
+            <Link href="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
           </div>
         </div>
       </section>

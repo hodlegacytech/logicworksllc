@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useAiTechPage, checkIcon, arrowIcon, AiTechFaq, AiTechCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function VoiceAi() {
 
   return (
     <div ref={pageRef} className="ai-tech-page">
-      <Helmet>
-        <title>Voice AI Solutions | LogicWorks — Intelligent Voice Interfaces</title>
-        <meta name="description" content="LogicWorks builds Voice AI solutions — IVR replacement, voice agents, real-time speech processing, and multilingual phone automation with sub-800ms latency." />
-        <link rel="canonical" href="https://logicworks.com/voice-ai" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Voice AI Solutions | LogicWorks — Intelligent Voice Interfaces</title>
+        <meta head-key="description" name="description" content="LogicWorks builds Voice AI solutions — IVR replacement, voice agents, real-time speech processing, and multilingual phone automation with sub-800ms latency." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/voice-ai" />
+      </Head>
 
       <section className="ai-tech-hero" aria-labelledby="voice-title">
         <div className="ai-tech-hero-mesh" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function VoiceAi() {
           <h1 className="ai-tech-hero-title" id="voice-title">VOICE AI<br /><span>SOLUTIONS</span></h1>
           <p className="ai-tech-hero-sub">Frictionless voice interfaces for customer service, IVR replacement, and smart device integration — natural conversations with sub-800ms latency, 24/7 phone coverage, and enterprise-grade compliance.</p>
           <div className="ai-tech-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Build Voice AI{arrowIcon}</Link>
-            <Link to="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Build Voice AI{arrowIcon}</Link>
+            <Link href="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
           </div>
         </div>
       </section>

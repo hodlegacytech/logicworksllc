@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 
 interface FormState {
@@ -55,11 +55,11 @@ export default function ContactPage() {
 
   return (
     <div ref={pageRef} className="contact-page">
-      <Helmet>
-        <title>Contact LogicWorks | Get Your Free Strategy Session</title>
-        <meta name="description" content="Contact LogicWorks for a free digital strategy session. USA-based senior consultants ready to audit your digital presence and map your path to market dominance." />
-        <link rel="canonical" href="https://logicworks.com/contact" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Contact LogicWorks | Get Your Free Strategy Session</title>
+        <meta head-key="description" name="description" content="Contact LogicWorks for a free digital strategy session. USA-based senior consultants ready to audit your digital presence and map your path to market dominance." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/contact" />
+      </Head>
 
       <section className="inner-hero contact-hero" aria-labelledby="contact-title" style={{ background: 'linear-gradient(135deg, #060d1f 0%, #091840 60%, #1a4bdb 100%)' }}>
         <div className="inner-hero-orb" aria-hidden="true" />

@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useAiTechPage, checkIcon, arrowIcon, AiTechFaq, AiTechCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function NlpSolutions() {
 
   return (
     <div ref={pageRef} className="ai-tech-page">
-      <Helmet>
-        <title>NLP & Language Models | LogicWorks — Custom LLM Integration</title>
-        <meta name="description" content="LogicWorks builds custom NLP solutions and LLM integrations — RAG pipelines, document intelligence, text classification, and enterprise language AI at scale." />
-        <link rel="canonical" href="https://logicworks.com/nlp-solutions" />
-      </Helmet>
+      <Head>
+        <title head-key="title">NLP & Language Models | LogicWorks — Custom LLM Integration</title>
+        <meta head-key="description" name="description" content="LogicWorks builds custom NLP solutions and LLM integrations — RAG pipelines, document intelligence, text classification, and enterprise language AI at scale." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/nlp-solutions" />
+      </Head>
 
       <section className="ai-tech-hero" aria-labelledby="nlp-title">
         <div className="ai-tech-hero-mesh" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function NlpSolutions() {
           <h1 className="ai-tech-hero-title" id="nlp-title">NLP & LANGUAGE<br /><span>MODELS</span></h1>
           <p className="ai-tech-hero-sub">Custom LLM integrations and NLP pipelines that turn unstructured language into business intelligence — from document extraction to real-time classification at enterprise scale.</p>
           <div className="ai-tech-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Explore NLP Solutions{arrowIcon}</Link>
-            <Link to="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Explore NLP Solutions{arrowIcon}</Link>
+            <Link href="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
           </div>
         </div>
       </section>

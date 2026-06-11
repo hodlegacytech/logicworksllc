@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useAiTechPage, checkIcon, arrowIcon, AiTechFaq, AiTechCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function AiPoweredCrm() {
 
   return (
     <div ref={pageRef} className="ai-tech-page">
-      <Helmet>
-        <title>AI-Powered CRM | LogicWorks — Intelligent Sales Automation</title>
-        <meta name="description" content="LogicWorks builds AI-powered CRM systems — predictive lead scoring, intelligent follow-ups, pipeline intelligence, and sales copilots that 3x your team's output." />
-        <link rel="canonical" href="https://logicworks.com/ai-powered-crm" />
-      </Helmet>
+      <Head>
+        <title head-key="title">AI-Powered CRM | LogicWorks — Intelligent Sales Automation</title>
+        <meta head-key="description" name="description" content="LogicWorks builds AI-powered CRM systems — predictive lead scoring, intelligent follow-ups, pipeline intelligence, and sales copilots that 3x your team's output." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ai-powered-crm" />
+      </Head>
 
       <section className="ai-tech-hero" aria-labelledby="crm-title">
         <div className="ai-tech-hero-mesh" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function AiPoweredCrm() {
           <h1 className="ai-tech-hero-title" id="crm-title">AI-POWERED<br /><span>CRM SYSTEMS</span></h1>
           <p className="ai-tech-hero-sub">Custom CRM systems infused with AI to score leads, automate follow-ups, and unlock superhuman sales productivity — so your team closes more, faster.</p>
           <div className="ai-tech-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Book AI CRM Demo{arrowIcon}</Link>
-            <Link to="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Book AI CRM Demo{arrowIcon}</Link>
+            <Link href="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
           </div>
         </div>
       </section>

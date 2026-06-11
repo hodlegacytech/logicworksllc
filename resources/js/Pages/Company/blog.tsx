@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useCompanyPage, arrowIcon, CompanyCta } from './shared';
 
 const categories = ['All', 'AI & Automation', 'SEO', 'Web Design', 'Digital Marketing', 'Branding', 'Industry Insights'] as const;
@@ -133,11 +133,11 @@ export default function Blog() {
 
   return (
     <div ref={pageRef} className="co-page">
-      <Helmet>
-        <title>Blog & Insights | LogicWorks — AI, SEO, Web Design & Marketing Intelligence</title>
-        <meta name="description" content="Strategic intelligence on AI, SEO, web design, and digital marketing from the LogicWorks team — actionable insights for ambitious businesses." />
-        <link rel="canonical" href="https://logicworks.com/blog" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Blog & Insights | LogicWorks — AI, SEO, Web Design & Marketing Intelligence</title>
+        <meta head-key="description" name="description" content="Strategic intelligence on AI, SEO, web design, and digital marketing from the LogicWorks team — actionable insights for ambitious businesses." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/blog" />
+      </Head>
 
       <section className="co-hero" aria-labelledby="blog-title">
         <div className="co-hero-glow" aria-hidden="true" />
@@ -147,7 +147,7 @@ export default function Blog() {
           <p className="co-hero-sub">Actionable insights on AI, SEO, web design, and digital marketing from the sharpest minds in the industry — no fluff, no filler.</p>
           <div className="co-hero-actions">
             <a href="#articles" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Browse Articles{arrowIcon}</a>
-            <Link to="/contact" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Get a Strategy Session</Link>
+            <Link href="/contact" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Get a Strategy Session</Link>
           </div>
         </div>
       </section>

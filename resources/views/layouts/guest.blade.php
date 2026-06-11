@@ -5,25 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'LogicWorks') }} — Sign In</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-        <!-- Scripts -->
         @vite(['resources/css/admin/app.css'])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-            <div>
-                <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-                </a>
+    <body class="auth-body antialiased">
+        <div class="auth-page">
+            <div class="auth-page-bg" aria-hidden="true">
+                <div class="auth-page-grid"></div>
+                <div class="auth-page-orb auth-page-orb--1"></div>
+                <div class="auth-page-orb auth-page-orb--2"></div>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                {{ $slot }}
+            <div class="auth-shell">
+                <a href="{{ url('/') }}" class="auth-brand">
+                    <img src="{{ asset('images/logicworks-logo.png') }}" alt="LogicWorks" class="auth-brand-logo" width="200" height="44" />
+                </a>
+
+                <div class="auth-card">
+                    {{ $slot }}
+                </div>
+
+                <p class="auth-footer">
+                    &copy; {{ date('Y') }} LogicWorks LLC &mdash;
+                    <a href="{{ url('/') }}">Back to website</a>
+                </p>
             </div>
         </div>
     </body>

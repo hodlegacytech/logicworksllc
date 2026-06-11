@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useCompanyPage, arrowIcon, CompanyCta } from './shared';
 
 const departments = ['All', 'Engineering', 'Design', 'Marketing', 'Strategy'] as const;
@@ -136,11 +136,11 @@ export default function Careers() {
 
   return (
     <div ref={pageRef} className="co-page">
-      <Helmet>
-        <title>Careers at LogicWorks — Join Elite Builders, Strategists & Visionaries</title>
-        <meta name="description" content="Join LogicWorks — we're hiring senior engineers, designers, marketers, and strategists. Remote-first, top-tier compensation, high-impact client work." />
-        <link rel="canonical" href="https://logicworks.com/careers" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Careers at LogicWorks — Join Elite Builders, Strategists & Visionaries</title>
+        <meta head-key="description" name="description" content="Join LogicWorks — we're hiring senior engineers, designers, marketers, and strategists. Remote-first, top-tier compensation, high-impact client work." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/careers" />
+      </Head>
 
       <section className="co-hero" aria-labelledby="careers-title">
         <div className="co-hero-glow" aria-hidden="true" />
@@ -150,7 +150,7 @@ export default function Careers() {
           <p className="co-hero-sub">Join the agency reshaping digital. We hire elite builders, strategists, and visionaries who want high-impact work — not another ticket queue.</p>
           <div className="co-hero-actions">
             <a href="#open-roles" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>View Open Roles{arrowIcon}</a>
-            <Link to="/our-team" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Meet the Team</Link>
+            <Link href="/our-team" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Meet the Team</Link>
           </div>
         </div>
       </section>
@@ -230,7 +230,7 @@ export default function Careers() {
                   </div>
                 </div>
                 <div className="co-career-role-action">
-                  <Link to="/contact" className="co-career-apply-btn">
+                  <Link href="/contact" className="co-career-apply-btn">
                     Apply Now{arrowIcon}
                   </Link>
                 </div>
@@ -297,7 +297,7 @@ export default function Careers() {
               <h2 className="co-career-apply-title">DON&apos;T SEE YOUR ROLE?</h2>
               <p className="co-career-apply-sub">We are always looking for exceptional talent. Send us your resume and tell us how you would make LogicWorks better.</p>
             </div>
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800, whiteSpace: 'nowrap' }}>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800, whiteSpace: 'nowrap' }}>
               Send General Application{arrowIcon}
             </Link>
           </div>

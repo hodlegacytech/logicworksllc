@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -36,11 +36,11 @@ export default function AISolutions() {
 
   return (
     <div ref={pageRef}>
-      <Helmet>
-        <title>AI & Technology Solutions | LogicWorks — Machine Learning, Automation & More</title>
-        <meta name="description" content="Custom AI automation, machine learning systems, AI chatbots, CRM intelligence, and predictive analytics from LogicWorks — America's elite AI agency." />
-        <link rel="canonical" href="https://logicworks.com/ai-solutions" />
-      </Helmet>
+      <Head>
+        <title head-key="title">AI & Technology Solutions | LogicWorks — Machine Learning, Automation & More</title>
+        <meta head-key="description" name="description" content="Custom AI automation, machine learning systems, AI chatbots, CRM intelligence, and predictive analytics from LogicWorks — America's elite AI agency." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ai-solutions" />
+      </Head>
 
       <section className="inner-hero" aria-labelledby="ai-page-title" style={{ background: 'linear-gradient(135deg, #060d1f 0%, #091840 50%, #0d1b3e 100%)' }}>
         <div className="inner-hero-orb" aria-hidden="true" />

@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useMarketingPage, checkIcon, arrowIcon, MarketingFaq, MarketingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function TechnicalSeo() {
 
   return (
     <div ref={pageRef} className="mkt-page">
-      <Helmet>
-        <title>Technical SEO | LogicWorks — Core Web Vitals & Site Architecture</title>
-        <meta name="description" content="LogicWorks technical SEO services deliver Core Web Vitals optimization, schema markup, crawlability audits, and site architecture that search engines reward." />
-        <link rel="canonical" href="https://logicworks.com/technical-seo" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Technical SEO | LogicWorks — Core Web Vitals & Site Architecture</title>
+        <meta head-key="description" name="description" content="LogicWorks technical SEO services deliver Core Web Vitals optimization, schema markup, crawlability audits, and site architecture that search engines reward." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/technical-seo" />
+      </Head>
 
       <section className="mkt-hero" aria-labelledby="technical-seo-title">
         <div className="mkt-hero-accent" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function TechnicalSeo() {
           <h1 className="mkt-hero-title" id="technical-seo-title">Technical<br /><span>SEO</span></h1>
           <p className="mkt-hero-sub">Core Web Vitals mastery, schema markup, crawlability audits, and site architecture that gives search engines every reason to rank you higher.</p>
           <div className="mkt-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Request a Technical Audit{arrowIcon}</Link>
-            <Link to="/local-seo" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Local SEO</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Request a Technical Audit{arrowIcon}</Link>
+            <Link href="/local-seo" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Local SEO</Link>
           </div>
         </div>
       </section>

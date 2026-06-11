@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -34,11 +34,11 @@ export default function BrandingPage() {
 
   return (
     <div ref={pageRef}>
-      <Helmet>
-        <title>Branding & Brand Design | LogicWorks — Logo, Identity & Strategy</title>
-        <meta name="description" content="LogicWorks builds brands that feel inevitable — strategy, logo design, visual identity, brand guidelines, and UI/UX design that makes you unforgettable in your market." />
-        <link rel="canonical" href="https://logicworks.com/branding" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Branding & Brand Design | LogicWorks — Logo, Identity & Strategy</title>
+        <meta head-key="description" name="description" content="LogicWorks builds brands that feel inevitable — strategy, logo design, visual identity, brand guidelines, and UI/UX design that makes you unforgettable in your market." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/branding" />
+      </Head>
 
       <section className="inner-hero" aria-labelledby="brand-title" style={{ background: 'linear-gradient(135deg, #060d1f 0%, #1a1a2e 60%, #16213e 100%)' }}>
         <div className="inner-hero-orb" style={{ background: 'radial-gradient(circle,rgba(200,146,42,.2),transparent 70%)' }} aria-hidden="true" />
@@ -47,8 +47,8 @@ export default function BrandingPage() {
           <h1 className="inner-hero-title" id="brand-title">YOUR BRAND IS YOUR<br /><span style={{ color: 'var(--gold-lt)' }}>MOST VALUABLE ASSET</span>.</h1>
           <p className="inner-hero-sub">We don't design logos — we build brand systems that command attention, convey authority, and create emotional resonance that makes your business the only logical choice in your market.</p>
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn btn-gold" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Brand Project<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
-            <Link to="/brand-design" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Brand Work</Link>
+            <Link href="/contact" className="btn btn-gold" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Brand Project<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
+            <Link href="/brand-design" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Brand Work</Link>
           </div>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function BrandingPage() {
           <h2 className="cta-title">A BRAND THAT COMMANDS<br /><em>INSTANT RESPECT</em>.</h2>
           <p className="cta-sub">Book a free brand discovery call. We'll audit your current brand and show you exactly what it's costing you in perception, leads, and revenue.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Start Brand Project<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Start Brand Project<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
           </div>
         </div>
       </section>

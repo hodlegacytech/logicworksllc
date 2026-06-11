@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useAiTechPage, checkIcon, arrowIcon, AiTechFaq, AiTechCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function MachineLearningSystems() {
 
   return (
     <div ref={pageRef} className="ai-tech-page">
-      <Helmet>
-        <title>Machine Learning Systems | LogicWorks — Custom ML Model Development</title>
-        <meta name="description" content="LogicWorks builds custom machine learning systems — churn prediction, demand forecasting, NLP, computer vision, and MLOps deployed on your data at enterprise scale." />
-        <link rel="canonical" href="https://logicworks.com/machine-learning-systems" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Machine Learning Systems | LogicWorks — Custom ML Model Development</title>
+        <meta head-key="description" name="description" content="LogicWorks builds custom machine learning systems — churn prediction, demand forecasting, NLP, computer vision, and MLOps deployed on your data at enterprise scale." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/machine-learning-systems" />
+      </Head>
 
       <section className="ai-tech-hero" aria-labelledby="ml-title">
         <div className="ai-tech-hero-mesh" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function MachineLearningSystems() {
           <h1 className="ai-tech-hero-title" id="ml-title">MACHINE<br /><span>LEARNING SYSTEMS</span></h1>
           <p className="ai-tech-hero-sub">Custom ML models trained on your data to predict, classify, and optimize at superhuman speed — with production-grade MLOps that keeps models accurate as your business evolves.</p>
           <div className="ai-tech-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Discuss Your ML Project{arrowIcon}</Link>
-            <Link to="/ai-consulting" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>AI Consulting</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Discuss Your ML Project{arrowIcon}</Link>
+            <Link href="/ai-consulting" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>AI Consulting</Link>
           </div>
         </div>
       </section>

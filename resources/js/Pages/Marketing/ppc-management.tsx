@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useMarketingPage, checkIcon, arrowIcon, MarketingFaq, MarketingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function PpcManagement() {
 
   return (
     <div ref={pageRef} className="mkt-page">
-      <Helmet>
-        <title>PPC Management | LogicWorks — Cross-Channel Paid Media & ROAS</title>
-        <meta name="description" content="LogicWorks manages PPC across Google, Microsoft, Meta, and programmatic — account audits, bid strategy, CRO alignment, and reporting that drives 4x+ ROAS." />
-        <link rel="canonical" href="https://logicworks.com/ppc-management" />
-      </Helmet>
+      <Head>
+        <title head-key="title">PPC Management | LogicWorks — Cross-Channel Paid Media & ROAS</title>
+        <meta head-key="description" name="description" content="LogicWorks manages PPC across Google, Microsoft, Meta, and programmatic — account audits, bid strategy, CRO alignment, and reporting that drives 4x+ ROAS." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ppc-management" />
+      </Head>
 
       <section className="mkt-hero" aria-labelledby="ppc-title">
         <div className="mkt-hero-accent" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function PpcManagement() {
           <h1 className="mkt-hero-title" id="ppc-title">PPC<br /><span>MANAGEMENT</span></h1>
           <p className="mkt-hero-sub">Cross-channel paid media managed with surgical precision — every dollar tracked, every campaign optimized, and every report tied to revenue your CFO trusts.</p>
           <div className="mkt-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free PPC Audit{arrowIcon}</Link>
-            <Link to="/digital-marketing" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All Marketing</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free PPC Audit{arrowIcon}</Link>
+            <Link href="/digital-marketing" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All Marketing</Link>
           </div>
         </div>
       </section>

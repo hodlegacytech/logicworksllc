@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -31,10 +31,10 @@ export default function SEOServices() {
 
   return (
     <div ref={pageRef}>
-      <Helmet>
-        <title>SEO & AEO Services | LogicWorks — Rank #1 on Google & AI Search</title>
-        <meta name="description" content="LogicWorks delivers industry-leading SEO and AEO services that rank your business #1 on Google and AI-powered answer engines like ChatGPT and Perplexity." />
-        <link rel="canonical" href="https://logicworks.com/seo-services" />
+      <Head>
+        <title head-key="title">SEO & AEO Services | LogicWorks — Rank #1 on Google & AI Search</title>
+        <meta head-key="description" name="description" content="LogicWorks delivers industry-leading SEO and AEO services that rank your business #1 on Google and AI-powered answer engines like ChatGPT and Perplexity." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/seo-services" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Service",
@@ -42,7 +42,7 @@ export default function SEOServices() {
           "provider": { "@type": "Organization", "name": "LogicWorks" },
           "description": "Comprehensive SEO and Answer Engine Optimization services.",
         })}</script>
-      </Helmet>
+      </Head>
 
       <section className="inner-hero" aria-labelledby="seo-title" style={{ background: 'linear-gradient(135deg, #0a0010 0%, #1a0020 50%, #c8192a 100%)' }}>
         <div className="inner-hero-orb" style={{ background: 'radial-gradient(circle,rgba(200,25,42,.2),transparent 70%)' }} aria-hidden="true" />
@@ -51,8 +51,8 @@ export default function SEOServices() {
           <h1 className="inner-hero-title" id="seo-title">RANK #1.<br />ON EVERY PLATFORM.</h1>
           <p className="inner-hero-sub">Traditional SEO. AEO for AI search. Local SEO for geographic dominance. We cover every surface where your customers are searching — and we make sure they find you first.</p>
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free SEO Audit<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
-            <Link to="/aeo-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Explore AEO →</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free SEO Audit<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
+            <Link href="/aeo-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Explore AEO →</Link>
           </div>
           {/* Live result ticker */}
           <div style={{ marginTop: '56px', display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
@@ -105,7 +105,7 @@ export default function SEOServices() {
                   {item}
                 </div>
               ))}
-              <Link to="/aeo-services" className="btn btn-gold" style={{ padding: '14px 28px', marginTop: '24px' }}>Explore AEO Services<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
+              <Link href="/aeo-services" className="btn btn-gold" style={{ padding: '14px 28px', marginTop: '24px' }}>Explore AEO Services<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
             </div>
             <div className="reveal-r">
               <div style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.08)', borderRadius: 'var(--r-xl)', padding: '32px', fontFamily: 'var(--ff-mono)', fontSize: '.8rem' }}>
@@ -137,7 +137,7 @@ export default function SEOServices() {
           <h2 className="cta-title">YOUR COMPETITORS ARE<br /><em>ALREADY ON PAGE 1</em>.</h2>
           <p className="cta-sub">Get a free SEO audit — keyword gap analysis, technical issues, and a 90-day ranking roadmap. Delivered in 48 hours.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free SEO Audit<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free SEO Audit<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Our SEO Team</a>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useCompanyPage, arrowIcon, CompanyCta } from './shared';
 
 const timeline = [
@@ -53,11 +53,11 @@ export default function About() {
 
   return (
     <div ref={pageRef} className="co-page">
-      <Helmet>
-        <title>About LogicWorks | America&apos;s Elite Digital Agency</title>
-        <meta name="description" content="LogicWorks is America's premier digital agency — 10+ years of excellence, 500+ clients transformed, and an unwavering commitment to results-driven strategy, AI, and design." />
-        <link rel="canonical" href="https://logicworks.com/about" />
-      </Helmet>
+      <Head>
+        <title head-key="title">About LogicWorks | America&apos;s Elite Digital Agency</title>
+        <meta head-key="description" name="description" content="LogicWorks is America's premier digital agency — 10+ years of excellence, 500+ clients transformed, and an unwavering commitment to results-driven strategy, AI, and design." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/about" />
+      </Head>
 
       <section className="co-hero" aria-labelledby="about-title">
         <div className="co-hero-glow" aria-hidden="true" />
@@ -66,8 +66,8 @@ export default function About() {
           <h1 className="co-hero-title" id="about-title">We Engineer the Future<br /><span>of Your Business</span></h1>
           <p className="co-hero-sub">Founded on the conviction that most digital agencies set the bar far too low — LogicWorks operates where creative excellence meets engineering discipline and business outcomes are non-negotiable.</p>
           <div className="co-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Partner With Us{arrowIcon}</Link>
-            <Link to="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>See Our Work</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Partner With Us{arrowIcon}</Link>
+            <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>See Our Work</Link>
           </div>
         </div>
       </section>
@@ -98,7 +98,7 @@ export default function About() {
               <h2 className="sec-title">NOT JUST AN AGENCY.<br /><em>A FORCE MULTIPLIER</em></h2>
               <p className="co-ab-story-text">LogicWorks exists to give ambitious businesses an unfair advantage. We combine the strategic depth of a management consultancy, the creative power of a top design studio, and the technical rigor of an elite engineering team — under one roof, at one price.</p>
               <p className="co-ab-story-text">Since 2015, we have helped over 500 businesses across 15+ industries grow faster, rank higher, convert better, and automate smarter. Every engagement is built on transparency, accountability, and a genuine obsession with your success.</p>
-              <Link to="/contact" className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 700 }}>
+              <Link href="/contact" className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 700 }}>
                 Start a Conversation{arrowIcon}
               </Link>
             </div>
@@ -218,7 +218,7 @@ export default function About() {
             ))}
           </div>
           <div className="co-ab-team-link">
-            <Link to="/our-team" className="co-ab-team-btn">
+            <Link href="/our-team" className="co-ab-team-btn">
               Meet the Full Team{arrowIcon}
             </Link>
           </div>

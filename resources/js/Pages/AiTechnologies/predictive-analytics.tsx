@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useAiTechPage, checkIcon, arrowIcon, AiTechFaq, AiTechCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function PredictiveAnalytics() {
 
   return (
     <div ref={pageRef} className="ai-tech-page">
-      <Helmet>
-        <title>Predictive Analytics | LogicWorks — ML Forecasting & Churn Prediction</title>
-        <meta name="description" content="LogicWorks builds predictive analytics solutions — churn prediction, demand forecasting, lead scoring, and ML models that surface opportunities before competitors do." />
-        <link rel="canonical" href="https://logicworks.com/predictive-analytics" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Predictive Analytics | LogicWorks — ML Forecasting & Churn Prediction</title>
+        <meta head-key="description" name="description" content="LogicWorks builds predictive analytics solutions — churn prediction, demand forecasting, lead scoring, and ML models that surface opportunities before competitors do." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/predictive-analytics" />
+      </Head>
 
       <section className="ai-tech-hero" aria-labelledby="predictive-title">
         <div className="ai-tech-hero-mesh" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function PredictiveAnalytics() {
           <h1 className="ai-tech-hero-title" id="predictive-title">PREDICTIVE<br /><span>ANALYTICS</span></h1>
           <p className="ai-tech-hero-sub">Forecast demand, detect churn, and surface your highest-value opportunities — ML models that see around corners and act before your competitors do.</p>
           <div className="ai-tech-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Build Predictive Models{arrowIcon}</Link>
-            <Link to="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Build Predictive Models{arrowIcon}</Link>
+            <Link href="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
           </div>
         </div>
       </section>

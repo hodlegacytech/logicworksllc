@@ -2,3 +2,294 @@
 @config "../../../tailwind.config.js";
 @source "../../views/**/*.blade.php";
 @source "../../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+
+/* ── LogicWorks Auth (login, register, etc.) ── */
+@layer base {
+  .auth-body {
+    font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+    color: #0d1b3e;
+  }
+}
+
+@layer components {
+  .auth-page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.25rem;
+    overflow: hidden;
+    background: linear-gradient(135deg, #060d1f 0%, #0e1e50 55%, #1a4bdb 100%);
+  }
+
+  .auth-page-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .auth-page-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.07;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .auth-page-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+  }
+
+  .auth-page-orb--1 {
+    width: 420px;
+    height: 420px;
+    top: -120px;
+    right: -80px;
+    background: rgba(26, 75, 219, 0.35);
+  }
+
+  .auth-page-orb--2 {
+    width: 320px;
+    height: 320px;
+    bottom: -100px;
+    left: -60px;
+    background: rgba(200, 25, 42, 0.18);
+  }
+
+  .auth-shell {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+  }
+
+  .auth-brand {
+    display: inline-flex;
+    transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .auth-brand:hover {
+    opacity: 0.92;
+    transform: translateY(-2px);
+  }
+
+  .auth-brand-logo {
+    height: 44px;
+    width: auto;
+    filter: brightness(0) invert(1);
+  }
+
+  .auth-card {
+    width: 100%;
+    padding: 2rem 1.75rem;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow:
+      0 24px 80px rgba(6, 13, 31, 0.35),
+      0 0 0 1px rgba(26, 75, 219, 0.06);
+  }
+
+  .auth-card-head {
+    margin-bottom: 1.75rem;
+  }
+
+  .auth-eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #1a4bdb;
+    background: rgba(26, 75, 219, 0.08);
+    border: 1px solid rgba(26, 75, 219, 0.15);
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    margin-bottom: 0.85rem;
+  }
+
+  .auth-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #060d1f;
+    letter-spacing: -0.02em;
+  }
+
+  .auth-subtitle {
+    margin-top: 0.5rem;
+    font-size: 0.92rem;
+    color: #64748b;
+    line-height: 1.55;
+  }
+
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+  }
+
+  .auth-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .auth-label {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    color: #0d1b3e !important;
+    letter-spacing: 0.01em;
+  }
+
+  .auth-input {
+    border: 1.5px solid rgba(13, 27, 62, 0.1) !important;
+    border-radius: 10px !important;
+    padding: 0.72rem 0.9rem !important;
+    font-family: 'Manrope', sans-serif !important;
+    font-size: 0.92rem !important;
+    color: #0d1b3e !important;
+    background: #f7f8fc !important;
+    box-shadow: none !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+
+  .auth-input::placeholder {
+    color: #94a3b8;
+  }
+
+  .auth-input:focus {
+    outline: none !important;
+    border-color: #1a4bdb !important;
+    background: #fff !important;
+    box-shadow: 0 0 0 4px rgba(26, 75, 219, 0.12) !important;
+  }
+
+  .auth-error {
+    margin-top: 0.45rem;
+    font-size: 0.8rem;
+    color: #c8192a;
+  }
+
+  .auth-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.15rem;
+  }
+
+  .auth-check {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #64748b;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .auth-check-input {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 4px;
+    border: 1.5px solid rgba(13, 27, 62, 0.18);
+    accent-color: #1a4bdb;
+  }
+
+  .auth-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1a4bdb;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .auth-link:hover {
+    color: #0d1b3e;
+  }
+
+  .auth-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.35rem;
+    padding: 0.9rem 1.25rem;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #1a4bdb 0%, #0d1b3e 100%);
+    box-shadow: 0 4px 24px rgba(26, 75, 219, 0.28);
+    cursor: pointer;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+  }
+
+  .auth-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 40px rgba(26, 75, 219, 0.4);
+  }
+
+  .auth-submit:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(26, 75, 219, 0.25), 0 8px 40px rgba(26, 75, 219, 0.35);
+  }
+
+  .auth-alert {
+    margin-bottom: 1rem;
+    padding: 0.75rem 0.9rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .auth-alert--success {
+    background: rgba(22, 101, 52, 0.08);
+    border: 1px solid rgba(22, 101, 52, 0.15);
+    color: #166534;
+  }
+
+  .auth-footer {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+  }
+
+  .auth-footer a {
+    color: #f0b429;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .auth-footer a:hover {
+    color: #fff;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .auth-title {
+    font-size: 1.5rem;
+  }
+}

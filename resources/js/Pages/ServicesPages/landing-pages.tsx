@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -83,11 +83,11 @@ export default function LandingPages() {
 
   return (
     <div ref={pageRef} className="svc-page">
-      <Helmet>
-        <title>Landing Pages | LogicWorks — High-Converting CRO Landing Page Design</title>
-        <meta name="description" content="LogicWorks builds conversion-obsessed landing pages — A/B tested, CRO-optimized, sub-2s load times. Turn paid and organic traffic into leads and revenue." />
-        <link rel="canonical" href="https://logicworks.com/landing-pages" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Landing Pages | LogicWorks — High-Converting CRO Landing Page Design</title>
+        <meta head-key="description" name="description" content="LogicWorks builds conversion-obsessed landing pages — A/B tested, CRO-optimized, sub-2s load times. Turn paid and organic traffic into leads and revenue." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/landing-pages" />
+      </Head>
 
       {/* Hero */}
       <section
@@ -106,11 +106,11 @@ export default function LandingPages() {
               A/B tested, CRO-optimized, and engineered to load in under 2 seconds.
             </p>
             <div className="svc-hero-actions">
-              <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
+              <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
                 Get Free CRO Audit
                 {arrowIcon}
               </Link>
-              <Link to="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>
+              <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>
                 View Results
               </Link>
             </div>
@@ -318,7 +318,7 @@ export default function LandingPages() {
           <h2 className="cta-title">EVERY CLICK DESERVES<br /><em>A PAGE THAT CONVERTS</em>.</h2>
           <p className="cta-sub">Get a free CRO audit of your current landing page and discover exactly what&apos;s costing you conversions.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
               Get Free CRO Audit
               {arrowIcon}
             </Link>

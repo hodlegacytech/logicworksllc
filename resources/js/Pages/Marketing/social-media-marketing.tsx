@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useMarketingPage, checkIcon, arrowIcon, MarketingFaq, MarketingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function SocialMediaMarketing() {
 
   return (
     <div ref={pageRef} className="mkt-page">
-      <Helmet>
-        <title>Social Media Marketing | LogicWorks — Paid Social Campaigns That Convert</title>
-        <meta name="description" content="LogicWorks delivers social media marketing — paid campaigns on Meta, TikTok, LinkedIn, and YouTube with creative testing, audience targeting, and ROAS-focused optimization." />
-        <link rel="canonical" href="https://logicworks.com/social-media-marketing" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Social Media Marketing | LogicWorks — Paid Social Campaigns That Convert</title>
+        <meta head-key="description" name="description" content="LogicWorks delivers social media marketing — paid campaigns on Meta, TikTok, LinkedIn, and YouTube with creative testing, audience targeting, and ROAS-focused optimization." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/social-media-marketing" />
+      </Head>
 
       <section className="mkt-hero" aria-labelledby="smm-title">
         <div className="mkt-hero-accent" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function SocialMediaMarketing() {
           <h1 className="mkt-hero-title" id="smm-title">SOCIAL MEDIA<br /><span>MARKETING</span></h1>
           <p className="mkt-hero-sub">Paid social campaigns engineered to stop the scroll, capture qualified leads, and drive measurable revenue — across Meta, TikTok, LinkedIn, and YouTube.</p>
           <div className="mkt-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Launch Your Campaigns{arrowIcon}</Link>
-            <Link to="/digital-marketing" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All Marketing Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Launch Your Campaigns{arrowIcon}</Link>
+            <Link href="/digital-marketing" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All Marketing Services</Link>
           </div>
         </div>
       </section>

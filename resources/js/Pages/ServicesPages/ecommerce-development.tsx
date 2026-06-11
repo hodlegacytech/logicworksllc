@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -64,11 +64,11 @@ export default function EcommerceDevelopment() {
 
   return (
     <div ref={pageRef} className="svc-page">
-      <Helmet>
-        <title>E-Commerce Development | LogicWorks — Shopify, WooCommerce & Custom Stores</title>
-        <meta name="description" content="LogicWorks builds high-converting e-commerce stores — Shopify, WooCommerce, headless commerce, CRO optimization, and integrations engineered to maximize revenue and AOV." />
-        <link rel="canonical" href="https://logicworks.com/ecommerce-development" />
-      </Helmet>
+      <Head>
+        <title head-key="title">E-Commerce Development | LogicWorks — Shopify, WooCommerce & Custom Stores</title>
+        <meta head-key="description" name="description" content="LogicWorks builds high-converting e-commerce stores — Shopify, WooCommerce, headless commerce, CRO optimization, and integrations engineered to maximize revenue and AOV." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ecommerce-development" />
+      </Head>
 
       <section className="inner-hero" aria-labelledby="ecom-title" style={{ background: `linear-gradient(135deg, #060d1f 0%, #091840 60%, ${HERO_COLOR} 100%)` }}>
         <div className="inner-hero-orb" aria-hidden="true" />

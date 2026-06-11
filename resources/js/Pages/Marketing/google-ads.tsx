@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useMarketingPage, checkIcon, arrowIcon, MarketingFaq, MarketingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function GoogleAds() {
 
   return (
     <div ref={pageRef} className="mkt-page">
-      <Helmet>
-        <title>Google Ads | LogicWorks — Search, Shopping & Performance Max</title>
-        <meta name="description" content="LogicWorks manages Google Ads — Search, Shopping, Performance Max, and YouTube with certified experts, Quality Score optimization, and conversion tracking done right." />
-        <link rel="canonical" href="https://logicworks.com/google-ads" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Google Ads | LogicWorks — Search, Shopping & Performance Max</title>
+        <meta head-key="description" name="description" content="LogicWorks manages Google Ads — Search, Shopping, Performance Max, and YouTube with certified experts, Quality Score optimization, and conversion tracking done right." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/google-ads" />
+      </Head>
 
       <section className="mkt-hero" aria-labelledby="gads-title">
         <div className="mkt-hero-accent" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function GoogleAds() {
           <h1 className="mkt-hero-title" id="gads-title">GOOGLE<br /><span>ADS</span></h1>
           <p className="mkt-hero-sub">Search, Shopping, Performance Max, and YouTube campaigns run by certified specialists who treat Quality Score, tracking, and ROAS as non-negotiables.</p>
           <div className="mkt-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Google Ads Audit{arrowIcon}</Link>
-            <Link to="/ppc-management" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Full PPC Management</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Google Ads Audit{arrowIcon}</Link>
+            <Link href="/ppc-management" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Full PPC Management</Link>
           </div>
         </div>
       </section>

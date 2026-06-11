@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useAiTechPage, checkIcon, arrowIcon, AiTechFaq, AiTechCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function AiConsulting() {
 
   return (
     <div ref={pageRef} className="ai-tech-page">
-      <Helmet>
-        <title>AI Strategy Consulting | LogicWorks — AI Roadmap & Transformation</title>
-        <meta name="description" content="LogicWorks AI consulting — readiness assessments, strategic roadmaps, ROI modeling, and governance frameworks that align AI investment with measurable business outcomes." />
-        <link rel="canonical" href="https://logicworks.com/ai-consulting" />
-      </Helmet>
+      <Head>
+        <title head-key="title">AI Strategy Consulting | LogicWorks — AI Roadmap & Transformation</title>
+        <meta head-key="description" name="description" content="LogicWorks AI consulting — readiness assessments, strategic roadmaps, ROI modeling, and governance frameworks that align AI investment with measurable business outcomes." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ai-consulting" />
+      </Head>
 
       <section className="ai-tech-hero" aria-labelledby="consult-title">
         <div className="ai-tech-hero-mesh" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function AiConsulting() {
           <h1 className="ai-tech-hero-title" id="consult-title">AI STRATEGY<br /><span>CONSULTING</span></h1>
           <p className="ai-tech-hero-sub">Build a clear, actionable AI roadmap that aligns technology investment with measurable business outcomes — from readiness assessment to implementation, guided by practitioners who build, not just advise.</p>
           <div className="ai-tech-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Book Strategy Session{arrowIcon}</Link>
-            <Link to="/ai-powered-crm" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Explore AI Products</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Book Strategy Session{arrowIcon}</Link>
+            <Link href="/ai-powered-crm" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Explore AI Products</Link>
           </div>
         </div>
       </section>

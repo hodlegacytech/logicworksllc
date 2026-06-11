@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useMarketingPage, checkIcon, arrowIcon, MarketingFaq, MarketingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function Retargeting() {
 
   return (
     <div ref={pageRef} className="mkt-page">
-      <Helmet>
-        <title>Retargeting Campaigns | LogicWorks — Win Back Lost Visitors</title>
-        <meta name="description" content="LogicWorks runs retargeting across Google, Meta, and programmatic — dynamic product ads, audience segmentation, and CAPI tracking that recovers 68%+ of abandoned carts." />
-        <link rel="canonical" href="https://logicworks.com/retargeting" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Retargeting Campaigns | LogicWorks — Win Back Lost Visitors</title>
+        <meta head-key="description" name="description" content="LogicWorks runs retargeting across Google, Meta, and programmatic — dynamic product ads, audience segmentation, and CAPI tracking that recovers 68%+ of abandoned carts." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/retargeting" />
+      </Head>
 
       <section className="mkt-hero" aria-labelledby="retarget-title">
         <div className="mkt-hero-accent" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function Retargeting() {
           <h1 className="mkt-hero-title" id="retarget-title">RETARGETING<br /><span>CAMPAIGNS</span></h1>
           <p className="mkt-hero-sub">Win back visitors who already showed intent — precision remarketing across Google, Meta, and programmatic with dynamic creative and frequency discipline.</p>
           <div className="mkt-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Retargeting Audit{arrowIcon}</Link>
-            <Link to="/ppc-management" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Full PPC Management</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Retargeting Audit{arrowIcon}</Link>
+            <Link href="/ppc-management" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Full PPC Management</Link>
           </div>
         </div>
       </section>

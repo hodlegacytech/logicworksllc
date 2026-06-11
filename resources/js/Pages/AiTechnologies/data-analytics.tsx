@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useAiTechPage, checkIcon, arrowIcon, AiTechFaq, AiTechCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function DataAnalytics() {
 
   return (
     <div ref={pageRef} className="ai-tech-page">
-      <Helmet>
-        <title>Data Analytics | LogicWorks — Business Intelligence & Dashboards</title>
-        <meta name="description" content="LogicWorks builds enterprise data analytics platforms — unified pipelines, executive dashboards, self-service BI, and actionable insights that drive decisions at scale." />
-        <link rel="canonical" href="https://logicworks.com/data-analytics" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Data Analytics | LogicWorks — Business Intelligence & Dashboards</title>
+        <meta head-key="description" name="description" content="LogicWorks builds enterprise data analytics platforms — unified pipelines, executive dashboards, self-service BI, and actionable insights that drive decisions at scale." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/data-analytics" />
+      </Head>
 
       <section className="ai-tech-hero" aria-labelledby="analytics-title">
         <div className="ai-tech-hero-mesh" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function DataAnalytics() {
           <h1 className="ai-tech-hero-title" id="analytics-title">DATA<br /><span>ANALYTICS</span></h1>
           <p className="ai-tech-hero-sub">Transform raw data into strategic intelligence — unified pipelines, executive dashboards, and actionable insights that turn every department into a data-driven decision machine.</p>
           <div className="ai-tech-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Data Project{arrowIcon}</Link>
-            <Link to="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Data Project{arrowIcon}</Link>
+            <Link href="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
           </div>
         </div>
       </section>

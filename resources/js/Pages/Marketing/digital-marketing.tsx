@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useMarketingPage, checkIcon, arrowIcon, MarketingFaq, MarketingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function DigitalMarketing() {
 
   return (
     <div ref={pageRef} className="mkt-page">
-      <Helmet>
-        <title>Digital Marketing | LogicWorks — Full-Spectrum Growth Strategy</title>
-        <meta name="description" content="LogicWorks digital marketing delivers integrated SEO, paid media, social, content, and CRO — unified strategy that drives measurable revenue across every channel." />
-        <link rel="canonical" href="https://logicworks.com/digital-marketing" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Digital Marketing | LogicWorks — Full-Spectrum Growth Strategy</title>
+        <meta head-key="description" name="description" content="LogicWorks digital marketing delivers integrated SEO, paid media, social, content, and CRO — unified strategy that drives measurable revenue across every channel." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/digital-marketing" />
+      </Head>
 
       <section className="mkt-hero" aria-labelledby="digital-marketing-title">
         <div className="mkt-hero-accent" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function DigitalMarketing() {
           <h1 className="mkt-hero-title" id="digital-marketing-title">Digital<br /><span>MARKETING</span></h1>
           <p className="mkt-hero-sub">Full-spectrum digital marketing strategy — from search to social, paid to organic — unified under one roof with obsessive ROI tracking.</p>
           <div className="mkt-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Book a Strategy Session{arrowIcon}</Link>
-            <Link to="/ppc-management" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>PPC Management</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Book a Strategy Session{arrowIcon}</Link>
+            <Link href="/ppc-management" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>PPC Management</Link>
           </div>
         </div>
       </section>

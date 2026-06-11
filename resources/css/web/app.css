@@ -365,6 +365,16 @@ body::after {
   position: relative;
 }
 
+/* invisible bridge — keeps dropdown open while mouse crosses the gap */
+.nav-item:has(.nav-drop)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 12px;
+}
+
 .nav-link {
   display: flex;
   align-items: center;
@@ -385,12 +395,12 @@ body::after {
   transition: transform .25s var(--ease-spring);
 }
 
-.nav-item:hover>.nav-link {
+.nav-item.is-open>.nav-link {
   color: var(--blue);
   background: rgba(26, 75, 219, .05);
 }
 
-.nav-item:hover>.nav-link svg {
+.nav-item.is-open>.nav-link svg {
   transform: rotate(180deg);
 }
 
@@ -414,8 +424,17 @@ body::after {
   transition: all .22s var(--ease-out);
 }
 
-.nav-item:hover>.nav-drop,
-.nav-item:focus-within>.nav-drop {
+/* invisible bridge so mouse can reach dropdown without closing menu */
+.nav-drop::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
+.nav-item.is-open>.nav-drop {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;

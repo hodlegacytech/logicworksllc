@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -83,11 +83,12 @@ export default function WebApps() {
 
   return (
     <div ref={pageRef} className="svc-page">
-      <Helmet>
-        <title>Web Applications | LogicWorks — Custom SaaS & App Development</title>
-        <meta name="description" content="LogicWorks builds scalable web applications and SaaS platforms — React, Next.js, Node.js, cloud-native architecture, and full product engineering from MVP to enterprise scale." />
-        <link rel="canonical" href="https://logicworks.com/web-apps" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Web Applications | LogicWorks — Custom SaaS & App Development</title>
+        <meta head-key="description" name="description" content="LogicWorks builds scalable web applications and SaaS platforms — React, Next.js, Node.js, cloud-native architecture, and full product engineering from MVP to enterprise scale." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/web-apps" />
+        <meta head-key="keywords" name="keywords" content="Web Applications" />
+      </Head>
 
       {/* Hero */}
       <section
@@ -106,11 +107,11 @@ export default function WebApps() {
               from MVP to millions of users, built on modern architecture that never needs a rewrite.
             </p>
             <div className="svc-hero-actions">
-              <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
+              <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
                 Get Free App Audit
                 {arrowIcon}
               </Link>
-              <Link to="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>
+              <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>
                 View Case Studies
               </Link>
             </div>

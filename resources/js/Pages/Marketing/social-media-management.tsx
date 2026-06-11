@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useMarketingPage, checkIcon, arrowIcon, MarketingFaq, MarketingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function SocialMediaManagement() {
 
   return (
     <div ref={pageRef} className="mkt-page">
-      <Helmet>
-        <title>Social Media Management | LogicWorks — Done-For-You Social Presence</title>
-        <meta name="description" content="LogicWorks handles social media management — daily posting, community engagement, content calendars, and growth strategy across Instagram, LinkedIn, TikTok, and more." />
-        <link rel="canonical" href="https://logicworks.com/social-media-management" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Social Media Management | LogicWorks — Done-For-You Social Presence</title>
+        <meta head-key="description" name="description" content="LogicWorks handles social media management — daily posting, community engagement, content calendars, and growth strategy across Instagram, LinkedIn, TikTok, and more." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/social-media-management" />
+      </Head>
 
       <section className="mkt-hero" aria-labelledby="smmgmt-title">
         <div className="mkt-hero-accent" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function SocialMediaManagement() {
           <h1 className="mkt-hero-title" id="smmgmt-title">SOCIAL MEDIA<br /><span>MANAGEMENT</span></h1>
           <p className="mkt-hero-sub">Daily posting, community management, and growth strategy across every platform — a consistent, on-brand social presence handled entirely for you.</p>
           <div className="mkt-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Managed Social{arrowIcon}</Link>
-            <Link to="/social-media-marketing" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Paid Social Marketing</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Managed Social{arrowIcon}</Link>
+            <Link href="/social-media-marketing" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Paid Social Marketing</Link>
           </div>
         </div>
       </section>

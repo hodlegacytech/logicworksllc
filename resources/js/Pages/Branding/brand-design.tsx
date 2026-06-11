@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useBrandingPage, checkIcon, arrowIcon, BrandingFaq, BrandingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function BrandDesign() {
 
   return (
     <div ref={pageRef} className="brd-page">
-      <Helmet>
-        <title>Brand Design | LogicWorks — Visual Identity & Design Systems</title>
-        <meta name="description" content="LogicWorks brand design services deliver visual identity systems — logos, color palettes, typography, UI components, and brand guidelines that make you unforgettable." />
-        <link rel="canonical" href="https://logicworks.com/brand-design" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Brand Design | LogicWorks — Visual Identity & Design Systems</title>
+        <meta head-key="description" name="description" content="LogicWorks brand design services deliver visual identity systems — logos, color palettes, typography, UI components, and brand guidelines that make you unforgettable." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/brand-design" />
+      </Head>
 
       <section className="brd-hero" aria-labelledby="brand-design-title">
         <div className="brd-hero-grain" aria-hidden="true" />
@@ -66,8 +66,8 @@ export default function BrandDesign() {
           <h1 className="brd-hero-title" id="brand-design-title">Brand<br /><span>Design</span></h1>
           <p className="brd-hero-sub">Visual identity systems — logos, color palettes, typography, and comprehensive guidelines — crafted by senior designers who understand the weight every mark carries.</p>
           <div className="brd-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Brand Design{arrowIcon}</Link>
-            <Link to="/branding-strategy" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Branding Strategy</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Brand Design{arrowIcon}</Link>
+            <Link href="/branding-strategy" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Branding Strategy</Link>
           </div>
         </div>
       </section>

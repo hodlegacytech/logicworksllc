@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Link, usePage } from "@inertiajs/react";
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { Link, router, usePage } from '@inertiajs/react';
 import { navLinks } from '@/data/nav';
 import type { NavLink as NavLinkType } from '@/types';
 import logo from '@/assets/images/logicworks-logo.png';
@@ -20,9 +20,9 @@ const IconArrow = () => (
   </svg>
 );
 
-function DropItem({ item }: { item: { label: string; href: string; desc?: string } }) {
+function DropItem({ item, onNavigate }: { item: { label: string; href: string; desc?: string }; onNavigate: () => void }) {
   return (
-    <Link href={item.href} className="dd-item" role="menuitem">
+    <Link href={item.href} className="dd-item" role="menuitem" onClick={onNavigate}>
       <span className="dd-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
           <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
@@ -36,11 +36,30 @@ function DropItem({ item }: { item: { label: string; href: string; desc?: string
   );
 }
 
-function NavItem({ link }: { link: NavLinkType }) {
+interface NavItemProps {
+  link: NavLinkType;
+  isOpen: boolean;
+  onOpen: () => void;
+  onNavigate: () => void;
+}
+
+function NavItem({ link, isOpen, onOpen, onNavigate }: NavItemProps) {
   const hasDrop = !!link.dropdown;
+
   return (
-    <li className="nav-item" role="none">
-      <Link href={link.href} className="nav-link" role="menuitem" aria-haspopup={hasDrop}>
+    <li
+      className={`nav-item${isOpen ? ' is-open' : ''}`}
+      role="none"
+      onMouseEnter={hasDrop ? onOpen : undefined}
+    >
+      <Link
+        href={link.href}
+        className="nav-link"
+        role="menuitem"
+        aria-haspopup={hasDrop}
+        aria-expanded={hasDrop ? isOpen : undefined}
+        onClick={onNavigate}
+      >
         {link.label}
         {hasDrop && <IconChevron />}
       </Link>
@@ -49,6 +68,7 @@ function NavItem({ link }: { link: NavLinkType }) {
           className={`nav-drop${link.dropdown.type === 'mega' ? ' nav-mega' : ''}`}
           role="menu"
           style={link.dropdown.type === 'simple' ? { minWidth: '270px' } : undefined}
+          onMouseEnter={onOpen}
         >
           {link.dropdown.type === 'mega' && link.dropdown.title && (
             <li className="mega-title" role="none">{link.dropdown.title}</li>
@@ -56,11 +76,11 @@ function NavItem({ link }: { link: NavLinkType }) {
           {link.dropdown.type === 'mega' && link.dropdown.columns?.map((col) => (
             <li key={col.heading} role="none">
               <div className="mega-col-hd">{col.heading}</div>
-              {col.items.map((item) => <DropItem key={item.href} item={item} />)}
+              {col.items.map((item) => <DropItem key={item.href} item={item} onNavigate={onNavigate} />)}
             </li>
           ))}
           {link.dropdown.type === 'simple' && link.dropdown.items?.map((item) => (
-            <DropItem key={item.href} item={item} />
+            <DropItem key={item.href} item={item} onNavigate={onNavigate} />
           ))}
         </ul>
       )}
@@ -72,13 +92,43 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobOpen, setMobOpen] = useState(false);
   const [openMobIdx, setOpenMobIdx] = useState<number | null>(null);
+  const [openNavIdx, setOpenNavIdx] = useState<number | null>(null);
+  const suppressHover = useRef(false);
   const page = usePage();
+
+  const closeAllMenus = useCallback(() => {
+    setOpenNavIdx(null);
+    suppressHover.current = true;
+  }, []);
+
+  const handleMenuLeave = () => {
+    setOpenNavIdx(null);
+    suppressHover.current = false;
+  };
+
+  const handleNavOpen = (index: number) => {
+    if (suppressHover.current) return;
+    setOpenNavIdx(index);
+  };
 
   useEffect(() => {
     setMobOpen(false);
     setOpenMobIdx(null);
+    setOpenNavIdx(null);
+    suppressHover.current = false;
     document.body.style.overflow = '';
   }, [page.url]);
+
+  useEffect(() => {
+    const removeStart = router.on('start', closeAllMenus);
+    const removeFinish = router.on('finish', () => {
+      suppressHover.current = true;
+    });
+    return () => {
+      removeStart();
+      removeFinish();
+    };
+  }, [closeAllMenus]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -94,17 +144,21 @@ export default function Navbar() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') { setMobOpen(false); document.body.style.overflow = ''; }
+      if (e.key === 'Escape') {
+        closeAllMenus();
+        setMobOpen(false);
+        document.body.style.overflow = '';
+      }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, []);
+  }, [closeAllMenus]);
 
   return (
     <>
       <nav id="navbar" className={scrolled ? 'scrolled' : ''} role="navigation" aria-label="Main navigation">
         <div className="nav-inner">
-          <Link href="/" className="nav-logo" aria-label="LogicWorks — Home">
+          <Link href="/" className="nav-logo" aria-label="LogicWorks — Home" onClick={closeAllMenus}>
             <img
               src={logo}
               alt="LogicWorks"
@@ -113,14 +167,22 @@ export default function Navbar() {
               height={40}
             />
           </Link>
-          <ul className="nav-menu" role="menubar">
-            {navLinks.map((link) => <NavItem key={link.href} link={link} />)}
+          <ul className="nav-menu" role="menubar" onMouseLeave={handleMenuLeave}>
+            {navLinks.map((link, i) => (
+              <NavItem
+                key={link.href}
+                link={link}
+                isOpen={openNavIdx === i}
+                onOpen={() => handleNavOpen(i)}
+                onNavigate={closeAllMenus}
+              />
+            ))}
           </ul>
           <div className="nav-right">
             <div className="nav-phone" aria-label="Call us">
               <IconPhone />+1 (800) LOGIC-WX
             </div>
-            <Link href="/contact" className="btn btn-primary nav-cta-btn">
+            <Link href="/contact" className="btn btn-primary nav-cta-btn" onClick={closeAllMenus}>
               Get Free Quote <IconArrow />
             </Link>
             <button
@@ -154,12 +216,12 @@ export default function Navbar() {
                       ? link.dropdown.columns?.flatMap((c) => c.items)
                       : link.dropdown.items
                     )?.map((item) => (
-                      <Link key={item.href} href={item.href}>{item.label}</Link>
+                      <Link key={item.href} href={item.href} onClick={closeAllMenus}>{item.label}</Link>
                     ))}
                   </div>
                 </>
               ) : (
-                <Link href={link.href} className="mob-link-btn">{link.label}</Link>
+                <Link href={link.href} className="mob-link-btn" onClick={closeAllMenus}>{link.label}</Link>
               )}
             </li>
           ))}

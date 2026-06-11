@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -64,11 +64,11 @@ export default function MobileApps() {
 
   return (
     <div ref={pageRef} className="svc-page">
-      <Helmet>
-        <title>Mobile App Development | LogicWorks — iOS, Android & React Native</title>
-        <meta name="description" content="LogicWorks builds native iOS, Android, and React Native mobile apps — performance-first, UX-obsessed, App Store optimized from MVP to millions of downloads." />
-        <link rel="canonical" href="https://logicworks.com/mobile-apps" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Mobile App Development | LogicWorks — iOS, Android & React Native</title>
+        <meta head-key="description" name="description" content="LogicWorks builds native iOS, Android, and React Native mobile apps — performance-first, UX-obsessed, App Store optimized from MVP to millions of downloads." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/mobile-apps" />
+      </Head>
 
       <section className="inner-hero" aria-labelledby="mobile-title" style={{ background: `linear-gradient(135deg, #060d1f 0%, #091840 60%, ${HERO_COLOR} 100%)` }}>
         <div className="inner-hero-orb" aria-hidden="true" />

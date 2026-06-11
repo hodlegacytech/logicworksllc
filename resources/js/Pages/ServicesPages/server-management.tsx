@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -64,11 +64,11 @@ export default function ServerManagement() {
 
   return (
     <div ref={pageRef} className="svc-page">
-      <Helmet>
-        <title>Server Management | LogicWorks — 24/7 Managed Server Operations</title>
-        <meta name="description" content="LogicWorks server management — 24/7 proactive monitoring, security patching, performance tuning, and rapid incident response so your infrastructure never goes dark." />
-        <link rel="canonical" href="https://logicworks.com/server-management" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Server Management | LogicWorks — 24/7 Managed Server Operations</title>
+        <meta head-key="description" name="description" content="LogicWorks server management — 24/7 proactive monitoring, security patching, performance tuning, and rapid incident response so your infrastructure never goes dark." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/server-management" />
+      </Head>
 
       <section className="inner-hero" aria-labelledby="server-title" style={{ background: `linear-gradient(135deg, #060d1f 0%, #091840 60%, ${HERO_COLOR} 100%)` }}>
         <div className="inner-hero-orb" aria-hidden="true" />

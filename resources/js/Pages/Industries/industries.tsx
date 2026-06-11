@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useIndustriesPage, checkIcon, arrowIcon, IndustriesFaq, IndustriesCta, verticals } from './shared';
 
 const metrics = [
@@ -42,11 +42,11 @@ export default function Industries() {
 
   return (
     <div ref={pageRef} className="ind-page">
-      <Helmet>
-        <title>Industries We Serve | LogicWorks — Vertical Digital Expertise</title>
-        <meta name="description" content="LogicWorks delivers specialized digital solutions across 15+ industries — healthcare, real estate, finance, legal, e-commerce, SaaS, education, and hospitality with proven vertical expertise." />
-        <link rel="canonical" href="https://logicworks.com/industries" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Industries We Serve | LogicWorks — Vertical Digital Expertise</title>
+        <meta head-key="description" name="description" content="LogicWorks delivers specialized digital solutions across 15+ industries — healthcare, real estate, finance, legal, e-commerce, SaaS, education, and hospitality with proven vertical expertise." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/industries" />
+      </Head>
 
       <section className="ind-hero" aria-labelledby="industries-title">
         <div className="ind-hero-orbs" aria-hidden="true" />
@@ -64,7 +64,7 @@ export default function Industries() {
           <h1 className="ind-hero-title" id="industries-title">Industries<br /><span>We Serve</span></h1>
           <p className="ind-hero-sub">Specialized expertise across 15+ verticals. We speak your language, know your market, and deliver digital solutions engineered for the way your industry actually works.</p>
           <div className="ind-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Talk to Your Vertical Team{arrowIcon}</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Talk to Your Vertical Team{arrowIcon}</Link>
             <a href="#verticals" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Explore Verticals</a>
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function Industries() {
             {verticals.map((v) => (
               <Link
                 key={v.path}
-                to={v.path}
+                href={v.path}
                 className="ind-vertical-card"
                 style={{ '--ind-accent': v.accent } as React.CSSProperties}
               >

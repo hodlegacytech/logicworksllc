@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useBrandingPage, checkIcon, arrowIcon, BrandingFaq, BrandingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function BrandGuidelines() {
 
   return (
     <div ref={pageRef} className="brd-page">
-      <Helmet>
-        <title>Brand Guidelines | LogicWorks — Comprehensive Brand Standards</title>
-        <meta name="description" content="LogicWorks brand guidelines deliver comprehensive standards documents — logo rules, color systems, typography, templates, and voice guides that ensure consistency across every touchpoint." />
-        <link rel="canonical" href="https://logicworks.com/brand-guidelines" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Brand Guidelines | LogicWorks — Comprehensive Brand Standards</title>
+        <meta head-key="description" name="description" content="LogicWorks brand guidelines deliver comprehensive standards documents — logo rules, color systems, typography, templates, and voice guides that ensure consistency across every touchpoint." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/brand-guidelines" />
+      </Head>
 
       <section className="brd-hero" aria-labelledby="brand-guidelines-title">
         <div className="brd-hero-grain" aria-hidden="true" />
@@ -66,8 +66,8 @@ export default function BrandGuidelines() {
           <h1 className="brd-hero-title" id="brand-guidelines-title">Brand<br /><span>GUIDELINES</span></h1>
           <p className="brd-hero-sub">Comprehensive brand standards documents that ensure consistency across every touchpoint, forever — so your team, partners, and vendors always get it right.</p>
           <div className="brd-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Build Your Brand Book{arrowIcon}</Link>
-            <Link to="/logo-design" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Logo Design</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Build Your Brand Book{arrowIcon}</Link>
+            <Link href="/logo-design" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Logo Design</Link>
           </div>
         </div>
       </section>

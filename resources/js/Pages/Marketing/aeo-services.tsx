@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useMarketingPage, checkIcon, arrowIcon, MarketingFaq, MarketingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function AeoServices() {
 
   return (
     <div ref={pageRef} className="mkt-page">
-      <Helmet>
-        <title>AEO Services | LogicWorks — Answer Engine Optimization</title>
-        <meta name="description" content="LogicWorks AEO services optimize your brand for AI-generated search — Google SGE, ChatGPT, Perplexity, and Bing Copilot citations with entity strategy, schema, and authority building." />
-        <link rel="canonical" href="https://logicworks.com/aeo-services" />
-      </Helmet>
+      <Head>
+        <title head-key="title">AEO Services | LogicWorks — Answer Engine Optimization</title>
+        <meta head-key="description" name="description" content="LogicWorks AEO services optimize your brand for AI-generated search — Google SGE, ChatGPT, Perplexity, and Bing Copilot citations with entity strategy, schema, and authority building." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/aeo-services" />
+      </Head>
 
       <section className="mkt-hero" aria-labelledby="aeo-title">
         <div className="mkt-hero-accent" aria-hidden="true" />
@@ -65,8 +65,8 @@ export default function AeoServices() {
           <h1 className="mkt-hero-title" id="aeo-title">Answer Engine<br /><span>OPTIMIZATION</span></h1>
           <p className="mkt-hero-sub">Dominate AI-generated search results on Google SGE, ChatGPT, Perplexity, and Bing Copilot — so your brand is cited, not buried, when buyers ask questions.</p>
           <div className="mkt-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your AEO Audit{arrowIcon}</Link>
-            <Link to="/technical-seo" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Technical SEO</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your AEO Audit{arrowIcon}</Link>
+            <Link href="/technical-seo" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Technical SEO</Link>
           </div>
         </div>
       </section>

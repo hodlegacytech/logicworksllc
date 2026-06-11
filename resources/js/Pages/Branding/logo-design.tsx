@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { useBrandingPage, checkIcon, arrowIcon, BrandingFaq, BrandingCta } from './shared';
 
 const metrics = [
@@ -51,11 +51,11 @@ export default function LogoDesign() {
 
   return (
     <div ref={pageRef} className="brd-page">
-      <Helmet>
-        <title>Logo Design | LogicWorks — Iconic, Scalable & Timeless Logos</title>
-        <meta name="description" content="LogicWorks logo design delivers iconic, scalable, timeless marks crafted by senior designers — strategic concepts, full logo systems, and production-ready files." />
-        <link rel="canonical" href="https://logicworks.com/logo-design" />
-      </Helmet>
+      <Head>
+        <title head-key="title">Logo Design | LogicWorks — Iconic, Scalable & Timeless Logos</title>
+        <meta head-key="description" name="description" content="LogicWorks logo design delivers iconic, scalable, timeless marks crafted by senior designers — strategic concepts, full logo systems, and production-ready files." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.com/logo-design" />
+      </Head>
 
       <section className="brd-hero" aria-labelledby="logo-design-title">
         <div className="brd-hero-grain" aria-hidden="true" />
@@ -66,8 +66,8 @@ export default function LogoDesign() {
           <h1 className="brd-hero-title" id="logo-design-title">Logo<br /><span>DESIGN</span></h1>
           <p className="brd-hero-sub">Iconic, scalable, timeless logos crafted by senior designers who understand the weight a mark carries — from first impression to lasting legacy.</p>
           <div className="brd-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Logo Project{arrowIcon}</Link>
-            <Link to="/brand-guidelines" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Brand Guidelines</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Logo Project{arrowIcon}</Link>
+            <Link href="/brand-guidelines" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Brand Guidelines</Link>
           </div>
         </div>
       </section>

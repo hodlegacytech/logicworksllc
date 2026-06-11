@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -125,7 +125,7 @@ export function IndustriesCta({ eyebrow, title, sub, btnText, note }: Industries
         <h2 className="cta-title">{title}</h2>
         <p className="cta-sub">{sub}</p>
         <div className="cta-btns">
-          <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
+          <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
             {btnText}{arrowIcon}
           </Link>
           <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
@@ -203,17 +203,17 @@ export function IndustryInnerPage({ config }: { config: IndustryPageConfig }) {
 
   return (
     <div ref={pageRef} className="ind-page" style={accentStyle}>
-      <Helmet>
-        <title>{config.metaTitle}</title>
-        <meta name="description" content={config.metaDescription} />
-        <link rel="canonical" href={`https://logicworks.com${config.canonical}`} />
-      </Helmet>
+      <Head>
+        <title head-key="title">{config.metaTitle}</title>
+        <meta head-key="description" name="description" content={config.metaDescription} />
+        <link head-key="canonical" rel="canonical" href={`https://logicworks.com${config.canonical}`} />
+      </Head>
 
       <section className="ind-inner-hero" aria-labelledby="ind-inner-title">
         <div className="ind-inner-hero-glow" aria-hidden="true" />
         <div className="ind-inner-hero-grid" aria-hidden="true" />
         <div className="con ind-inner-hero-inner">
-          <Link to="/industries" className="ind-back-link">← All Industries</Link>
+          <Link href="/industries" className="ind-back-link">← All Industries</Link>
           <div className="ind-inner-badge">
             <div className="ind-inner-code">{config.code}</div>
             <span className="ind-inner-label">{config.label}</span>
@@ -221,8 +221,8 @@ export function IndustryInnerPage({ config }: { config: IndustryPageConfig }) {
           <h1 className="ind-inner-title" id="ind-inner-title">{config.heroTitle}</h1>
           <p className="ind-inner-sub">{config.heroSub}</p>
           <div className="ind-hero-actions">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>{config.ctaBtn}{arrowIcon}</Link>
-            <Link to="/industries" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All Industries</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>{config.ctaBtn}{arrowIcon}</Link>
+            <Link href="/industries" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All Industries</Link>
           </div>
         </div>
       </section>

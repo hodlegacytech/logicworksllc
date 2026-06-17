@@ -79,8 +79,8 @@ export default function UiUxDesign() {
             <h1 className="inner-hero-title" id="uiux-title">UI/UX<br />DESIGN</h1>
             <p className="inner-hero-sub">User-research-driven design that balances beauty and function — every pixel placed with purpose, every flow validated by real user behavior.</p>
             <div className="svc-hero-actions">
-              <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free UX Audit{arrowIcon}</Link>
-              <Link to="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Our Work</Link>
+              <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free UX Audit{arrowIcon}</Link>
+              <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Our Work</Link>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function UiUxDesign() {
           <h2 className="cta-title">BAD UX IS COSTING YOU<br /><em>USERS AND REVENUE</em>.</h2>
           <p className="cta-sub">Get a free UX audit and discover the friction points, drop-offs, and missed opportunities hiding in your current product.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free UX Audit{arrowIcon}</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free UX Audit{arrowIcon}</Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
           <p className="cta-note">FREE AUDIT · NO COMMITMENT · DELIVERED IN 48 HOURS</p>

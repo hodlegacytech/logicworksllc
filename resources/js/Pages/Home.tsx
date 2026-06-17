@@ -195,10 +195,10 @@ function HeroSection() {
           </p>
 
           <div className="hero-ctas" ref={ctaRef}>
-            <Link to="/contact" className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '1rem' }}>
+            <Link href="/contact" className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '1rem' }}>
               Start Your Project {IC.arrow}
             </Link>
-            <Link to="/case-studies" className="btn btn-outline" style={{ padding: '16px 32px', fontSize: '1rem' }}>
+            <Link href="/case-studies" className="btn btn-outline" style={{ padding: '16px 32px', fontSize: '1rem' }}>
               View Our Work
             </Link>
           </div>
@@ -630,7 +630,7 @@ function WhyUs() {
           <div className="reveal-l">
             <div className="sec-label">Why LogicWorks</div>
             <h2 className="sec-title" id="why-title">NOT JUST AN AGENCY.<br />YOUR <em>STRATEGIC WEAPON</em>.</h2>
-            <p className="sec-desc" style={{ marginBottom: '36px' }}>Most agencies talk about results. We engineer them. With a 98% client retention rate and 500+ transformed businesses, our track record speaks louder than any pitch deck.</p>
+            <p className="sec-desc why-intro">Most agencies talk about results. We engineer them. With a 98% client retention rate and 500+ transformed businesses, our track record speaks louder than any pitch deck.</p>
             <div className="why-cards">
               {[
                 { icon: IC.bolt, cls: 'wci-b', title: 'AI-First Approach', desc: 'Every strategy enhanced with AI for maximum efficiency and precision.' },
@@ -656,7 +656,7 @@ function WhyUs() {
                   <li key={li} className="why-li">{IC.check}{li}</li>
                 ))}
               </ul>
-              <Link to="/contact" className="btn btn-gold" style={{ padding: '16px 32px', fontSize: '1rem', position: 'relative', zIndex: 1 }}>
+              <Link href="/contact" className="btn btn-gold why-cta-btn">
                 Book Free Strategy Call {IC.arrow}
               </Link>
             </div>
@@ -767,7 +767,7 @@ function CTASection() {
         <h2 className="cta-title" id="cta-title">YOUR COMPETITORS<br />ARE <em>ALREADY MOVING</em>.</h2>
         <p className="cta-sub">Every day without a bulletproof digital strategy is revenue left on the table. Let's change that — starting today.</p>
         <div className="cta-btns">
-          <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
+          <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
             Get My Free Strategy Session {IC.arrow}
           </Link>
           <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>

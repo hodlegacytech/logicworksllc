@@ -96,7 +96,7 @@ export default function BrandingPage() {
                     <div key={color} className="brand-color-swatch" style={{ textAlign: 'center' }}>
                       <div style={{ width: '64px', height: '64px', borderRadius: '12px', background: color, border: '1px solid rgba(0,0,0,.08)', boxShadow: '0 4px 12px rgba(0,0,0,.1)' }} />
                       <div style={{ fontFamily: 'var(--ff-mono)', fontSize: '.6rem', color: 'var(--muted)', marginTop: '6px' }}>{name}</div>
-                      <div style={{ fontFamily: 'var(--ff-mono)', fontSize: '.58rem', color: 'var(--border)', marginTop: '2px' }}>{color}</div>
+                      <div style={{ fontFamily: 'var(--ff-mono)', fontSize: '.58rem', color: 'var(--text)', marginTop: '2px' }}>{color}</div>
                     </div>
                   ))}
                 </div>

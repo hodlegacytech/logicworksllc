@@ -54,7 +54,7 @@ export default function PageTemplate({ title, subtitle, label, heroColor = '#0d1
           </h1>
           <p className="inner-hero-sub" ref={subRef}>{subtitle}</p>
           <div ref={btnRef} style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
               Get Free Quote
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                 <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
@@ -91,7 +91,7 @@ export default function PageTemplate({ title, subtitle, label, heroColor = '#0d1
                 ))}
               </div>
               <div style={{ marginTop: '36px' }}>
-                <Link to="/contact" className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '1rem' }}>
+                <Link href="/contact" className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '1rem' }}>
                   Start Your Project
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                     <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
@@ -139,7 +139,7 @@ export default function PageTemplate({ title, subtitle, label, heroColor = '#0d1
           <h2 className="cta-title">YOUR COMPETITORS<br />ARE <em>ALREADY MOVING</em>.</h2>
           <p className="cta-sub">Every day without a bulletproof digital strategy is revenue left on the table. Let's change that — starting today.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
               Get My Free Strategy Session
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                 <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />

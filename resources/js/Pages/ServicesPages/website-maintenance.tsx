@@ -79,7 +79,7 @@ export default function WebsiteMaintenance() {
             <h1 className="inner-hero-title" id="maint-title">WEBSITE<br />MAINTENANCE</h1>
             <p className="inner-hero-sub">Ongoing updates, security scanning, performance optimization, and content management — keeping your website flawless, fast, and secure around the clock.</p>
             <div className="svc-hero-actions">
-              <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free Site Health Check{arrowIcon}</Link>
+              <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free Site Health Check{arrowIcon}</Link>
               <Link to="/hosting-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Maintenance Plans</Link>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function WebsiteMaintenance() {
           <h2 className="cta-title">A NEGLECTED WEBSITE<br /><em>COSTS YOU DAILY</em>.</h2>
           <p className="cta-sub">Get a free site health check — we&apos;ll identify outdated plugins, security gaps, and performance issues dragging your site down.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free Site Health Check{arrowIcon}</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free Site Health Check{arrowIcon}</Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
           <p className="cta-note">FREE HEALTH CHECK · PLANS FROM $149/MO · 30-MIN EMERGENCY RESPONSE</p>

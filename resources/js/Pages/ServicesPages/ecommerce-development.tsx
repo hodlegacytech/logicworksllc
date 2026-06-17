@@ -79,8 +79,8 @@ export default function EcommerceDevelopment() {
             <h1 className="inner-hero-title" id="ecom-title">E-COMMERCE<br />DEVELOPMENT</h1>
             <p className="inner-hero-sub">Shopify, WooCommerce, and fully custom e-commerce solutions engineered to maximize conversions, average order value, and lifetime customer revenue.</p>
             <div className="svc-hero-actions">
-              <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free Store Audit{arrowIcon}</Link>
-              <Link to="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Results</Link>
+              <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free Store Audit{arrowIcon}</Link>
+              <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Results</Link>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function EcommerceDevelopment() {
           <h2 className="cta-title">YOUR STORE SHOULD BE<br /><em>YOUR BEST SALESPERSON</em>.</h2>
           <p className="cta-sub">Get a free e-commerce audit and discover exactly what&apos;s limiting your conversions and average order value.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free Store Audit{arrowIcon}</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free Store Audit{arrowIcon}</Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
           <p className="cta-note">FREE AUDIT · NO COMMITMENT · DELIVERED IN 48 HOURS</p>

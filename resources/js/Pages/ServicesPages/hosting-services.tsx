@@ -79,8 +79,8 @@ export default function HostingServices() {
             <h1 className="inner-hero-title" id="hosting-title">HOSTING<br />SERVICES</h1>
             <p className="inner-hero-sub">99.99% uptime, blazing-fast CDN delivery, and enterprise-grade security — managed hosting that keeps your digital assets fast, secure, and always online.</p>
             <div className="svc-hero-actions">
-              <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free Hosting Audit{arrowIcon}</Link>
-              <Link to="/contact" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Plans</Link>
+              <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free Hosting Audit{arrowIcon}</Link>
+              <Link href="/contact" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Plans</Link>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function HostingServices() {
           <h2 className="cta-title">YOUR SITE DESERVES<br /><em>BULLETPROOF HOSTING</em>.</h2>
           <p className="cta-sub">Get a free hosting audit — we&apos;ll benchmark your current setup and show you exactly where performance and security can improve.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free Hosting Audit{arrowIcon}</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free Hosting Audit{arrowIcon}</Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
           <p className="cta-note">FREE AUDIT · NO COMMITMENT · ZERO-DOWNTIME MIGRATION</p>

@@ -79,7 +79,7 @@ export default function ServerManagement() {
             <h1 className="inner-hero-title" id="server-title">SERVER<br />MANAGEMENT</h1>
             <p className="inner-hero-sub">24/7 proactive monitoring, patching, and rapid-response server management — so your infrastructure stays secure, fast, and always online.</p>
             <div className="svc-hero-actions">
-              <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free Server Audit{arrowIcon}</Link>
+              <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free Server Audit{arrowIcon}</Link>
               <Link to="/hosting-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Hosting Plans</Link>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function ServerManagement() {
           <h2 className="cta-title">UNMANAGED SERVERS ARE<br /><em>A LIABILITY</em>.</h2>
           <p className="cta-sub">Get a free server audit — we&apos;ll identify vulnerabilities, performance bottlenecks, and single points of failure in your current setup.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free Server Audit{arrowIcon}</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free Server Audit{arrowIcon}</Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
           <p className="cta-note">FREE AUDIT · 15-MIN CRITICAL RESPONSE · 24/7 MONITORING</p>

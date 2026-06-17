@@ -9,6 +9,7 @@ import BackToTop from "./BackToTop";
 import { useCounter } from "../hooks/useCounter";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { useEmLetterReveal } from "../hooks/useEmLetterReveal";
+import { useScrollToTop } from "../hooks/useScrollToTop";
 
 type LayoutProps = { children: React.ReactNode };
 
@@ -18,6 +19,7 @@ export default function Layout({ children }: LayoutProps) {
   useCounter(url);
   useScrollReveal(url);
   useEmLetterReveal(url);
+  useScrollToTop();
 
   return (
     <>

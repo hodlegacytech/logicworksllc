@@ -49,7 +49,7 @@ export default function AISolutions() {
           <h1 className="inner-hero-title" id="ai-page-title" style={{ maxWidth: '800px' }}>THE FUTURE OF BUSINESS<br />IS <span style={{ color: 'var(--gold-lt)' }}>INTELLIGENT</span>.</h1>
           <p className="inner-hero-sub">We architect custom AI systems that don't just automate — they think, learn, and continuously optimize for your business outcomes. This isn't a chatbot plugin. This is competitive transformation.</p>
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Book AI Consultation<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Book AI Consultation<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
             <Link to="/ai-automation" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Explore AI Automation</Link>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function AISolutions() {
           <h2 className="cta-title">YOUR COMPETITORS ARE<br />ALREADY <em>AUTOMATING</em>.</h2>
           <p className="cta-sub">Book a free AI opportunity audit. We'll identify every process ripe for automation and model the exact ROI you can expect — before you spend a dollar.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Book Free AI Audit<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Book Free AI Audit<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Our AI Team</a>
           </div>
         </div>

@@ -320,7 +320,7 @@ export default function WebApps() {
           <h2 className="cta-title">YOUR APP IDEA DESERVES<br /><em>ELITE ENGINEERING</em>.</h2>
           <p className="cta-sub">Get a free application architecture audit and a clear roadmap from MVP to scale — delivered within 48 hours.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
               Get Free App Audit
               {arrowIcon}
             </Link>

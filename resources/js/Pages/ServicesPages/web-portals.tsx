@@ -106,11 +106,11 @@ export default function WebPortals() {
               and empower teams, customers, and partners at scale — built secure, scalable, and tailored to your workflow.
             </p>
             <div className="svc-hero-actions">
-              <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
+              <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
                 Get Free Portal Audit
                 {arrowIcon}
               </Link>
-              <Link to="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>
+              <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>
                 View Case Studies
               </Link>
             </div>
@@ -317,7 +317,7 @@ export default function WebPortals() {
           <h2 className="cta-title">YOUR PORTAL IS THE<br /><em>BACKBONE OF SCALE</em>.</h2>
           <p className="cta-sub">Get a free portal architecture audit and discover how a unified platform can eliminate silos and accelerate growth.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
               Get Free Portal Audit
               {arrowIcon}
             </Link>

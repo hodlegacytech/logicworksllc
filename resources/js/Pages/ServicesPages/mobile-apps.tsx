@@ -79,8 +79,8 @@ export default function MobileApps() {
             <h1 className="inner-hero-title" id="mobile-title">MOBILE<br />APPS</h1>
             <p className="inner-hero-sub">Native iOS &amp; Android and cross-platform React Native apps. Performance-first, UX-obsessed, and App Store optimized — built to acquire, engage, and retain users at scale.</p>
             <div className="svc-hero-actions">
-              <Link to="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free App Consultation{arrowIcon}</Link>
-              <Link to="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Case Studies</Link>
+              <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free App Consultation{arrowIcon}</Link>
+              <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Case Studies</Link>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function MobileApps() {
           <h2 className="cta-title">YOUR USERS ARE ON MOBILE.<br /><em>YOUR BRAND SHOULD BE TOO</em>.</h2>
           <p className="cta-sub">Get a free mobile app consultation and a clear roadmap from idea to App Store — delivered within 48 hours.</p>
           <div className="cta-btns">
-            <Link to="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free App Consultation{arrowIcon}</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free App Consultation{arrowIcon}</Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
           <p className="cta-note">FREE CONSULTATION · NO COMMITMENT · DELIVERED IN 48 HOURS</p>

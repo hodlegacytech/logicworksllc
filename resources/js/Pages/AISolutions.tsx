@@ -50,7 +50,7 @@ export default function AISolutions() {
           <p className="inner-hero-sub">We architect custom AI systems that don't just automate — they think, learn, and continuously optimize for your business outcomes. This isn't a chatbot plugin. This is competitive transformation.</p>
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
             <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Book AI Consultation<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
-            <Link to="/ai-automation" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Explore AI Automation</Link>
+            <Link  to="/ai-automation" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Explore AI Automation</Link>
           </div>
         </div>
       </section>

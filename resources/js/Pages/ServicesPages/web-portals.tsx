@@ -9,27 +9,87 @@ gsap.registerPlugin(ScrollTrigger);
 const HERO_COLOR = '#1a4bdb';
 
 const capabilities = [
-  { badge: 'SSO', title: 'Single Sign-On & Identity', desc: 'Enterprise SSO via SAML 2.0, OAuth 2.0, and Active Directory. Role-based access control with granular permissions across every portal module.' },
-  { badge: 'API', title: 'API-First Architecture', desc: 'RESTful and GraphQL APIs that connect your portal to ERP, CRM, HRIS, and legacy systems — real-time data sync without manual exports.' },
-  { badge: 'RBAC', title: 'Role-Based Dashboards', desc: 'Personalized views for admins, managers, partners, and end-users. Each role sees exactly the data and tools they need — nothing more.' },
-  { badge: 'Workflow', title: 'Workflow Automation', desc: 'Automated approvals, notifications, and task routing that eliminate bottlenecks. Configurable business rules without custom code for every change.' },
-  { badge: 'Reports', title: 'Analytics & Reporting', desc: 'Real-time dashboards, exportable reports, and KPI tracking built into every portal layer. Data-driven decisions at every level of your organization.' },
-  { badge: 'Security', title: 'Enterprise Security', desc: 'SOC 2-aligned practices, encryption at rest and in transit, audit logs, and penetration-tested deployments. Compliance-ready from day one.' },
+  {
+    badge: 'SSO',
+    title: 'SSO',
+    desc: 'Enterprise-grade SSO through SAML 2.0, OAuth 2.0, and Active Directory, paired with role-based access control that governs granular permissions across every module in the portal.',
+  },
+  {
+    badge: 'API',
+    title: 'API',
+    desc: 'RESTful and GraphQL APIs connect your portal directly to ERP, CRM, HRIS, and legacy systems, keeping data synchronized in real time without a single manual export.',
+  },
+  {
+    badge: 'RBAC',
+    title: 'RBAC',
+    desc: 'Every admin, manager, partner, and end-user sees a dashboard built specifically around their role, surfacing exactly the data and tools they need and nothing that clutters the experience.',
+  },
+  {
+    badge: 'Workflow',
+    title: 'Workflow Automation',
+    desc: 'Automated approvals, intelligent notifications, and task routing eliminate bottlenecks that slow teams down, all governed by configurable business rules that flex without requiring custom code for every change.',
+  },
+  {
+    badge: 'Reports',
+    title: 'Analytics & Reporting',
+    desc: 'Live dashboards, exportable reports, and KPI tracking are built into every layer of the platform, putting genuinely data-driven decisions within reach at every level of your organization.',
+  },
+  {
+    badge: 'Security',
+    title: 'Enterprise Security',
+    desc: 'SOC 2-aligned practices, encryption at rest and in transit, comprehensive audit logs, and penetration-tested deployments mean every portal we ship is compliance-ready from day one.',
+  },
 ];
 
 const portalTypes = [
-  { icon: '01', title: 'Employee Intranets', desc: 'Centralize HR resources, internal communications, document management, and team collaboration for distributed workforces.' },
-  { icon: '02', title: 'Customer Portals', desc: 'Self-service account management, order tracking, support tickets, billing, and knowledge bases that reduce support load by up to 60%.' },
-  { icon: '03', title: 'Partner & Vendor Hubs', desc: 'Onboard distributors, suppliers, and affiliates with dedicated dashboards, commission tracking, and co-branded experiences.' },
-  { icon: '04', title: 'Member & Community Platforms', desc: 'Subscription management, exclusive content, forums, and event registration for associations, SaaS communities, and membership organizations.' },
+  {
+    icon: '01',
+    title: 'Employee Intranets',
+    desc: 'Centralize HR resources, internal communications, document repositories, and team collaboration into one hub built for distributed and hybrid workforces alike.',
+  },
+  {
+    icon: '02',
+    title: 'Customer Portals',
+    desc: 'Self-service account management, order tracking, support ticketing, billing, and knowledge bases have been shown to cut support load by up to 60%.',
+  },
+  {
+    icon: '03',
+    title: 'Partner & Vendor Hubs',
+    desc: 'Onboard distributors, suppliers, and affiliates through dedicated dashboards, commission tracking, and co-branded experiences built around your partner ecosystem.',
+  },
+  {
+    icon: '04',
+    title: 'Member & Community Platforms',
+    desc: 'Subscription management, gated content, community forums, and event registration are purpose-built for associations, SaaS communities, and membership-driven organizations.',
+  },
 ];
 
 const processSteps = [
-  { num: '01', title: 'Discovery', desc: 'Stakeholder interviews, user research, and technical audit of existing systems and data flows.' },
-  { num: '02', title: 'Architecture', desc: 'Information architecture, integration mapping, security model, and scalable system design.' },
-  { num: '03', title: 'Design & Build', desc: 'UI/UX prototyping, agile development sprints, and continuous client review cycles.' },
-  { num: '04', title: 'Integration', desc: 'API connections, SSO setup, data migration, and QA across all user roles and edge cases.' },
-  { num: '05', title: 'Launch & Scale', desc: 'Staged rollout, team training, performance monitoring, and ongoing optimization support.' },
+  {
+    num: '01',
+    title: 'Discovery',
+    desc: 'Stakeholder interviews, in-depth user research, and a full technical audit of your existing systems and data flows.',
+  },
+  {
+    num: '02',
+    title: 'Architecture',
+    desc: 'Information architecture, integration mapping, a defined security model, and a system design engineered to scale from the outset.',
+  },
+  {
+    num: '03',
+    title: 'Design & Build',
+    desc: 'UI/UX prototyping, agile development sprints, and continuous review cycles that keep your team involved at every checkpoint.',
+  },
+  {
+    num: '04',
+    title: 'Integration',
+    desc: 'API connections, SSO configuration, data migration, and rigorous QA across every user role and edge case before anything goes live.',
+  },
+  {
+    num: '05',
+    title: 'Launch & Scale',
+    desc: 'A staged rollout, hands-on team training, ongoing performance monitoring, and continued optimization support long after launch day.',
+  },
 ];
 
 const techStack = [
@@ -38,11 +98,26 @@ const techStack = [
 ];
 
 const faqs = [
-  { q: 'How long does a custom web portal take to build?', a: 'Timeline depends on scope and integrations. A focused MVP portal typically ships in 10–14 weeks. Enterprise portals with multiple integrations and user roles range from 4–8 months. We provide a detailed roadmap after discovery.' },
-  { q: 'Can you integrate with our existing ERP or CRM?', a: 'Yes. We specialize in API-first portal architecture and have integrated with Salesforce, HubSpot, SAP, NetSuite, Microsoft Dynamics, and custom legacy systems via REST, GraphQL, and middleware solutions.' },
-  { q: 'Do you support single sign-on (SSO)?', a: 'Absolutely. We implement SAML 2.0, OAuth 2.0, OpenID Connect, and Active Directory/LDAP integration so your users authenticate once across all connected systems.' },
-  { q: 'What happens after the portal launches?', a: 'We offer ongoing maintenance, security patching, feature enhancements, and 24/7 monitoring packages. Most clients retain us for continuous iteration as their business evolves.' },
-  { q: 'Is the portal mobile-responsive?', a: 'Every portal we build is fully responsive and tested across desktop, tablet, and mobile. Progressive Web App (PWA) capabilities are available for app-like mobile experiences without app store deployment.' },
+  {
+    q: 'What does a web portal development company build versus a web design agency?',
+    a: 'A web portal development company builds secure, role-based platforms with integrations, workflows, and business logic, while web design agencies typically focus on marketing websites.',
+  },
+  {
+    q: 'How long does custom web portal development take?',
+    a: 'Most enterprise web portals take 3–6 months to design, build, and launch, depending on complexity and integrations.',
+  },
+  {
+    q: 'How is a web portal development services company different from an in-house team?',
+    a: 'They bring proven expertise in portal architecture, integrations, security, and scalability, helping reduce risk and development time.',
+  },
+  {
+    q: 'Can a legacy system be integrated into a new custom portal?',
+    a: 'Yes. Most legacy ERP, CRM, and HRIS systems can be integrated through APIs, allowing you to keep existing data and processes.',
+  },
+  {
+    q: 'What support is included after launch?',
+    a: 'Post-launch support typically includes training, monitoring, maintenance, and ongoing optimization as your business grows.',
+  },
 ];
 
 const checkIcon = (
@@ -84,8 +159,12 @@ export default function WebPortals() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">Web Portals | LogicWorks — Enterprise Portal Development</title>
-        <meta head-key="description" name="description" content="LogicWorks builds enterprise-grade web portals — employee intranets, customer portals, partner hubs, and member platforms with SSO, API integrations, and role-based access." />
+        <title head-key="title">Web Portal Development Company | LogicWorks</title>
+        <meta
+          head-key="description"
+          name="description"
+          content="As a leading web portal development company, we engineer enterprise-grade platforms that consolidate fragmented data, streamline operations, and give every stakeholder a single, secure place to work."
+        />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/web-portals" />
       </Head>
 
@@ -100,18 +179,17 @@ export default function WebPortals() {
         <div className="con" style={{ position: 'relative', zIndex: 2 }}>
           <div className="svc-hero-animate">
             <span className="inner-hero-label">Web Services</span>
-            <h1 className="inner-hero-title" id="portals-title">WEB<br />PORTALS</h1>
+            <h1 className="inner-hero-title" id="portals-title">WEB PORTAL<br />DEVELOPMENT COMPANY</h1>
             <p className="inner-hero-sub">
-              Enterprise-grade portal solutions that centralize data, streamline operations,
-              and empower teams, customers, and partners at scale — built secure, scalable, and tailored to your workflow.
+              As a leading web portal development company, we engineer enterprise-grade platforms that consolidate fragmented data, streamline operations, and give every stakeholder, internal teams, customers, and partners alike, a single, secure place to work. Architected for scale. Hardened for security. Tailored to the way your business actually runs.
             </p>
             <div className="svc-hero-actions">
               <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
-                Get Free Portal Audit
+                Start Your Project
                 {arrowIcon}
               </Link>
               <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>
-                View Case Studies
+                View Our Work
               </Link>
             </div>
           </div>
@@ -126,19 +204,17 @@ export default function WebPortals() {
               <div className="sec-label">Why Web Portals</div>
               <h2 className="sec-title">ONE PLATFORM.<br /><em>EVERY STAKEHOLDER.</em></h2>
               <p className="sec-desc" style={{ marginBottom: '20px' }}>
-                Scattered tools, siloed data, and manual workflows cost enterprises millions in lost productivity.
-                A unified web portal becomes the single source of truth — connecting people, processes, and platforms.
+                Disconnected tools, siloed data, and manual handoffs quietly drain enterprises of millions in lost productivity every year. However, a properly engineered web portal eliminates that unncessary dragging, becomes the definitive source of truth that ties together people, processes, and platforms under one roof.
               </p>
               <p className="sec-desc">
-                LogicWorks engineers portals that scale from 100 to 100,000+ users without compromising speed,
-                security, or user experience. Every portal is custom-architected for your business logic — not a template with your logo pasted on.
+                At LogicWorks, our custom web portal development scales gracefully from a hundred users to well over a hundred thousand, without sacrificing speed, security, or the experience your users expect. Every portal we deliver is architected around your specific business logic, never a recycled template with a new logo stapled on top.
               </p>
               <div className="svc-check-list">
                 {[
-                  'Reduce support tickets by up to 60% with self-service portals',
-                  'Cut onboarding time for partners and employees in half',
-                  'Real-time data sync across CRM, ERP, and legacy systems',
-                  'WCAG 2.2 AA accessible and mobile-first by default',
+                  'Cut support tickets by as much as 60% through intelligent self-service design',
+                  'Slash onboarding time for new partners and employees by half',
+                  'Maintain real-time data synchronization across your CRM, ERP, and legacy systems',
+                  'Ship every portal WCAG 2.2 AA accessible and mobile-first from the very first sprint',
                 ].map((item) => (
                   <div key={item} className="svc-check-item">{checkIcon}{item}</div>
                 ))}
@@ -195,7 +271,9 @@ export default function WebPortals() {
           <div className="svc-sec-hd-c reveal">
             <div className="sec-label">Core Capabilities</div>
             <h2 className="sec-title">BUILT FOR<br /><em>ENTERPRISE COMPLEXITY</em></h2>
-            <p className="sec-desc">Every portal module engineered for security, scalability, and seamless integration with your existing tech stack.</p>
+            <p className="sec-desc">
+              Every module within our platform is engineered for security, scalability, and frictionless integration with your existing technology stack.
+            </p>
           </div>
           <div className="svc-grid-3 svc-capabilities">
             {capabilities.map((cap) => (
@@ -215,7 +293,9 @@ export default function WebPortals() {
           <div className="svc-sec-hd-c reveal">
             <div className="sec-label">Portal Types</div>
             <h2 className="sec-title">PORTALS FOR<br /><em>EVERY USE CASE</em></h2>
-            <p className="sec-desc">From internal intranets to customer-facing hubs — we architect the right portal for your audience and business model.</p>
+            <p className="sec-desc">
+              As a web portal development services company, we architect the right solution for your audience and business model, whether that&apos;s an internal system of record or a fully customer-facing experience.
+            </p>
           </div>
           <div className="svc-grid-4">
             {portalTypes.map((type) => (
@@ -235,7 +315,9 @@ export default function WebPortals() {
           <div className="svc-sec-hd-c reveal">
             <div className="sec-label">Our Process</div>
             <h2 className="sec-title">FROM DISCOVERY TO<br /><em>LAUNCH IN 5 PHASES</em></h2>
-            <p className="sec-desc">A battle-tested methodology refined across 120+ enterprise portal deployments.</p>
+            <p className="sec-desc">
+              A methodology refined across more than 120 enterprise portal deployments, built to remove guesswork at every stage.
+            </p>
           </div>
           <div className="svc-process-grid">
             {processSteps.map((step) => (
@@ -270,8 +352,7 @@ export default function WebPortals() {
         <div className="con">
           <div className="sec-hd-c reveal">
             <div className="sec-label">FAQ</div>
-            <h2 className="sec-title" id="portals-faq-title">PORTAL QUESTIONS<br /><em>ANSWERED</em></h2>
-            <p className="sec-desc">Common questions from enterprise teams evaluating a custom portal build.</p>
+            <h2 className="sec-title" id="portals-faq-title">FAQs</h2>
           </div>
           <div className="faq-list">
             {faqs.map((faq, index) => {
@@ -315,7 +396,9 @@ export default function WebPortals() {
         <div className="con" style={{ position: 'relative', zIndex: 1 }}>
           <span className="cta-eyebrow">Ready to Unify Your Operations?</span>
           <h2 className="cta-title">YOUR PORTAL IS THE<br /><em>BACKBONE OF SCALE</em>.</h2>
-          <p className="cta-sub">Get a free portal architecture audit and discover how a unified platform can eliminate silos and accelerate growth.</p>
+          <p className="cta-sub">
+            Request a free portal audit for you and find out exactly how a unified platform can eliminate silos and accelerate growth across your organization.
+          </p>
           <div className="cta-btns">
             <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
               Get Free Portal Audit
@@ -323,7 +406,7 @@ export default function WebPortals() {
             </Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
-          <p className="cta-note">FREE AUDIT · NO COMMITMENT · DELIVERED IN 48 HOURS</p>
+          {/* <p className="cta-note">FREE AUDIT · NO COMMITMENT · DELIVERED IN 48 HOURS</p> */}
         </div>
       </section>
     </div>

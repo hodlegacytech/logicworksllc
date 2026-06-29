@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from '@inertiajs/react';
 import { Head } from '@inertiajs/react';
 import { gsap } from 'gsap';
@@ -6,17 +6,85 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const HERO_COLOR = '#1a4bdb';
+
 const features = [
-  { title: 'Custom WordPress & Headless CMS', desc: 'Bespoke CMS solutions built for performance — Sanity, Contentful, or WordPress configured exactly to your workflow with zero page builder bloat.', badge: 'CMS' },
-  { title: 'React / Next.js Applications', desc: 'Scalable web apps and SaaS products built on the modern React ecosystem. Server components, streaming, ISR — we leverage every performance advantage.', badge: 'React' },
-  { title: 'E-Commerce Excellence', desc: 'Shopify, WooCommerce, and fully custom e-commerce builds with conversion-rate optimization baked in from the first wireframe. Average client AOV uplift: 34%.', badge: 'E-Com' },
-  { title: 'Core Web Vitals Mastery', desc: 'Every site we ship achieves Green CWV scores. LCP under 2.5s, CLS near zero, INP optimized. Google rewards speed — so we engineer it obsessively.', badge: 'Performance' },
-  { title: 'UI/UX Design System', desc: 'Research-driven design backed by user testing, heatmaps, and session recordings. We design for behavior, not just aesthetics — and the difference shows in your conversion data.', badge: 'Design' },
-  { title: 'WCAG 2.2 AA Accessibility', desc: 'Every deliverable meets or exceeds accessibility standards. Keyboard navigation, screen reader compatibility, contrast ratios — all audited and certified.', badge: 'A11y' },
+  {
+    badge: 'CMS',
+    title: 'Custom WordPress & Headless CMS',
+    desc: "Tailored CMS builds made for speed, whether that's Sanity, Contentful, or a fully dialed-in WordPress setup built around how your team actually works, with none of the page-builder weight.",
+  },
+  {
+    badge: 'React',
+    title: 'React / Next.js Applications',
+    desc: 'Powerful web apps and SaaS platforms built on the modern React stack. Server components, streaming, ISR- we pull every lever the framework offers.',
+  },
+  {
+    badge: 'E-Com',
+    title: 'E-Commerce Excellence',
+    desc: 'Shopify, WooCommerce, or fully custom storefronts with conversion strategy built in from the very first wireframe. Average client AOV lift: 34%.',
+  },
+  {
+    badge: 'Performance',
+    title: 'Core Web Vitals Mastery',
+    desc: 'Every project we launch hits Green Core Web Vitals. LCP under 2.5s, CLS near zero, INP dialed in. Google favors speed, so speed is engineered into everything we touch.',
+  },
+  {
+    badge: 'Design',
+    title: 'UI/UX Design System',
+    desc: 'Design backed by real user testing, heatmaps, and session recordings, not guesswork. We design around behavior, and your conversion numbers will show it.',
+  },
+  {
+    badge: 'A11y',
+    title: 'WCAG 2.2 AA Accessibility',
+    desc: 'Every project we ship meets or beats current accessibility standards. Keyboard navigation, screen reader support, proper contrast- all audited and verified.',
+  },
 ];
 
+const faqs = [
+  {
+    q: 'What makes your web design & development company different?',
+    a: 'We combine strategy, design, and development under one roof, creating high-performance websites that look exceptional and drive measurable business results.',
+  },
+  {
+    q: 'Why hire a web design & development agency instead of a freelancer?',
+    a: 'An agency gives you access to designers, developers, UX specialists, and SEO experts working together to deliver a more scalable and polished product.',
+  },
+  {
+    q: 'What website design & development services do you offer?',
+    a: 'We provide custom website design, WordPress development, React and Next.js applications, e-commerce solutions, CMS integrations, and ongoing support.',
+  },
+  {
+    q: 'How long does a website design and development project take?',
+    a: "Most projects take between 4–12 weeks, depending on the site's size, functionality, and content requirements.",
+  },
+  {
+    q: 'Do you build custom websites or use templates?',
+    a: 'Every website is custom-designed and developed to match your brand, goals, and user experience requirements.',
+  },
+  {
+    q: 'Will my website be mobile-friendly and fast?',
+    a: 'Yes. Every site we build is fully responsive, optimized for Core Web Vitals, and designed to perform across all devices.',
+  },
+  {
+    q: 'Can your web design & development agency redesign an existing website?',
+    a: 'Absolutely. We can modernize your current website, improve performance, and enhance the user experience without disrupting your business.',
+  },
+  {
+    q: 'Do you provide support after the website launches?',
+    a: 'Yes. We offer maintenance, updates, performance monitoring, and ongoing optimization to keep your website running at its best.',
+  },
+];
+
+const arrowIcon = (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+    <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+  </svg>
+);
+
 export default function WebDesign() {
-  const heroRef = useRef<HTMLElement>(null);
+  const pageRef = useRef<HTMLDivElement>(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -29,35 +97,36 @@ export default function WebDesign() {
         { opacity: 1, y: 0, scale: 1, duration: 0.6, stagger: 0.1, ease: 'power3.out',
           scrollTrigger: { trigger: '.wd-features', start: 'top 80%' } }
       );
-    }, heroRef);
+    }, pageRef);
     return () => ctx.revert();
   }, []);
 
   return (
-    <>
+    <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">Web Design & Development | LogicWorks — Elite Digital Agency</title>
-        <meta head-key="description" name="description" content="Custom web design and development by LogicWorks. React, Next.js, WordPress, e-commerce, and more — pixel-perfect, blazing fast, conversion-optimized." />
+        <title head-key="title">Premium Web Design & Development Company | LogicWorks</title>
+        <meta head-key="description" name="description" content="We don't just design pages; we build digital experiences that stop the scroll and turn clicks into customers. Hand-coded. Flawlessly detailed. Exceptionally fast." />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/web-design-development" />
       </Head>
 
       <section
         className="inner-hero"
-        ref={heroRef}
         aria-labelledby="wd-title"
-        style={{ background: 'linear-gradient(135deg, #060d1f 0%, #0e1e50 60%, #1a4bdb 100%)' }}
+        style={{ background: `linear-gradient(135deg, #060d1f 0%, #0e1e50 60%, ${HERO_COLOR} 100%)` }}
       >
         <div className="inner-hero-orb" aria-hidden="true" />
         <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(26,75,219,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(26,75,219,.035) 1px,transparent 1px)', backgroundSize: '72px 72px', pointerEvents: 'none' }} />
         <div className="con" style={{ position: 'relative', zIndex: 2 }}>
           <div className="wd-hero-content">
             <span className="inner-hero-label">Web Services</span>
-            <h1 className="inner-hero-title" id="wd-title">WEB DESIGN &<br />DEVELOPMENT</h1>
-            <p className="inner-hero-sub">We don't build websites — we engineer digital experiences that captivate on first look and convert with every click. Custom-coded. Pixel-perfect. Blazing fast.</p>
+            <h1 className="inner-hero-title" id="wd-title">PREMIUM WEB DESIGN<br />& DEVELOPMENT COMPANY</h1>
+            <p className="inner-hero-sub">
+              We don&apos;t just design pages; we build digital experiences that stop the scroll and turn clicks into customers. Hand-coded. Flawlessly detailed. Exceptionally fast.
+            </p>
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
               <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
                 Start Your Project
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                {arrowIcon}
               </Link>
               <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Our Work</Link>
             </div>
@@ -66,23 +135,22 @@ export default function WebDesign() {
       </section>
 
       {/* Features */}
-      <section style={{ background: 'var(--white)', padding: '120px 0' }}>
+      <section className="svc-sec" style={{ background: 'var(--white)' }}>
         <div className="con">
           <div className="sec-hd-c reveal">
             <div className="sec-label">Our Capabilities</div>
-            <h2 className="sec-title">EVERYTHING YOUR DIGITAL<br /><em>PRESENCE DEMANDS</em></h2>
-            <p className="sec-desc">From architecture to animation — every element engineered for performance, beauty, and results.</p>
+            <h2 className="sec-title">EVERYTHING A MODERN BRAND<br /><em>NEEDS ONLINE</em></h2>
+            <p className="sec-desc">
+              From structure to motion, every detail is built by a web design &amp; development agency obsessed with speed, beauty, and results that actually move the needle.
+            </p>
           </div>
-          <div className="wd-features" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
+          <div className="wd-features svc-grid-3">
             {features.map((f) => (
-              <div key={f.title} className="wd-feature-card" style={{ background: 'var(--off-white)', border: '1px solid var(--border)', borderRadius: 'var(--r-xl)', padding: '36px', position: 'relative', overflow: 'hidden', transition: 'all .4s var(--ease-out)' }}
-                onMouseEnter={(e) => gsap.to(e.currentTarget, { y: -8, boxShadow: '0 32px 64px rgba(13,27,62,.1)', duration: 0.3 })}
-                onMouseLeave={(e) => gsap.to(e.currentTarget, { y: 0, boxShadow: 'none', duration: 0.4, ease: 'power3.out' })}
-              >
-                <div style={{ display: 'inline-block', padding: '4px 12px', borderRadius: '100px', background: 'rgba(26,75,219,.08)', fontFamily: 'var(--ff-mono)', fontSize: '.65rem', fontWeight: 600, color: 'var(--blue)', letterSpacing: '.08em', marginBottom: '16px' }}>{f.badge}</div>
-                <h3 style={{ fontFamily: 'var(--ff-head)', fontSize: '1.05rem', fontWeight: 700, color: 'var(--navy)', marginBottom: '10px' }}>{f.title}</h3>
-                <p style={{ fontFamily: 'var(--ff-body)', fontSize: '.87rem', color: 'var(--muted)', lineHeight: 1.7 }}>{f.desc}</p>
-              </div>
+              <article key={f.title} className="wd-feature-card svc-card svc-card--white">
+                <span className="svc-card-badge">{f.badge}</span>
+                <h3 className="svc-card-title">{f.title}</h3>
+                <p className="svc-card-desc">{f.desc}</p>
+              </article>
             ))}
           </div>
         </div>
@@ -97,7 +165,9 @@ export default function WebDesign() {
           </div>
           <div className="wd-tech-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '12px' }}>
             {['React', 'Next.js', 'TypeScript', 'Node.js', 'WordPress', 'Shopify', 'Tailwind CSS', 'PostgreSQL', 'Vercel', 'AWS', 'Figma', 'GSAP'].map((tech) => (
-              <div key={tech} style={{ background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.08)', borderRadius: 'var(--r-md)', padding: '20px 16px', textAlign: 'center', fontFamily: 'var(--ff-head)', fontSize: '.82rem', fontWeight: 600, color: 'rgba(255,255,255,.7)', cursor: 'default', transition: 'all .25s' }}
+              <div
+                key={tech}
+                style={{ background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.08)', borderRadius: 'var(--r-md)', padding: '20px 16px', textAlign: 'center', fontFamily: 'var(--ff-head)', fontSize: '.82rem', fontWeight: 600, color: 'rgba(255,255,255,.7)', cursor: 'default', transition: 'all .25s' }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = 'rgba(26,75,219,.15)'; (e.currentTarget as HTMLElement).style.color = '#fff'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(26,75,219,.3)'; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,.05)'; (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,.7)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,.08)'; }}
               >
@@ -108,20 +178,66 @@ export default function WebDesign() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="faq-sec svc-sec svc-sec--alt" aria-labelledby="wd-faq-title">
+        <div className="con">
+          <div className="sec-hd-c reveal">
+            <h2 className="sec-title" id="wd-faq-title">FAQs</h2>
+          </div>
+          <div className="faq-list">
+            {faqs.map((faq, index) => {
+              const isOpen = openFaq === index;
+              return (
+                <div key={faq.q} className={`faq-item${isOpen ? ' on' : ''}`}>
+                  <div
+                    className="faq-q"
+                    role="button"
+                    tabIndex={0}
+                    aria-expanded={isOpen}
+                    onClick={() => setOpenFaq(isOpen ? null : index)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setOpenFaq(isOpen ? null : index);
+                      }
+                    }}
+                  >
+                    <span className="faq-q-text">{faq.q}</span>
+                    <div className="faq-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                        <line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="faq-body" style={{ height: isOpen ? 'auto' : '0' }}>
+                    <div className="faq-body-inner">{faq.a}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="cta-sec">
         <div className="cta-orb1" aria-hidden="true" /><div className="cta-orb2" aria-hidden="true" />
         <div className="con" style={{ position: 'relative', zIndex: 1 }}>
-          <span className="cta-eyebrow">Let's Build Something Legendary</span>
-          <h2 className="cta-title">YOUR WEBSITE IS EITHER<br /><em>WORKING FOR YOU</em> OR AGAINST YOU.</h2>
-          <p className="cta-sub">Get a free website audit and discover exactly what's costing you conversions — then let us fix it.</p>
+          <span className="cta-eyebrow">Let&apos;s Build Something Legendary</span>
+          <h2 className="cta-title">YOUR SITE IS EITHER MAKING YOU MONEY<br /><em>OR COSTING YOU MONEY.</em></h2>
+          <p className="cta-sub">
+            As a website design &amp; development services provider, we&apos;ll show you exactly where your site is leaking conversions with a free audit, then build the fix.
+          </p>
           <div className="cta-btns">
-            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free Website Audit<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
+              Get Free Website Audit
+              {arrowIcon}
+            </Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
-          <p className="cta-note">FREE AUDIT · NO COMMITMENT · DELIVERED IN 48 HOURS</p>
+          {/* <p className="cta-note">FREE AUDIT · NO COMMITMENT · DELIVERED IN 48 HOURS</p> */}
         </div>
       </section>
-    </>
+    </div>
   );
 }

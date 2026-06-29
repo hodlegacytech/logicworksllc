@@ -100,8 +100,8 @@ export default function Footer() {
           <div className="ft-bottom-links">
             <Link href="/privacy-policy">Privacy Policy</Link>
             <Link href="/terms-of-service">Terms of Service</Link>
-            <a href="/sitemap.xml">Sitemap</a>
-            <Link href="/accessibility">Accessibility</Link>
+            {/* <a href="/sitemap.xml">Sitemap</a>
+            <Link href="/accessibility">Accessibility</Link> */}
           </div>
         </div>
       </div>

@@ -11,37 +11,37 @@ const metrics = [
 ];
 
 const solutions = [
-  { title: 'Content Strategy & Planning', desc: 'Audience research, keyword mapping, content pillar development, and editorial calendars — every piece tied to search intent and business goals, not random blog posts.' },
-  { title: 'SEO Blog Writing', desc: 'Long-form, keyword-optimized articles that rank on Google and answer real buyer questions — structured with headers, internal links, schema, and E-E-A-T signals search engines reward.' },
-  { title: 'Lead Magnets & Gated Content', desc: 'Whitepapers, ebooks, checklists, and templates designed to capture emails — high-value assets that position your brand as the authority and fuel nurture sequences.' },
-  { title: 'Video Scripts & Storyboards', desc: 'YouTube scripts, explainer video copy, and social video storyboards — content engineered for watch time, retention, and conversion CTAs at the right moment.' },
-  { title: 'Email Newsletter Content', desc: 'Weekly or monthly newsletters that subscribers actually open — curated insights, product updates, and thought leadership that keeps your brand top-of-mind between purchases.' },
-  { title: 'Content Distribution & Repurposing', desc: 'One pillar piece becomes ten assets — blog to social snippets, email excerpts, infographic data, and podcast talking points — maximizing ROI on every content investment.' },
+  { title: 'Content Strategy & Planning', desc: 'Audience research, keyword mapping, content pillar development, and editorial calendars, with every piece tied to search intent and business goals rather than published at random.' },
+  { title: 'SEO Blog Writing', desc: 'Long-form, keyword-optimized articles that rank on Google and answer real buyer questions, structured with headers, internal links, schema, and the E-E-A-T signals search engines actually reward.' },
+  { title: 'Lead Magnets & Gated Content', desc: 'Whitepapers, ebooks, checklists, and templates designed specifically to capture emails, positioning your brand as the authority while fueling nurture sequences behind the scenes.' },
+  { title: 'Video Scripts & Storyboards', desc: 'YouTube scripts, explainer video copy, and social video storyboards, engineered for watch time, retention, and a conversion CTA placed at exactly the right moment.' },
+  { title: 'Email Newsletter Content', desc: 'Weekly or monthly newsletters that subscribers genuinely open, built from curated insights, product updates, and thought leadership that keep your brand top of mind between purchases.' },
+  { title: 'Content Distribution & Repurposing', desc: 'One pillar piece becomes ten assets: blog content turns into social snippets, email excerpts, infographic data, and podcast talking points, maximizing return on every piece of content produced.' },
 ];
 
 const useCases = [
-  { icon: 'SaaS', title: 'SaaS & Technology', desc: 'Product-led content, comparison guides, integration tutorials, and developer docs that drive organic sign-ups and reduce support ticket volume.' },
-  { icon: 'FIN', title: 'Finance & Insurance', desc: 'Compliance-aware educational content, calculators, and guides that build trust and generate qualified leads in heavily regulated industries.' },
-  { icon: 'HLTH', title: 'Healthcare & Wellness', desc: 'Patient education articles, provider profiles, and condition-specific content that ranks locally and establishes clinical authority.' },
-  { icon: 'MFG', title: 'Manufacturing & B2B', desc: 'Technical whitepapers, case studies, spec sheets, and industry reports that support long sales cycles and complex buyer committees.' },
+  { icon: 'SaaS', title: 'SaaS & Technology', desc: 'Product-led content, comparison guides, integration tutorials, and developer docs that drive organic sign-ups while reducing support ticket volume at the same time.' },
+  { icon: 'FIN', title: 'Finance & Insurance', desc: 'Compliance-aware educational content, calculators, and guides that build trust and generate qualified leads even within heavily regulated industries.' },
+  { icon: 'HLTH', title: 'Healthcare & Wellness', desc: 'Patient education articles, provider profiles, and condition-specific content that rank locally while establishing genuine clinical authority.' },
+  { icon: 'MFG', title: 'Manufacturing & B2B', desc: 'Technical whitepapers, case studies, spec sheets, and industry reports built to support long sales cycles and complex buyer committees.' },
 ];
 
 const process = [
-  { num: '01', title: 'Research & Audit', desc: 'Keyword research, competitor content analysis, gap identification, and audience intent mapping.' },
-  { num: '02', title: 'Strategy & Calendar', desc: 'Content pillars, editorial calendar, format mix, and distribution plan aligned to funnel stages.' },
-  { num: '03', title: 'Create & Optimize', desc: 'Writing, editing, SEO optimization, visual assets, and internal linking — publication-ready quality.' },
-  { num: '04', title: 'Publish & Distribute', desc: 'CMS publishing, social promotion, email inclusion, and syndication to relevant channels.' },
-  { num: '05', title: 'Measure & Refresh', desc: 'Traffic, rankings, and conversion tracking — content refreshes and updates to maintain performance.' },
+  { num: '01', title: 'Research & Audit', desc: 'Keyword research, competitor content analysis, gap identification, and audience intent mapping are settled before a single word is written.' },
+  { num: '02', title: 'Strategy & Calendar', desc: 'Content pillars, an editorial calendar, a format mix, and a distribution plan aligned to each stage of the funnel.' },
+  { num: '03', title: 'Create & Optimize', desc: 'Writing, editing, SEO optimization, visual assets, and internal linking are all brought to publication-ready quality before anything goes live.' },
+  { num: '04', title: 'Publish & Distribute', desc: 'CMS publishing, social promotion, email inclusion, and syndication across relevant channels, since great content still needs a push to be seen.' },
+  { num: '05', title: 'Measure & Refresh', desc: 'Traffic, rankings, and conversion tracking inform ongoing content refreshes and updates that keep older pieces performing well into the future.' },
 ];
 
 const channels = ['Blog Articles', 'Whitepapers', 'Case Studies', 'Email Newsletters', 'Video Scripts', 'Infographics', 'Podcast Show Notes', 'Landing Page Copy', 'Social Snippets', 'Press Releases'];
 
 const faqs = [
-  { q: 'How is content marketing different from SEO?', a: 'SEO focuses on ranking in search engines. Content marketing is broader — it includes SEO content but also email newsletters, whitepapers, video scripts, and social content. We integrate both: every piece is strategically written and search-optimized.' },
-  { q: 'How long before content drives organic traffic?', a: 'SEO content typically takes 3–6 months to rank and compound. Pillar pages and competitive keywords may take longer. We track early signals — impressions, indexation, and long-tail rankings — while building toward sustained traffic growth.' },
-  { q: 'Do you write content in our brand voice?', a: 'Yes. We develop voice guidelines during onboarding and every piece goes through your approval process. We study your existing content, sales materials, and customer language to match tone, terminology, and personality.' },
-  { q: 'What types of content do you produce?', a: 'Blog posts, whitepapers, ebooks, case studies, email newsletters, video scripts, landing page copy, social snippets, and press releases. We recommend formats based on your audience, funnel stage, and distribution channels.' },
-  { q: 'How do you measure content marketing ROI?', a: 'We track organic traffic, keyword rankings, time on page, lead form submissions, content-attributed pipeline, and assisted conversions. Monthly reports connect content performance to business outcomes — not just pageviews.' },
+  { q: 'What does content marketing services typically include?', a: 'Blog writing, website copy, case studies, email content, and a content calendar strategically aligned to your audience\'s search intent and buying journey.' },
+  { q: 'How is a content marketing agency different from hiring a content writer freelancer?', a: 'An agency brings strategy, SEO research, and a full editorial process, while a freelancer typically just produces individual pieces without the broader strategic planning.' },
+  { q: 'How often should a content marketing company publish new content?', a: 'Consistency matters more than volume. Most brands see strong results publishing 2 to 4 quality pieces per month rather than daily low-effort content.' },
+  { q: 'Does content marketing actually drive measurable business results?', a: 'Yes, particularly over time. Strong content builds organic search rankings, generates leads, and establishes authority, compounding in value the longer it stays live.' },
+  { q: 'Can content writer services include technical or industry-specific topics?', a: 'Yes. Most professional content marketing agency teams work with subject matter experts or conduct deep research to write accurately on specialized or technical topics.' },
 ];
 
 export default function ContentMarketing() {
@@ -53,7 +53,7 @@ export default function ContentMarketing() {
     <div ref={pageRef} className="mkt-page">
       <Head>
         <title head-key="title">Content Marketing | LogicWorks — SEO Content That Ranks & Converts</title>
-        <meta head-key="description" name="description" content="LogicWorks delivers content marketing — SEO blog writing, whitepapers, video scripts, and editorial strategy that drives organic traffic and generates qualified leads." />
+        <meta head-key="description" name="description" content="Our content marketing services produce SEO-optimized work that ranks, resonates, and converts, spanning blog posts, whitepapers, video scripts, and editorial strategy that compounds into organic growth over time." />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/content-marketing" />
       </Head>
 
@@ -63,7 +63,7 @@ export default function ContentMarketing() {
         <div className="con mkt-hero-inner">
           <div className="mkt-eyebrow">Social Media</div>
           <h1 className="mkt-hero-title" id="cm-title">CONTENT<br /><span>MARKETING</span></h1>
-          <p className="mkt-hero-sub">SEO-optimized content that ranks, resonates, and converts — blog posts, whitepapers, video scripts, and editorial strategy that compounds into organic growth.</p>
+          <p className="mkt-hero-sub">Our content marketing services produce SEO-optimized work that ranks, resonates, and converts, spanning blog posts, whitepapers, video scripts, and editorial strategy that compounds into organic growth over time.</p>
           <div className="mkt-hero-actions">
             <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Start Your Content Strategy{arrowIcon}</Link>
             <Link href="/seo-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>SEO Services</Link>
@@ -90,8 +90,8 @@ export default function ContentMarketing() {
             <div className="reveal-l">
               <div className="sec-label">The Opportunity</div>
               <h2 className="sec-title">CONTENT COMPOUNDS.<br /><em>ADS DO NOT</em></h2>
-              <p className="sec-desc" style={{ marginBottom: '20px' }}>Paid ads stop working the moment you stop paying. Content marketing builds an asset library that ranks, generates leads, and establishes authority for years. Every article, guide, and whitepaper is a permanent salesperson working 24/7 — attracting buyers who are actively searching for what you sell.</p>
-              <div className="mkt-highlight-box"><p>Companies with active content marketing strategies generate 3x more leads at 62% lower cost than those relying solely on outbound and paid channels.</p></div>
+              <p className="sec-desc" style={{ marginBottom: '20px' }}>Paid ads stop working the moment you stop paying for them. Content marketing, however, builds an asset library that keeps ranking, generating leads, and establishing authority for years afterward. Every article, guide, and whitepaper effectively becomes a permanent salesperson working around the clock, attracting buyers who are already searching for exactly what you sell.</p>
+              <div className="mkt-highlight-box"><p>Companies with active content marketing strategies therefore generate roughly 3 times more leads at 62% lower cost than those relying solely on outbound and paid channels.</p></div>
               <div className="mkt-check-list">
                 {['Keyword-driven content strategy', 'SEO-optimized long-form writing', 'Lead magnets and gated assets', 'Content distribution and repurposing'].map((item) => (
                   <div key={item} className="mkt-check-item">{checkIcon}{item}</div>
@@ -102,10 +102,10 @@ export default function ContentMarketing() {
             <div className="reveal-r mkt-results-panel">
               <div className="mkt-results-label">Expected Results</div>
               {[
-                { icon: '↑', title: '312% Traffic Growth', desc: 'Strategic content compounds into sustained organic traffic increases.' },
-                { icon: '↓', title: '67% Lower CPL', desc: 'Content-generated leads cost far less than paid acquisition.' },
-                { icon: '◎', title: '3.4x Content ROI', desc: 'Every piece continues generating value long after publication.' },
-                { icon: '⏱', title: 'Authority Building', desc: 'Consistent publishing establishes your brand as the industry expert.' },
+                { icon: '↑', title: 'Traffic Growth', desc: '312% increase through strategic, compounding content' },
+                { icon: '↓', title: 'Lower CPL', desc: '67% reduction versus paid acquisition alone' },
+                { icon: '◎', title: 'Content ROI', desc: '3.4x, since every piece keeps generating value after publication' },
+                { icon: '⏱', title: 'Authority Building', desc: 'Consistent publishing establishes your brand as the industry expert' },
               ].map((o) => (
                 <div key={o.title} className="mkt-results-item">
                   <div className="mkt-results-icon">{o.icon}</div>
@@ -122,7 +122,7 @@ export default function ContentMarketing() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Capabilities</div>
             <h2 className="sec-title">CONTENT THAT<br /><em>RANKS AND CONVERTS</em></h2>
-            <p className="sec-desc">Six content marketing capabilities — from strategy and SEO writing to distribution and performance tracking.</p>
+            <p className="sec-desc">As a content marketing agency, we organize our work around six capabilities, from strategy and SEO writing through distribution and performance tracking.</p>
           </div>
           <div className="mkt-solution-grid">
             {solutions.map((s, i) => (
@@ -141,7 +141,7 @@ export default function ContentMarketing() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Use Cases</div>
             <h2 className="sec-title">CONTENT FOR<br /><em>EVERY INDUSTRY</em></h2>
-            <p className="sec-desc">SaaS, finance, healthcare, and manufacturing — industry-specific content strategies that drive qualified organic leads.</p>
+            <p className="sec-desc">Whether the audience is SaaS buyers, finance professionals, healthcare patients, or manufacturing procurement teams, our content writer services adapt strategy to fit the industry, not the other way around.</p>
           </div>
           <div className="mkt-use-grid">
             {useCases.map((u) => (
@@ -159,7 +159,7 @@ export default function ContentMarketing() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Our Process</div>
             <h2 className="sec-title">FROM STRATEGY TO<br /><em>COMPOUNDING GROWTH</em></h2>
-            <p className="sec-desc">A proven five-phase content marketing process — research, creation, distribution, and continuous optimization.</p>
+            <p className="sec-desc">A proven five-phase process covering research, creation, distribution, and continuous optimization.</p>
           </div>
           <div className="mkt-process-track">
             {process.map((s) => (
@@ -186,8 +186,8 @@ export default function ContentMarketing() {
         </div>
       </section>
 
-      <MarketingFaq id="cm-faq" title={<>Content Marketing<br /><em>QUESTIONS ANSWERED</em></>} desc="What marketing leaders ask before investing in a content marketing program." faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
-      <MarketingCta eyebrow="Content That Works While You Sleep" title={<>RANK ORGANICALLY.<br /><em>CONVERT CONSISTENTLY</em>.</>} sub="Book a free content audit and get a keyword-driven editorial strategy tailored to your market." btnText="Start Your Content Strategy" note="FREE CONTENT AUDIT · KEYWORD STRATEGY · NO COMMITMENT" />
+      <MarketingFaq id="cm-faq" title={<>FAQs</>} desc="" faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
+      <MarketingCta eyebrow="Content That Works While You Sleep" title={<>RANK ORGANICALLY.<br /><em>CONVERT CONSISTENTLY</em>.</>} sub="Book a free content audit and get a keyword-driven editorial strategy tailored to your market." btnText="Start Your Content Strategy" note="" />
     </div>
   );
 }

@@ -11,37 +11,106 @@ const metrics = [
 ];
 
 const solutions = [
-  { title: 'Paid Social Campaign Strategy', desc: 'Full-funnel campaign architecture across Meta, TikTok, LinkedIn, and YouTube — prospecting, retargeting, and lookalike audiences mapped to your buyer journey.' },
-  { title: 'Creative Production & Testing', desc: 'Scroll-stopping ad creative — static, carousel, Reels, and UGC-style video — with structured A/B testing to find winners fast and scale spend confidently.' },
-  { title: 'Audience Targeting & Segmentation', desc: 'Interest, behavioral, and custom audience builds from CRM data, website visitors, and engagement signals — precision targeting that reduces wasted ad spend.' },
-  { title: 'Conversion Tracking & Attribution', desc: 'Meta CAPI, GA4, UTM governance, and offline conversion imports — full visibility from impression to revenue, not vanity metrics.' },
-  { title: 'Influencer & Partnership Campaigns', desc: 'Micro and macro influencer sourcing, brief development, whitelisting, and performance tracking — authentic reach that converts better than polished brand ads.' },
-  { title: 'Social Commerce & Shop Setup', desc: 'Instagram Shop, Facebook Catalog, and TikTok Shop integration — shoppable posts and product tagging that shorten the path from discovery to purchase.' },
+  {
+    title: 'Paid Social Campaign Strategy',
+    desc: 'Full-funnel campaign architecture across Meta, TikTok, LinkedIn, and YouTube, with prospecting, retargeting, and lookalike audiences mapped directly to your buyer journey.',
+  },
+  {
+    title: 'Creative Production & Testing',
+    desc: 'Scroll-stopping ad creative, including static, carousel, Reels, and UGC-style video, paired with structured A/B testing that finds winners fast so spend scales with confidence.',
+  },
+  {
+    title: 'Audience Targeting & Segmentation',
+    desc: 'Interest, behavioral, and custom audience builds drawn from CRM data, website visitors, and engagement signals, all aimed at precision targeting that cuts down on wasted spend.',
+  },
+  {
+    title: 'Conversion Tracking & Attribution',
+    desc: 'Meta CAPI, GA4, UTM governance, and offline conversion imports give you full visibility from impression to revenue, rather than another report full of vanity metrics.',
+  },
+  {
+    title: 'Influencer & Partnership Campaigns',
+    desc: 'Micro and macro influencer sourcing, brief development, whitelisting, and performance tracking, since authentic reach tends to convert better than a polished brand ad ever could.',
+  },
+  {
+    title: 'Social Commerce & Shop Setup',
+    desc: 'Instagram Shop, Facebook Catalog, and TikTok Shop integration, with shoppable posts and product tagging that shorten the path from discovery to purchase considerably.',
+  },
 ];
 
 const useCases = [
-  { icon: 'B2B', title: 'B2B Lead Generation', desc: 'LinkedIn and Meta lead gen campaigns with gated content, demo requests, and MQL scoring — filling pipeline for SaaS, agencies, and professional services.' },
-  { icon: 'DTC', title: 'E-Commerce & DTC Brands', desc: 'Prospecting and dynamic product retargeting that drives ROAS-positive sales — catalog ads, abandoned cart sequences, and seasonal promo bursts.' },
-  { icon: 'LOC', title: 'Local & Franchise Growth', desc: 'Geo-targeted campaigns for multi-location businesses — store visit optimization, local awareness, and franchise-level reporting dashboards.' },
-  { icon: 'EVT', title: 'Event & Launch Promotion', desc: 'Pre-launch buzz, ticket sales, and post-event retargeting — countdown creative, early-bird offers, and attendee lookalike expansion.' },
+  {
+    icon: 'B2B',
+    title: 'B2B Lead Generation',
+    desc: 'LinkedIn and Meta lead gen campaigns with gated content, demo requests, and MQL scoring fill the pipeline for SaaS companies, agencies, and professional services alike.',
+  },
+  {
+    icon: 'DTC',
+    title: 'E-Commerce & DTC Brands',
+    desc: 'Prospecting and dynamic product retargeting that drives ROAS-positive sales, supported by catalog ads, abandoned cart sequences, and seasonal promo bursts.',
+  },
+  {
+    icon: 'LOC',
+    title: 'Local & Franchise Growth',
+    desc: 'Geo-targeted campaigns built for multi-location businesses, including store visit optimization, local awareness, and franchise-level reporting dashboards.',
+  },
+  {
+    icon: 'EVT',
+    title: 'Event & Launch Promotion',
+    desc: 'Pre-launch buzz, ticket sales, and post-event retargeting, driven by countdown creative, early-bird offers, and attendee lookalike expansion.',
+  },
 ];
 
 const process = [
-  { num: '01', title: 'Audit & Strategy', desc: 'Competitive analysis, account audit, audience research, and funnel mapping with clear KPI targets.' },
-  { num: '02', title: 'Campaign Build', desc: 'Ad set structure, pixel/CAPI setup, creative production, and landing page alignment.' },
-  { num: '03', title: 'Launch & Test', desc: 'Controlled budget ramp, creative A/B tests, and audience experiments with daily monitoring.' },
-  { num: '04', title: 'Optimize & Scale', desc: 'Kill underperformers, scale winners, refresh creative, and expand to new platforms.' },
-  { num: '05', title: 'Report & Iterate', desc: 'Weekly performance reports, attribution reviews, and quarterly strategy recalibration.' },
+  {
+    num: '01',
+    title: 'Audit & Strategy',
+    desc: 'Competitive analysis, account audit, audience research, and funnel mapping, all anchored to clear KPI targets from the outset.',
+  },
+  {
+    num: '02',
+    title: 'Campaign Build',
+    desc: 'Ad set structure, pixel and CAPI setup, creative production, and landing page alignment are built before a single dollar of spend goes live.',
+  },
+  {
+    num: '03',
+    title: 'Launch & Test',
+    desc: 'A controlled budget ramp alongside creative A/B tests and audience experiments, with daily monitoring catching issues before they become expensive.',
+  },
+  {
+    num: '04',
+    title: 'Optimize & Scale',
+    desc: 'Underperformers get killed quickly, winners get scaled deliberately, creative gets refreshed regularly, and successful campaigns expand to new platforms.',
+  },
+  {
+    num: '05',
+    title: 'Report & Iterate',
+    desc: 'Weekly performance reports, attribution reviews, and a quarterly strategy recalibration keep the account improving rather than coasting.',
+  },
 ];
 
 const channels = ['Meta Ads', 'Instagram', 'TikTok Ads', 'LinkedIn Ads', 'YouTube Ads', 'Pinterest Ads', 'Snapchat Ads', 'X (Twitter) Ads', 'Reddit Ads', 'Spotify Ads'];
 
 const faqs = [
-  { q: 'Which social platforms should we advertise on?', a: 'It depends on your audience and offer. B2B typically wins on LinkedIn and Meta. DTC and lifestyle brands excel on Instagram, TikTok, and Pinterest. We recommend platforms based on where your buyers actually spend time — not trends.' },
-  { q: 'What budget do we need to see results?', a: 'Minimum viable spend varies by platform and industry. Most clients start at $3,000–$5,000/month in ad spend plus management fees. We scale budgets once campaigns hit target CPA or ROAS — never before data supports it.' },
-  { q: 'Do you create the ad creative or do we provide assets?', a: 'Both. We produce scroll-stopping creative in-house — static, video, and UGC-style — and also optimize assets you provide. Every campaign includes structured creative testing to find what resonates.' },
-  { q: 'How do you measure campaign success?', a: 'We track beyond impressions and clicks — cost per lead, cost per acquisition, ROAS, and pipeline contribution. Conversion tracking via Meta CAPI, GA4, and CRM integration ensures reported numbers match real business outcomes.' },
-  { q: 'How long before we see results?', a: 'Initial learning phase is 2–4 weeks as platforms optimize delivery. Most clients see meaningful performance data by week 3 and scalable results by month 2. Complex B2B funnels may take longer due to longer sales cycles.' },
+  {
+    q: 'What does a social media marketing company actually manage day to day?',
+    a: 'Content calendars, post creation, community engagement, paid social campaigns, and monthly performance reporting, all tailored to the platforms where your audience actually spends time.',
+  },
+  {
+    q: 'How long before social media marketing services show real results?',
+    a: 'Organic growth typically builds over 3 to 6 months, while paid social campaigns can show measurable engagement and leads within the first few weeks.',
+  },
+  {
+    q: 'Which platforms does a social media marketing agency typically recommend?',
+    a: 'It depends on your audience. B2B brands often lean into LinkedIn, while consumer brands see stronger results on Instagram, TikTok, and Facebook.',
+  },
+  {
+    q: 'Can social media marketing services include paid ad management too?',
+    a: 'Yes. Most engagements combine organic content strategy with paid social advertising, since the two work best when run together rather than separately.',
+  },
+  {
+    q: 'How is success measured by a social media marketing company?',
+    a: 'Through engagement rate, follower growth, click-through rate, and ultimately leads or sales generated, not just vanity metrics like likes.',
+  },
 ];
 
 export default function SocialMediaMarketing() {
@@ -53,7 +122,11 @@ export default function SocialMediaMarketing() {
     <div ref={pageRef} className="mkt-page">
       <Head>
         <title head-key="title">Social Media Marketing | LogicWorks — Paid Social Campaigns That Convert</title>
-        <meta head-key="description" name="description" content="LogicWorks delivers social media marketing — paid campaigns on Meta, TikTok, LinkedIn, and YouTube with creative testing, audience targeting, and ROAS-focused optimization." />
+        <meta
+          head-key="description"
+          name="description"
+          content="As a social media marketing company built around revenue rather than vanity metrics, we run paid campaigns engineered to stop the scroll, capture qualified leads, and drive measurable pipeline across Meta, TikTok, LinkedIn, and YouTube."
+        />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/social-media-marketing" />
       </Head>
 
@@ -63,10 +136,17 @@ export default function SocialMediaMarketing() {
         <div className="con mkt-hero-inner">
           <div className="mkt-eyebrow">Social Media</div>
           <h1 className="mkt-hero-title" id="smm-title">SOCIAL MEDIA<br /><span>MARKETING</span></h1>
-          <p className="mkt-hero-sub">Paid social campaigns engineered to stop the scroll, capture qualified leads, and drive measurable revenue — across Meta, TikTok, LinkedIn, and YouTube.</p>
+          <p className="mkt-hero-sub">
+            As a social media marketing company built around revenue rather than vanity metrics, we run paid campaigns engineered to stop the scroll, capture qualified leads, and drive measurable pipeline across Meta, TikTok, LinkedIn, and YouTube.
+          </p>
           <div className="mkt-hero-actions">
-            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Launch Your Campaigns{arrowIcon}</Link>
-            <Link href="/digital-marketing" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All Marketing Services</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
+              Launch Your Campaigns
+              {arrowIcon}
+            </Link>
+            <Link href="/digital-marketing" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>
+              All Marketing Services
+            </Link>
           </div>
         </div>
       </section>
@@ -90,26 +170,44 @@ export default function SocialMediaMarketing() {
             <div className="reveal-l">
               <div className="sec-label">The Opportunity</div>
               <h2 className="sec-title">ORGANIC REACH<br /><em>IS NOT ENOUGH</em></h2>
-              <p className="sec-desc" style={{ marginBottom: '20px' }}>Algorithm changes killed organic reach. Your competitors are buying attention on every feed — and converting it into pipeline. Paid social marketing puts your brand in front of buyers who match your ideal customer profile, with creative and targeting precision that organic posts cannot match.</p>
-              <div className="mkt-highlight-box"><p>Businesses running optimized paid social campaigns see 4x higher conversion rates than organic-only strategies — with full attribution from click to close.</p></div>
+              <p className="sec-desc" style={{ marginBottom: '20px' }}>
+                Algorithm changes have quietly buried organic reach for nearly every brand. Meanwhile, your competitors are buying attention on every feed and turning it directly into the pipeline. Our social media marketing services put your brand in front of buyers who actually match your ideal customer profile, with a level of creative and targeting precision that organic posts simply cannot reach anymore.
+              </p>
+              <div className="mkt-highlight-box">
+                <p>
+                  Businesses running optimized paid social campaigns, therefore, see roughly 4 times higher conversion rates than organic-only strategies, with full attribution tracked from the first click all the way to a closed deal.
+                </p>
+              </div>
               <div className="mkt-check-list">
-                {['Full-funnel campaign architecture', 'Creative production with A/B testing', 'Advanced audience segmentation', 'Conversion tracking and ROAS reporting'].map((item) => (
+                {[
+                  'Full-funnel campaign architecture',
+                  'Creative production with A/B testing',
+                  'Advanced audience segmentation',
+                  'Conversion tracking and ROAS reporting',
+                ].map((item) => (
                   <div key={item} className="mkt-check-item">{checkIcon}{item}</div>
                 ))}
               </div>
-              <div className="mkt-tag-row">{['Meta Ads', 'TikTok', 'LinkedIn', 'YouTube', 'Retargeting'].map((t) => <span key={t} className="mkt-tag">{t}</span>)}</div>
+              <div className="mkt-tag-row">
+                {['Meta Ads', 'TikTok', 'LinkedIn', 'YouTube', 'Retargeting'].map((t) => (
+                  <span key={t} className="mkt-tag">{t}</span>
+                ))}
+              </div>
             </div>
             <div className="reveal-r mkt-results-panel">
               <div className="mkt-results-label">Expected Results</div>
               {[
-                { icon: '↑', title: '4.2x Average ROAS', desc: 'Clients consistently achieve strong return on ad spend across platforms.' },
-                { icon: '↓', title: '68% Lower CPL', desc: 'Precision targeting and creative testing cut cost per lead dramatically.' },
-                { icon: '◎', title: 'Full-Funnel Visibility', desc: 'Track every touchpoint from impression to revenue in your CRM.' },
-                { icon: '⚡', title: 'Scalable Growth', desc: 'Proven campaigns scaled with confidence — not guesswork.' },
+                { icon: '↑', title: 'Average ROAS', desc: '4.2x return on ad spend across platforms' },
+                { icon: '↓', title: 'Lower CPL', desc: '68% reduction through precision targeting and creative testing' },
+                { icon: '◎', title: 'Full-Funnel Visibility', desc: 'Every touchpoint tracked from impression to revenue in your CRM' },
+                { icon: '⚡', title: 'Scalable Growth', desc: 'Proven campaigns scaled with confidence, not guesswork' },
               ].map((o) => (
                 <div key={o.title} className="mkt-results-item">
                   <div className="mkt-results-icon">{o.icon}</div>
-                  <div className="mkt-results-text"><strong>{o.title}</strong><span>{o.desc}</span></div>
+                  <div className="mkt-results-text">
+                    <strong>{o.title}</strong>
+                    <span>{o.desc}</span>
+                  </div>
                 </div>
               ))}
             </div>
@@ -122,7 +220,9 @@ export default function SocialMediaMarketing() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Capabilities</div>
             <h2 className="sec-title">CAMPAIGNS THAT<br /><em>CONVERT AT SCALE</em></h2>
-            <p className="sec-desc">Six core paid social capabilities — from strategy and creative to tracking and social commerce.</p>
+            <p className="sec-desc">
+              As a social media marketing agency, we approach paid social through six core capabilities, spanning strategy and creative all the way through tracking and social commerce.
+            </p>
           </div>
           <div className="mkt-solution-grid">
             {solutions.map((s, i) => (
@@ -141,13 +241,18 @@ export default function SocialMediaMarketing() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Use Cases</div>
             <h2 className="sec-title">SOCIAL ADS FOR<br /><em>EVERY BUSINESS MODEL</em></h2>
-            <p className="sec-desc">B2B pipeline, e-commerce sales, local growth, and event promotion — proven playbooks with measurable ROI.</p>
+            <p className="sec-desc">
+              Whether the goal is a B2B pipeline, e-commerce sales, local growth, or event promotion, our social media marketing services follow proven playbooks built around measurable ROI.
+            </p>
           </div>
           <div className="mkt-use-grid">
             {useCases.map((u) => (
               <article key={u.title} className="mkt-use-card">
                 <div className="mkt-use-icon">{u.icon}</div>
-                <div><h3 className="mkt-use-title">{u.title}</h3><p className="mkt-use-desc">{u.desc}</p></div>
+                <div>
+                  <h3 className="mkt-use-title">{u.title}</h3>
+                  <p className="mkt-use-desc">{u.desc}</p>
+                </div>
               </article>
             ))}
           </div>
@@ -159,7 +264,9 @@ export default function SocialMediaMarketing() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Our Process</div>
             <h2 className="sec-title">FROM STRATEGY TO<br /><em>SCALABLE RESULTS</em></h2>
-            <p className="sec-desc">A proven five-phase approach to launching, optimizing, and scaling paid social campaigns.</p>
+            <p className="sec-desc">
+              A proven five-phase approach to launching, optimizing, and scaling paid social campaigns over time.
+            </p>
           </div>
           <div className="mkt-process-track">
             {process.map((s) => (
@@ -186,8 +293,21 @@ export default function SocialMediaMarketing() {
         </div>
       </section>
 
-      <MarketingFaq id="smm-faq" title={<>Social Media Marketing<br /><em>QUESTIONS ANSWERED</em></>} desc="What marketing leaders ask before investing in paid social campaigns." faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
-      <MarketingCta eyebrow="Stop Leaving Leads on the Table" title={<>TURN SCROLLS INTO<br /><em>SALES PIPELINE</em>.</>} sub="Book a free social media audit and discover your highest-ROI campaign opportunities." btnText="Launch Your Campaigns" note="FREE ACCOUNT AUDIT · ROAS PROJECTION · NO COMMITMENT" />
+      <MarketingFaq
+        id="smm-faq"
+        title={<>FAQs</>}
+        desc=""
+        faqs={faqs}
+        openFaq={openFaq}
+        setOpenFaq={setOpenFaq}
+      />
+      <MarketingCta
+        eyebrow="Stop Leaving Leads on the Table"
+        title={<>TURN SCROLLS INTO<br /><em>A SALES PIPELINE</em>.</>}
+        sub="Book a free social media audit and discover your highest-ROI campaign opportunities."
+        btnText="Launch Your Campaigns"
+        note="FREE ACCOUNT AUDIT · ROAS PROJECTION · NO COMMITMENT"
+      />
     </div>
   );
 }

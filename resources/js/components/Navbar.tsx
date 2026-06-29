@@ -4,6 +4,7 @@ import { navLinks } from '@/data/nav';
 import type { NavLink as NavLinkType } from '@/types';
 import logo from '@/assets/images/logicworks-logo.png';
 
+
 const IconChevron = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
     <polyline points="6 9 12 15 18 9" />
@@ -180,7 +181,7 @@ export default function Navbar() {
           </ul>
           <div className="nav-right">
             <div className="nav-phone" aria-label="Call us">
-              <IconPhone />+1 (800) LOGIC-WX
+              <IconPhone />+1234567890
             </div>
             <Link href="/contact" className="btn btn-primary nav-cta-btn" onClick={closeAllMenus}>
               Get Free Quote <IconArrow />

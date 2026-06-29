@@ -9,27 +9,87 @@ gsap.registerPlugin(ScrollTrigger);
 const HERO_COLOR = '#1a4bdb';
 
 const capabilities = [
-  { badge: 'React', title: 'React & Next.js Frontends', desc: 'Server components, streaming SSR, and ISR for blazing-fast UX. Component-driven architecture with design systems that scale across products and teams.' },
-  { badge: 'SaaS', title: 'Multi-Tenant SaaS Architecture', desc: 'Tenant isolation, subscription billing, usage metering, and role-based access — built to onboard thousands of customers without re-architecting.' },
-  { badge: 'API', title: 'Robust API Layer', desc: 'RESTful and GraphQL APIs with versioning, rate limiting, and auto-generated documentation. Clean contracts between frontend, mobile, and third-party integrations.' },
-  { badge: 'Real-time', title: 'Real-Time Features', desc: 'WebSockets, server-sent events, and live dashboards for chat, notifications, collaborative editing, and operational monitoring.' },
-  { badge: 'Cloud', title: 'Cloud-Native Infrastructure', desc: 'Auto-scaling on AWS, GCP, or Azure with containerized deployments, CDN edge caching, and 99.9%+ uptime SLAs baked into the architecture.' },
-  { badge: 'DevOps', title: 'CI/CD & DevOps Pipeline', desc: 'Automated testing, staging environments, and zero-downtime deployments. GitHub Actions, Docker, and infrastructure-as-code from day one.' },
+  {
+    badge: 'React',
+    title: 'React & Next.js frontends',
+    desc: 'Server components, streaming SSR, and ISR power an interface that feels instant. Component-driven design systems scale cleanly across products and teams.',
+  },
+  {
+    badge: 'SaaS',
+    title: 'SaaS',
+    desc: 'Tenant isolation, subscription billing, usage metering, and role-based access, built so you can onboard your thousandth customer without re-architecting anything.',
+  },
+  {
+    badge: 'API',
+    title: 'API',
+    desc: 'RESTful and GraphQL APIs with proper versioning, rate limiting, and auto-generated docs. Clean contracts connect your frontend, mobile clients, and third parties without friction.',
+  },
+  {
+    badge: 'Real-time',
+    title: 'Real-Time Features',
+    desc: 'WebSockets, server-sent events, and live dashboards that power chat, notifications, collaborative editing, and operational monitoring as they happen.',
+  },
+  {
+    badge: 'Cloud',
+    title: 'Cloud Infrastructure',
+    desc: 'Auto-scaling across AWS, GCP, or Azure with containerized deployments, CDN edge caching, and 99.9%+ uptime built directly into the architecture.',
+  },
+  {
+    badge: 'DevOps',
+    title: 'DevOps',
+    desc: 'Automated testing, staging environments, and zero-downtime deploys. GitHub Actions, Docker, and infrastructure-as-code from day one, not bolted on later.',
+  },
 ];
 
 const appTypes = [
-  { icon: '01', title: 'SaaS Products', desc: 'Subscription-based platforms with onboarding flows, billing integration, admin dashboards, and analytics — built to acquire and retain users at scale.' },
-  { icon: '02', title: 'Internal Business Tools', desc: 'Custom CRMs, inventory systems, project trackers, and workflow tools that replace spreadsheets and eliminate operational friction.' },
-  { icon: '03', title: 'Data Dashboards', desc: 'Real-time KPI dashboards, reporting portals, and BI interfaces that turn raw data into actionable intelligence for decision-makers.' },
-  { icon: '04', title: 'Marketplaces & Platforms', desc: 'Two-sided marketplaces with vendor onboarding, payments, reviews, and search — engineered for liquidity and trust at scale.' },
+  {
+    icon: '01',
+    title: 'SaaS Products',
+    desc: 'Subscription platforms with onboarding flows, billing integration, admin dashboards, and analytics, engineered to acquire and retain users at real scale.',
+  },
+  {
+    icon: '02',
+    title: 'Internal Business Tools',
+    desc: 'Custom CRMs, inventory systems, project trackers, and workflow software that replace spreadsheet chaos and remove operational friction entirely.',
+  },
+  {
+    icon: '03',
+    title: 'Data Dashboards',
+    desc: 'Real-time KPI dashboards, reporting portals, and BI interfaces that turn raw data into decisions your leadership team can actually act on.',
+  },
+  {
+    icon: '04',
+    title: 'Marketplaces & Platforms',
+    desc: 'Two-sided marketplaces with vendor onboarding, payments, reviews, and search, engineered specifically for liquidity and trust at scale.',
+  },
 ];
 
 const processSteps = [
-  { num: '01', title: 'Product Discovery', desc: 'User stories, competitive analysis, technical feasibility, and MVP scope definition aligned to business goals.' },
-  { num: '02', title: 'UX & Architecture', desc: 'Wireframes, system design, database schema, API contracts, and scalability planning before a single line of code.' },
-  { num: '03', title: 'Agile Development', desc: 'Two-week sprints with demoable increments, automated testing, and continuous client feedback loops.' },
-  { num: '04', title: 'QA & Hardening', desc: 'Load testing, security audits, cross-browser QA, and performance optimization to production standards.' },
-  { num: '05', title: 'Launch & Iterate', desc: 'Production deployment, monitoring setup, user analytics, and roadmap-driven feature releases post-launch.' },
+  {
+    num: '01',
+    title: 'Product Discovery',
+    desc: 'User stories, competitive analysis, technical feasibility, and MVP scope defined against your actual business goals.',
+  },
+  {
+    num: '02',
+    title: 'UX & Architecture',
+    desc: 'Wireframes, system design, database schema, API contracts, and scalability planning, all settled before a single line of code gets written.',
+  },
+  {
+    num: '03',
+    title: 'Agile Development',
+    desc: 'Two-week sprints with demoable increments, automated testing, and a continuous feedback loop with your team.',
+  },
+  {
+    num: '04',
+    title: 'QA & Hardening',
+    desc: 'Load testing, security audits, cross-browser QA, and performance tuning to genuine production standards.',
+  },
+  {
+    num: '05',
+    title: 'Launch & Iterate',
+    desc: 'Production deployment, monitoring setup, user analytics, and feature releases driven by an actual roadmap, not guesswork.',
+  },
 ];
 
 const techStack = [
@@ -38,11 +98,26 @@ const techStack = [
 ];
 
 const faqs = [
-  { q: 'How long does it take to build a custom web application?', a: 'An MVP typically ships in 8–12 weeks. Full-featured SaaS platforms range from 4–7 months depending on complexity, integrations, and user roles. We deliver a detailed timeline after the discovery phase.' },
-  { q: 'Do you build SaaS products from scratch?', a: 'Yes. We architect and build multi-tenant SaaS platforms including authentication, subscription billing (Stripe/Paddle), admin panels, and analytics — everything needed to launch and scale a software product.' },
-  { q: 'Can you take over an existing codebase?', a: 'Absolutely. We perform a technical audit, identify debt and bottlenecks, and either refactor incrementally or rebuild critical modules while keeping the product live and stable.' },
-  { q: 'What tech stack do you recommend?', a: 'We default to React/Next.js + Node.js + PostgreSQL for most projects — proven, hireable, and scalable. We adapt based on your requirements, team, and existing infrastructure.' },
-  { q: 'Do you provide post-launch support?', a: 'Yes. We offer retainer packages for bug fixes, feature development, performance monitoring, and security updates. Most product teams retain us as their long-term engineering partner.' },
+  {
+    q: 'How is a web app development company different from a generic software agency?',
+    a: 'A dedicated web app development company specializes in the architecture decisions that determine whether your product scales or collapses under its own growth, things like multi-tenancy, API design, and cloud infrastructure, rather than treating every project as a one-off build.',
+  },
+  {
+    q: 'What do web application development services typically include from start to finish?',
+    a: 'Comprehensive web application development services span product discovery, UX and system architecture, agile development sprints, QA and security hardening, and post-launch monitoring, covering the full lifecycle rather than just the coding phase.',
+  },
+  {
+    q: 'How long does it take a web app development agency to ship an MVP?',
+    a: 'Most MVPs reach the market in 8 to 12 weeks, depending on integration complexity and scope. A capable web app development agency scopes this clearly during discovery so there are no surprises mid-build.',
+  },
+  {
+    q: 'Can an existing application be rebuilt without losing all our user data?',
+    a: 'Yes. Data migration is a standard part of any serious rebuild, and our process includes dedicated migration planning specifically so legacy data, accounts, and history carry over cleanly into the new architecture.',
+  },
+  {
+    q: 'What happens after launch? Does support end once the app goes live?',
+    a: 'No. Post-launch monitoring, performance optimization, and roadmap-driven feature development continue well past launch day, since most of a product\'s real evolution happens after users start actually using it.',
+  },
 ];
 
 const checkIcon = (
@@ -85,7 +160,11 @@ export default function WebApps() {
     <div ref={pageRef} className="svc-page">
       <Head>
         <title head-key="title">Web Applications | LogicWorks — Custom SaaS & App Development</title>
-        <meta head-key="description" name="description" content="LogicWorks builds scalable web applications and SaaS platforms — React, Next.js, Node.js, cloud-native architecture, and full product engineering from MVP to enterprise scale." />
+        <meta
+          head-key="description"
+          name="description"
+          content="As a web app development company built for growth, we engineer SaaS platforms and custom applications on architecture designed to outlast your roadmap, not just your next funding round."
+        />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/web-apps" />
         <meta head-key="keywords" name="keywords" content="Web Applications" />
       </Head>
@@ -103,8 +182,7 @@ export default function WebApps() {
             <span className="inner-hero-label">Web Services</span>
             <h1 className="inner-hero-title" id="webapps-title">WEB<br />APPLICATIONS</h1>
             <p className="inner-hero-sub">
-              Scalable, high-performance SaaS platforms and custom web apps engineered for growth —
-              from MVP to millions of users, built on modern architecture that never needs a rewrite.
+              As a web app development company built for growth, we engineer SaaS platforms and custom applications on architecture designed to outlast your roadmap, not just your next funding round. From a scrappy MVP to a product carrying millions of users, nothing we ship needs a rewrite six months later.
             </p>
             <div className="svc-hero-actions">
               <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
@@ -127,21 +205,17 @@ export default function WebApps() {
               <div className="sec-label">Why Custom Web Apps</div>
               <h2 className="sec-title">SOFTWARE THAT<br /><em>SCALES WITH YOU</em></h2>
               <p className="sec-desc" style={{ marginBottom: '20px' }}>
-                Off-the-shelf tools force your business into someone else&apos;s workflow. Custom web applications
-                are built around how you actually operate — eliminating workarounds, reducing manual overhead,
-                and creating competitive advantages no competitor can copy.
+                Off-the-shelf software bends your business to fit its workflow, not the other way around. A properly engineered application removes the duct tape entirely, killing manual workarounds and building the kind of operational edge a competitor cannot just buy and install.
               </p>
               <p className="sec-desc">
-                LogicWorks engineers full-stack web applications from the ground up — product strategy,
-                UX design, backend architecture, and cloud deployment — so you launch faster and scale
-                without hitting technical ceilings.
+                Our web application development services cover the entire build from end to end: product strategy, UX, backend architecture, and cloud deployment, so you launch faster and never slam into a technical ceiling you didn&apos;t see coming.
               </p>
               <div className="svc-check-list">
                 {[
-                  'MVP to market in as little as 8 weeks',
-                  'Multi-tenant SaaS architecture out of the box',
-                  '99.9% uptime with auto-scaling cloud infrastructure',
-                  'Automated CI/CD pipelines for rapid, safe releases',
+                  'An MVP in the market in as little as 8 weeks',
+                  'Multi-tenant SaaS architecture from the first commit',
+                  '99.9% uptime backed by auto-scaling cloud infrastructure',
+                  'Automated CI/CD pipelines built for fast, safe releases',
                 ].map((item) => (
                   <div key={item} className="svc-check-item">{checkIcon}{item}</div>
                 ))}
@@ -198,7 +272,9 @@ export default function WebApps() {
           <div className="svc-sec-hd-c reveal">
             <div className="sec-label">Core Capabilities</div>
             <h2 className="sec-title">ENGINEERED FOR<br /><em>PERFORMANCE & SCALE</em></h2>
-            <p className="sec-desc">Full-stack expertise from database design to pixel-perfect UI — every layer optimized for speed, security, and maintainability.</p>
+            <p className="sec-desc">
+              Full-stack depth from the database schema up to the pixel, with every layer of our web app development agency workflow optimized for speed, security, and long-term maintainability.
+            </p>
           </div>
           <div className="svc-grid-3 svc-capabilities">
             {capabilities.map((cap) => (
@@ -218,7 +294,9 @@ export default function WebApps() {
           <div className="svc-sec-hd-c reveal">
             <div className="sec-label">Application Types</div>
             <h2 className="sec-title">APPS FOR<br /><em>EVERY BUSINESS MODEL</em></h2>
-            <p className="sec-desc">Whether you&apos;re launching a SaaS product or replacing legacy internal tools — we build the right application for your use case.</p>
+            <p className="sec-desc">
+              Whether you&apos;re launching a SaaS product or ripping out legacy internal tools, we build the application that actually fits your use case.
+            </p>
           </div>
           <div className="svc-grid-4">
             {appTypes.map((type) => (
@@ -238,7 +316,9 @@ export default function WebApps() {
           <div className="svc-sec-hd-c reveal">
             <div className="sec-label">Our Process</div>
             <h2 className="sec-title">FROM IDEA TO<br /><em>PRODUCTION IN 5 PHASES</em></h2>
-            <p className="sec-desc">Agile product development refined across 200+ web application launches.</p>
+            <p className="sec-desc">
+              Agile product development refined across more than 200 web application launches.
+            </p>
           </div>
           <div className="svc-process-grid">
             {processSteps.map((step) => (
@@ -272,9 +352,7 @@ export default function WebApps() {
       <section className="faq-sec svc-sec" aria-labelledby="webapps-faq-title">
         <div className="con">
           <div className="sec-hd-c reveal">
-            <div className="sec-label">FAQ</div>
-            <h2 className="sec-title" id="webapps-faq-title">WEB APP QUESTIONS<br /><em>ANSWERED</em></h2>
-            <p className="sec-desc">What founders and product teams ask before building a custom web application.</p>
+            <h2 className="sec-title" id="webapps-faq-title">FAQs</h2>
           </div>
           <div className="faq-list">
             {faqs.map((faq, index) => {
@@ -318,7 +396,9 @@ export default function WebApps() {
         <div className="con" style={{ position: 'relative', zIndex: 1 }}>
           <span className="cta-eyebrow">Ready to Build Your Product?</span>
           <h2 className="cta-title">YOUR APP IDEA DESERVES<br /><em>ELITE ENGINEERING</em>.</h2>
-          <p className="cta-sub">Get a free application architecture audit and a clear roadmap from MVP to scale — delivered within 48 hours.</p>
+          <p className="cta-sub">
+            Get a free application architecture audit and a clear roadmap from MVP to scale, delivered within 48 hours.
+          </p>
           <div className="cta-btns">
             <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>
               Get Free App Audit
@@ -326,7 +406,7 @@ export default function WebApps() {
             </Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
-          <p className="cta-note">FREE AUDIT · NO COMMITMENT · DELIVERED IN 48 HOURS</p>
+          {/* <p className="cta-note">FREE AUDIT · NO COMMITMENT · DELIVERED IN 48 HOURS</p> */}
         </div>
       </section>
     </div>

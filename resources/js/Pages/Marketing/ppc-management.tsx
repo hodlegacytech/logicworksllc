@@ -11,37 +11,115 @@ const metrics = [
 ];
 
 const solutions = [
-  { num: '01', title: 'Cross-Channel PPC Strategy', desc: 'Unified paid media roadmaps across Google, Microsoft, Meta, and programmatic — aligned to funnel stage, margin targets, and seasonality.' },
-  { num: '02', title: 'Account Structure & Audits', desc: 'Campaign architecture rebuilt for Quality Score, budget pacing, and clean attribution — eliminating wasted spend from legacy setups.' },
-  { num: '03', title: 'Bid & Budget Automation', desc: 'Smart bidding tuned with first-party data, conversion value rules, and dayparting that protects margin during peak and off-peak windows.' },
-  { num: '04', title: 'Creative & Ad Copy Testing', desc: 'RSA, PMax asset groups, and display creative tested on a structured cadence — winners scaled, losers cut within 72 hours.' },
-  { num: '05', title: 'Landing Page & CRO Alignment', desc: 'Message-matched post-click experiences built for conversion — because the best bid strategy fails on a weak landing page.' },
-  { num: '06', title: 'Reporting & Attribution', desc: 'Executive dashboards with GA4, offline conversion imports, and CRM pipeline tie-in — so finance and marketing agree on ROI.' },
+  {
+    num: '01',
+    title: 'Cross-Channel PPC Strategy',
+    desc: 'Unified paid media roadmaps across Google, Microsoft, Meta, and programmatic, all aligned to funnel stage, margin targets, and seasonality rather than being treated as separate silos.',
+  },
+  {
+    num: '02',
+    title: 'Account Structure & Audits',
+    desc: 'Campaign architecture was rebuilt for Quality Score, budget pacing, and clean attribution, which in turn eliminates the wasted spend that legacy account setups tend to accumulate.',
+  },
+  {
+    num: '03',
+    title: 'Bid & Budget Automation',
+    desc: 'Smart bidding tuned with first-party data, conversion value rules, and dayparting that protects margin during both peak and off-peak windows.',
+  },
+  {
+    num: '04',
+    title: 'Creative & Ad Copy Testing',
+    desc: 'RSA, PMax asset groups, and display creative tested on a structured cadence, with winners scaled and losers cut within 72 hours rather than left to linger.',
+  },
+  {
+    num: '05',
+    title: 'Landing Page & CRO Alignment',
+    desc: 'Message-matched post-click experiences built specifically for conversion, since even the best bid strategy fails quickly against a weak landing page.',
+  },
+  {
+    num: '06',
+    title: 'Reporting & Attribution',
+    desc: 'Executive dashboards combine GA4, offline conversion imports, and CRM pipeline tie-in, so finance and marketing finally agree on what ROI actually looks like',
+  },
 ];
 
 const useCases = [
-  { icon: 'B2B', title: 'B2B Lead Generation', desc: 'LinkedIn and Google Search campaigns with lead scoring integration — CPL targets met while sales receives qualified opportunities, not form spam.' },
-  { icon: 'DTC', title: 'E-Commerce & DTC', desc: 'Shopping, PMax, and catalog feeds optimized for ROAS and new-customer acquisition — with margin-aware bidding by SKU category.' },
-  { icon: 'LOC', title: 'Multi-Location Brands', desc: 'Geo-targeted campaigns per market with localized ad copy, call extensions, and store visit conversion tracking for franchise and retail networks.' },
-  { icon: 'SaaS', title: 'SaaS & Subscription', desc: 'Trial and demo signup funnels with LTV-based bidding, churn-aware audiences, and cohort reporting that connects ad spend to MRR.' },
+  {
+    icon: 'B2B',
+    title: 'B2B Lead Generation',
+    desc: 'LinkedIn and Google Search campaigns designed to attract decision-makers and high-intent prospects, with lead qualification systems that help sales teams focus on opportunities that are more likely to convert.',
+  },
+  {
+    icon: 'DTC',
+    title: 'E-Commerce & DTC',
+    desc: 'Shopping, Performance Max, and feed-driven campaigns built to increase revenue and customer acquisition, using profitability-focused bidding strategies across product categories.',
+  },
+  {
+    icon: 'LOC',
+    title: 'Multi-Location Brands',
+    desc: 'Market-specific campaigns with localized messaging, location assets, and store visit tracking that help franchise groups and retail brands drive visibility and performance across every region.',
+  },
+  {
+    icon: 'SaaS',
+    title: 'SaaS & Subscription',
+    desc: 'Demo and free trial acquisition campaigns supported by LTV-focused bidding, audience segmentation, and revenue reporting that connect advertising investment directly to recurring growth.',
+  },
 ];
 
 const process = [
-  { num: '01', title: 'Audit & Baseline', desc: 'Full account teardown, competitive spend analysis, and wasted-spend identification before a single bid changes.' },
-  { num: '02', title: 'Strategy & Architecture', desc: 'Channel mix, budget allocation, and campaign structure mapped to your conversion goals and sales cycle length.' },
-  { num: '03', title: 'Launch & Track', desc: 'Tracking validation, conversion actions, and audience builds deployed with QA checklists before spend scales.' },
-  { num: '04', title: 'Optimize Daily', desc: 'Search term mining, bid adjustments, creative tests, and budget shifts based on performance data — not gut feel.' },
-  { num: '05', title: 'Scale & Report', desc: 'Winning campaigns scaled with guardrails; monthly business reviews with actionable insights for leadership.' },
+  {
+    num: '01',
+    title: 'Audit & Baseline',
+    desc: 'A full account teardown, competitive spend analysis, and wasted-spend identification, all completed before a single bid gets changed.',
+  },
+  {
+    num: '02',
+    title: 'Strategy & Architecture',
+    desc: 'Channel mix, budget allocation, and campaign structure mapped directly to your conversion goals and sales cycle length.',
+  },
+  {
+    num: '03',
+    title: 'Launch & Track',
+    desc: 'Tracking validation, conversion actions, and audience builds are deployed against QA checklists before spend is allowed to scale.',
+  },
+  {
+    num: '04',
+    title: 'Optimize Daily',
+    desc: 'Search term mining, bid adjustments, creative tests, and budget shifts driven by performance data rather than gut feel.',
+  },
+  {
+    num: '05',
+    title: 'Scale & Report',
+    desc: 'Winning campaigns scaled within clear guardrails, paired with monthly business reviews that give leadership insights they can actually act on.',
+  },
 ];
 
-const channels = ['Google Ads', 'Microsoft Ads', 'Meta Ads', 'LinkedIn Ads', 'YouTube', 'Display & GDN', 'Performance Max', 'Shopping', 'Programmatic', 'Amazon Ads', 'TikTok Ads', 'GA4 & GTM'];
+const channels = [
+  'Google Ads', 'Microsoft Ads', 'Meta Ads', 'LinkedIn Ads', 'YouTube', 'Display & GDN',
+  'Performance Max', 'Shopping', 'Programmatic', 'Amazon Ads', 'TikTok Ads', 'GA4 & GTM',
+];
 
 const faqs = [
-  { q: 'What minimum ad spend do you manage?', a: 'We typically partner with brands spending $5K+/month in paid media. Below that threshold, we recommend a focused audit and setup package so budget goes further before full management.' },
-  { q: 'Do you work with our in-house team or replace them?', a: 'Both models work. We can own execution end-to-end or operate as a strategic layer — setting structure, testing frameworks, and training your team on optimization playbooks.' },
-  { q: 'How fast will we see results?', a: 'Waste reduction and structure fixes often show within 2–4 weeks. Meaningful ROAS or CPA improvements typically emerge in 6–10 weeks as bidding models learn and creative tests compound.' },
-  { q: 'Who owns the ad accounts?', a: 'You always retain account ownership and billing access. We request manager access only — no lock-in, full transparency on every change.' },
-  { q: 'How do you report on performance?', a: 'Live dashboards plus monthly reviews covering spend, conversions, CPA/ROAS, channel contribution, and test learnings — tied to your CRM or revenue data when available.' },
+  {
+    q: 'How quickly can a pay-per-click marketing company generate results?',
+    a: 'PPC campaigns can start driving traffic within days of launch, though optimal performance and lower cost-per-click usually take 4 to 6 weeks of data and refinement.',
+  },
+  {
+    q: 'What\'s included in a typical pay-per-click marketing service?',
+    a: 'Keyword research, ad copywriting, bid management, landing page alignment, and ongoing optimization based on real campaign performance data.',
+  },
+  {
+    q: 'How does a pay-per-click agency decide on budget allocation?',
+    a: 'Budget is typically distributed based on keyword competition, conversion value, and which campaigns are already proving profitable, shifting spend toward what\'s working.',
+  },
+  {
+    q: 'Is PPC worth it for small businesses, or just larger companies?',
+    a: 'PPC works well for businesses of nearly any size since budgets are fully controllable, making it scalable for both small local businesses and large enterprises.',
+  },
+  {
+    q: 'What platforms does pay-per-click marketing typically cover?',
+    a: 'Most campaigns run on Google Ads and Microsoft Ads, with many agencies also managing paid social platforms like Meta and LinkedIn under the same PPC strategy.',
+  },
 ];
 
 export default function PpcManagement() {
@@ -53,7 +131,11 @@ export default function PpcManagement() {
     <div ref={pageRef} className="mkt-page">
       <Head>
         <title head-key="title">PPC Management | LogicWorks — Cross-Channel Paid Media & ROAS</title>
-        <meta head-key="description" name="description" content="LogicWorks manages PPC across Google, Microsoft, Meta, and programmatic — account audits, bid strategy, CRO alignment, and reporting that drives 4x+ ROAS." />
+        <meta
+          head-key="description"
+          name="description"
+          content="As a pay-per-click marketing company, we manage cross-channel paid media with surgical precision, tracking every dollar, optimizing every campaign, and tying every report to revenue your CFO actually trusts."
+        />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/ppc-management" />
       </Head>
 
@@ -63,10 +145,17 @@ export default function PpcManagement() {
         <div className="con mkt-hero-inner">
           <div className="mkt-eyebrow">Paid Media</div>
           <h1 className="mkt-hero-title" id="ppc-title">PPC<br /><span>MANAGEMENT</span></h1>
-          <p className="mkt-hero-sub">Cross-channel paid media managed with surgical precision — every dollar tracked, every campaign optimized, and every report tied to revenue your CFO trusts.</p>
+          <p className="mkt-hero-sub">
+            As a pay-per-click marketing company, we manage cross-channel paid media with surgical precision, tracking every dollar, optimizing every campaign, and tying every report to revenue your CFO actually trusts.
+          </p>
           <div className="mkt-hero-actions">
-            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free PPC Audit{arrowIcon}</Link>
-            <Link href="/digital-marketing" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All Marketing</Link>
+            <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>
+              Get Free PPC Audit
+              {arrowIcon}
+            </Link>
+            <Link href="/digital-marketing" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>
+              All Marketing
+            </Link>
           </div>
         </div>
       </section>
@@ -90,28 +179,44 @@ export default function PpcManagement() {
             <div className="reveal-l">
               <div className="sec-label">The Problem</div>
               <h2 className="sec-title">AD SPEND WITHOUT<br /><em>ACCOUNTABILITY</em></h2>
-              <p className="sec-desc" style={{ marginBottom: '20px' }}>Most agencies optimize for clicks and impressions while your CPA creeps up and sales questions lead quality. PPC management should mean profit — not activity reports.</p>
+              <p className="sec-desc" style={{ marginBottom: '20px' }}>
+                Most agencies optimize for clicks and impressions, all while your CPA quietly creeps upward and sales start questioning lead quality. A real pay-per-click marketing service should mean profit, not another stack of activity reports.
+              </p>
               <div className="mkt-highlight-box">
-                <p>We rebuild accounts around conversion economics: what you pay per customer, not what you pay per click.</p>
+                <p>
+                  We rebuild accounts around conversion economics instead, focusing on what you actually pay per customer rather than what you pay per click.
+                </p>
               </div>
               <div className="mkt-check-list">
-                {['Full-funnel cross-channel strategy', 'Daily bid and budget optimization', 'Message-matched landing pages', 'CRM-attributed revenue reporting'].map((item) => (
+                {[
+                  'Full-funnel cross-channel strategy',
+                  'Daily bid and budget optimization',
+                  'Message-matched landing pages',
+                  'CRM-attributed revenue reporting',
+                ].map((item) => (
                   <div key={item} className="mkt-check-item">{checkIcon}{item}</div>
                 ))}
               </div>
-              <div className="mkt-tag-row">{['Google', 'Microsoft', 'Meta', 'LinkedIn', 'Programmatic'].map((t) => <span key={t} className="mkt-tag">{t}</span>)}</div>
+              <div className="mkt-tag-row">
+                {['Google', 'Microsoft', 'Meta', 'LinkedIn', 'Programmatic'].map((t) => (
+                  <span key={t} className="mkt-tag">{t}</span>
+                ))}
+              </div>
             </div>
             <div className="reveal-r mkt-results-panel">
               <div className="mkt-results-label">Client Outcomes</div>
               {[
-                { icon: '↑', title: '4.2x Average ROAS', desc: 'Portfolio-weighted return across e-commerce and lead-gen accounts.' },
-                { icon: '↓', title: '38% Lower CPA', desc: 'Structural fixes and negative keyword discipline cut waste fast.' },
-                { icon: '$', title: '$12M+ Managed', desc: 'Annual ad spend optimized with enterprise-grade governance.' },
-                { icon: '◎', title: '24hr Optimization', desc: 'Bid and creative adjustments within one business day of signal.' },
+                { icon: '↑', title: 'Average ROAS', desc: '4.2x portfolio-weighted return across e-commerce and lead-gen accounts' },
+                { icon: '↓', title: 'Lower CPA', desc: '38% reduction through structural fixes and negative keyword discipline' },
+                { icon: '$', title: 'Ad Spend Managed', desc: '$12M+ in annual spend optimized with enterprise-grade governance' },
+                { icon: '◎', title: 'Optimization Speed', desc: 'Bid and creative adjustments within 24 hours of the signal' },
               ].map((o) => (
                 <div key={o.title} className="mkt-results-item">
                   <div className="mkt-results-icon">{o.icon}</div>
-                  <div className="mkt-results-text"><strong>{o.title}</strong><span>{o.desc}</span></div>
+                  <div className="mkt-results-text">
+                    <strong>{o.title}</strong>
+                    <span>{o.desc}</span>
+                  </div>
                 </div>
               ))}
             </div>
@@ -124,7 +229,9 @@ export default function PpcManagement() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Capabilities</div>
             <h2 className="sec-title">PAID MEDIA THAT<br /><em>PERFORMS</em></h2>
-            <p className="sec-desc">Six pillars of PPC management — from strategy through attribution.</p>
+            <p className="sec-desc">
+              As a pay-per-click agency, we organize our work around six pillars that run from strategy all the way through attribution.
+            </p>
           </div>
           <div className="mkt-solution-grid">
             {solutions.map((s) => (
@@ -143,13 +250,18 @@ export default function PpcManagement() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Use Cases</div>
             <h2 className="sec-title">PPC FOR<br /><em>YOUR BUSINESS MODEL</em></h2>
-            <p className="sec-desc">Proven paid media playbooks for B2B, e-commerce, local, and subscription growth.</p>
+            <p className="sec-desc">
+              Proven paid media strategies tailored for B2B, e-commerce, local businesses, and subscription-based brands focused on scalable growth.
+            </p>
           </div>
           <div className="mkt-use-grid">
             {useCases.map((u) => (
               <article key={u.title} className="mkt-use-card">
                 <div className="mkt-use-icon">{u.icon}</div>
-                <div><h3 className="mkt-use-title">{u.title}</h3><p className="mkt-use-desc">{u.desc}</p></div>
+                <div>
+                  <h3 className="mkt-use-title">{u.title}</h3>
+                  <p className="mkt-use-desc">{u.desc}</p>
+                </div>
               </article>
             ))}
           </div>
@@ -161,7 +273,9 @@ export default function PpcManagement() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Our Process</div>
             <h2 className="sec-title">FROM AUDIT TO<br /><em>SCALE</em></h2>
-            <p className="sec-desc">Five phases that turn underperforming accounts into predictable revenue engines.</p>
+            <p className="sec-desc">
+              Five phases that turn an underperforming account into a predictable revenue engine.
+            </p>
           </div>
           <div className="mkt-process-track">
             {process.map((s) => (
@@ -182,12 +296,27 @@ export default function PpcManagement() {
             <h2 className="sec-title">EVERY PLATFORM<br /><em>ONE TEAM</em></h2>
             <p className="sec-desc">Certified specialists across search, social, shopping, and programmatic networks.</p>
           </div>
-          <div className="mkt-channel-grid">{channels.map((c) => <span key={c} className="mkt-channel-pill">{c}</span>)}</div>
+          <div className="mkt-channel-grid">
+            {channels.map((c) => <span key={c} className="mkt-channel-pill">{c}</span>)}
+          </div>
         </div>
       </section>
 
-      <MarketingFaq id="ppc-faq" title={<>PPC Management<br /><em>QUESTIONS ANSWERED</em></>} desc="What marketing leaders ask before handing off paid media." faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
-      <MarketingCta eyebrow="Stop Wasting Ad Spend" title={<>EVERY DOLLAR<br /><em>SHOULD EARN</em>.</>} sub="Book a free PPC audit and see exactly where your accounts are leaking budget." btnText="Get Free PPC Audit" note="FREE AUDIT · ACCOUNT REVIEW · NO COMMITMENT" />
+      <MarketingFaq
+        id="ppc-faq"
+        title={<>FAQs</>}
+        desc=""
+        faqs={faqs}
+        openFaq={openFaq}
+        setOpenFaq={setOpenFaq}
+      />
+      <MarketingCta
+        eyebrow="Pay for Performance, Not Promises"
+        title={<>YOUR ACCOUNT SHOULD<br /><em>ANSWER TO REVENUE</em>.</>}
+        sub="Get a free PPC audit and see exactly where your ad spend is leaking before it costs you another month."
+        btnText="Get Free PPC Audit"
+        note=""
+      />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -10,6 +12,8 @@ use Inertia\Inertia;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Route::get('/sitemap.xml', SitemapController::class);
 
 // web routes
 Route::get('/', function () {
@@ -182,6 +186,9 @@ Route::get('/careers', function () {
 Route::get('/contact', function () {
     return Inertia::render('ContactPage');
 });
+Route::post('/contact', [ContactController::class, 'store'])
+    ->middleware('throttle:5,1')
+    ->name('contact.store');
 Route::get('/privacy-policy', function () {
     return Inertia::render('PrivacyPolicy');
 });

@@ -1,16 +1,27 @@
 import { useState, useRef, useEffect } from 'react';
-import { Head } from '@inertiajs/react';
+import { Head, useForm } from '@inertiajs/react';
 import { gsap } from 'gsap';
 
-interface FormState {
-  name: string; email: string; phone: string; company: string;
-  service: string; budget: string; message: string;
-}
-interface Errors { [key: string]: string }
+type FormFields = {
+  name: string;
+  email: string;
+  phone: string;
+  company: string;
+  service: string;
+  budget: string;
+  message: string;
+};
 
 export default function ContactPage() {
-  const [form, setForm] = useState<FormState>({ name: '', email: '', phone: '', company: '', service: '', budget: '', message: '' });
-  const [errors, setErrors] = useState<Errors>({});
+  const { data, setData, post, processing, errors, reset, clearErrors } = useForm<FormFields>({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    service: '',
+    budget: '',
+    message: '',
+  });
   const [submitted, setSubmitted] = useState(false);
   const pageRef = useRef<HTMLDivElement>(null);
 
@@ -28,26 +39,22 @@ export default function ContactPage() {
     return () => ctx.revert();
   }, []);
 
-  const validate = (): boolean => {
-    const errs: Errors = {};
-    if (!form.name.trim()) errs.name = 'Full name is required.';
-    if (!form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) errs.email = 'A valid email is required.';
-    if (!form.service) errs.service = 'Please select a service.';
-    if (!form.message.trim() || form.message.length < 20) errs.message = 'Please describe your project (min. 20 characters).';
-    setErrors(errs);
-    return Object.keys(errs).length === 0;
-  };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validate()) return;
-    setSubmitted(true);
+
+    post('/contact', {
+      preserveScroll: true,
+      onSuccess: () => {
+        setSubmitted(true);
+        reset();
+      },
+    });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-    if (errors[name]) setErrors((prev) => ({ ...prev, [name]: '' }));
+    setData(name as keyof FormFields, value);
+    clearErrors(name as keyof FormFields);
   };
 
   const services = ['Web Design & Development', 'AI Automation & Machine Learning', 'SEO & AEO Services', 'PPC & Paid Media', 'Social Media Marketing', 'Mobile App Development', 'Branding & Brand Design', 'AI-Powered CRM', 'Hosting & Infrastructure', 'Other / Multiple Services'];
@@ -86,32 +93,38 @@ export default function ContactPage() {
               </div>
             ) : (
               <form className="contact-form" onSubmit={handleSubmit} noValidate aria-label="Contact form">
+                {(errors as Record<string, string | undefined>).form && (
+                  <div className="form-error" style={{ marginBottom: '16px' }}>
+                    {(errors as Record<string, string | undefined>).form}
+                  </div>
+                )}
+
                 <div className="form-row">
                   <div className="form-group">
                     <label className="form-label" htmlFor="name">Full Name *</label>
-                    <input id="name" name="name" type="text" className={`form-input${errors.name ? ' error' : ''}`} placeholder="John Smith" value={form.name} onChange={handleChange} autoComplete="name" />
+                    <input id="name" name="name" type="text" className={`form-input${errors.name ? ' error' : ''}`} placeholder="John Smith" value={data.name} onChange={handleChange} autoComplete="name" />
                     {errors.name && <div className="form-error">{errors.name}</div>}
                   </div>
                   <div className="form-group">
                     <label className="form-label" htmlFor="email">Business Email *</label>
-                    <input id="email" name="email" type="email" className={`form-input${errors.email ? ' error' : ''}`} placeholder="john@company.com" value={form.email} onChange={handleChange} autoComplete="email" />
+                    <input id="email" name="email" type="email" className={`form-input${errors.email ? ' error' : ''}`} placeholder="john@company.com" value={data.email} onChange={handleChange} autoComplete="email" />
                     {errors.email && <div className="form-error">{errors.email}</div>}
                   </div>
                 </div>
                 <div className="form-row">
                   <div className="form-group">
                     <label className="form-label" htmlFor="phone">Phone Number</label>
-                    <input id="phone" name="phone" type="tel" className="form-input" placeholder="+1 (555) 000-0000" value={form.phone} onChange={handleChange} autoComplete="tel" />
+                    <input id="phone" name="phone" type="tel" className="form-input" placeholder="+1 (555) 000-0000" value={data.phone} onChange={handleChange} autoComplete="tel" />
                   </div>
                   <div className="form-group">
                     <label className="form-label" htmlFor="company">Company Name</label>
-                    <input id="company" name="company" type="text" className="form-input" placeholder="Acme Inc." value={form.company} onChange={handleChange} autoComplete="organization" />
+                    <input id="company" name="company" type="text" className="form-input" placeholder="Acme Inc." value={data.company} onChange={handleChange} autoComplete="organization" />
                   </div>
                 </div>
                 <div className="form-row">
                   <div className="form-group">
                     <label className="form-label" htmlFor="service">Service Interested In *</label>
-                    <select id="service" name="service" className={`form-select${errors.service ? ' error' : ''}`} value={form.service} onChange={handleChange}>
+                    <select id="service" name="service" className={`form-select${errors.service ? ' error' : ''}`} value={data.service} onChange={handleChange}>
                       <option value="">Select a service…</option>
                       {services.map((s) => <option key={s} value={s}>{s}</option>)}
                     </select>
@@ -119,7 +132,7 @@ export default function ContactPage() {
                   </div>
                   <div className="form-group">
                     <label className="form-label" htmlFor="budget">Budget Range</label>
-                    <select id="budget" name="budget" className="form-select" value={form.budget} onChange={handleChange}>
+                    <select id="budget" name="budget" className="form-select" value={data.budget} onChange={handleChange}>
                       <option value="">Select budget range…</option>
                       {budgets.map((b) => <option key={b} value={b}>{b}</option>)}
                     </select>
@@ -127,12 +140,14 @@ export default function ContactPage() {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="message">Tell Us About Your Project *</label>
-                  <textarea id="message" name="message" className={`form-textarea${errors.message ? ' error' : ''}`} rows={6} placeholder="Describe your goals, challenges, timeline, and any specific requirements…" value={form.message} onChange={handleChange} />
+                  <textarea id="message" name="message" className={`form-textarea${errors.message ? ' error' : ''}`} rows={6} placeholder="Describe your goals, challenges, timeline, and any specific requirements…" value={data.message} onChange={handleChange} />
                   {errors.message && <div className="form-error">{errors.message}</div>}
                 </div>
-                <button type="submit" className="btn btn-primary contact-submit-btn">
-                  Send Request — Get Free Strategy Session
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <button type="submit" className="btn btn-primary contact-submit-btn" disabled={processing}>
+                  {processing ? 'Sending Request…' : 'Send Request — Get Free Strategy Session'}
+                  {!processing && (
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  )}
                 </button>
                 <p className="contact-form-note">
                   Response within 2 business hours · No contracts · Free audit included

@@ -163,7 +163,7 @@ export default function UiUxDesign() {
         <meta
           head-key="description"
           name="description"
-          content="As a ui/ux design company grounded in user research, we balance beauty and function on every screen, placing each pixel with intent and validating every flow against how people actually behave."
+          content="As a ui/ux design company grounded in user research, we balance beauty and function on every screen, placing each pixel with intent and validating every flow against how people actually behave, not how a deck assumes they will."
         />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/ui-ux-design" />
       </Head>
@@ -397,7 +397,7 @@ export default function UiUxDesign() {
             </Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
-          <p className="cta-note">FREE AUDIT · NO COMMITMENT · DELIVERED IN 48 HOURS</p>
+          {/* <p className="cta-note">FREE AUDIT · NO COMMITMENT · DELIVERED IN 48 HOURS</p> */}
         </div>
       </section>
     </div>

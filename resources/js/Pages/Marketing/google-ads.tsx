@@ -11,37 +11,37 @@ const metrics = [
 ];
 
 const solutions = [
-  { num: '01', title: 'Search Campaign Mastery', desc: 'Exact, phrase, and broad match strategies with SKAG-inspired structure, negative keyword lists, and ad copy mapped to high-intent queries.' },
-  { num: '02', title: 'Performance Max & PMax', desc: 'Asset group strategy, audience signals, and conversion goal tuning so PMax supplements — not cannibalizes — your branded and non-brand search.' },
-  { num: '03', title: 'Google Shopping & Feeds', desc: 'Merchant Center optimization, feed rules, supplemental titles, and bid strategies by margin tier for catalog and DTC brands.' },
-  { num: '04', title: 'Display & YouTube', desc: 'Custom intent audiences, in-market segments, and video action campaigns with creative built for view-through and assisted conversions.' },
-  { num: '05', title: 'Conversion Tracking Setup', desc: 'Enhanced conversions, offline import, GA4 linked goals, and Consent Mode v2 — so Smart Bidding trains on accurate data.' },
-  { num: '06', title: 'Competitive & Auction Insights', desc: 'Impression share analysis, auction overlap reports, and share-of-voice strategy to win head terms without blowing budget.' },
+  { num: '01', title: 'Search Campaign Mastery', desc: 'Exact, phrase, and broad match strategies with SKAG-inspired structure, negative keyword lists, and ad copy mapped directly to high-intent queries.' },
+  { num: '02', title: 'Performance Max & PMax', desc: 'Asset group strategy, audience signals, and conversion goal tuning, so PMax supplements rather than cannibalizes your branded and non-brand search.' },
+  { num: '03', title: 'Google Shopping & Feeds', desc: 'Merchant Center optimization, feed rules, supplemental titles, and bid strategies by margin tier for catalog and DTC brands alike.' },
+  { num: '04', title: 'Display & YouTube', desc: 'Custom intent audiences, in-market segments, and video action campaigns with creative built specifically for view-through and assisted conversions.' },
+  { num: '05', title: 'Conversion Tracking Setup', desc: 'Enhanced conversions, offline import, GA4 linked goals, and Consent Mode v2, so Smart Bidding trains on data that\'s actually accurate.' },
+  { num: '06', title: 'Competitive & Auction Insights', desc: 'Impression share analysis, auction overlap reports, and share-of-voice strategy built to win head terms without blowing the budget.' },
 ];
 
 const useCases = [
-  { icon: 'SRCH', title: 'High-Intent Search', desc: 'Capture buyers actively searching your category — branded defense, competitor conquest, and category terms with tight message match.' },
-  { icon: 'SHOP', title: 'Product Feed Revenue', desc: 'Shopping campaigns that surface top SKUs, suppress low-margin items, and sync promotions with Merchant Center promotions.' },
-  { icon: 'LEAD', title: 'Lead Gen & Services', desc: 'Call-only, lead form extensions, and local service ads for attorneys, contractors, and healthcare with compliance-safe copy.' },
+  { icon: 'SRCH', title: 'High-Intent Search', desc: 'Capture buyers actively searching your category, branded defense, competitor conquest, and category terms with a tight message match.' },
+  { icon: 'SHOP', title: 'Product Feed Revenue', desc: 'Shopping campaigns that surface top SKUs, suppress low-margin items, and sync promotions directly with Merchant Center.' },
+  { icon: 'LEAD', title: 'Lead Gen & Services', desc: 'Call-only campaigns, lead form extensions, and local service ads for attorneys, contractors, and healthcare providers, all with compliance-safe copy.' },
   { icon: 'APP', title: 'App & SaaS Installs', desc: 'App campaigns and web-to-app flows with tROAS targets tied to in-app events and trial-to-paid conversion data.' },
 ];
 
 const process = [
-  { num: '01', title: 'Tracking & Compliance', desc: 'GTM, GA4, and conversion tags validated — Consent Mode and policy compliance checked before spend.' },
-  { num: '02', title: 'Account Rebuild', desc: 'Campaigns, ad groups, and extensions restructured for Quality Score and clear budget control.' },
-  { num: '03', title: 'Keyword & Copy Launch', desc: 'RSA variants, sitelinks, and structured snippets deployed with A/B test labels from day one.' },
-  { num: '04', title: 'Smart Bidding Tune', desc: 'Target CPA/ROAS calibrated with conversion value rules and audience exclusions refined weekly.' },
-  { num: '05', title: 'Scale & Defend', desc: 'Budget increases on proven segments; brand protection and competitor strategy adjusted to market shifts.' },
+  { num: '01', title: 'Tracking & Compliance', desc: 'GTM, GA4, and conversion tags validated, with Consent Mode and policy compliance checked before any spend goes live.' },
+  { num: '02', title: 'Account Rebuild', desc: 'Campaigns, ad groups, and extensions restructured for Quality Score, along with clear budget control.' },
+  { num: '03', title: 'Keyword & Copy Launch', desc: 'RSA variants, sitelinks, and structured snippets were deployed with A/B test labels in place from day one.' },
+  { num: '04', title: 'Smart Bidding Tune', desc: 'Target CPA and ROAS are calibrated with conversion value rules, and audience exclusions are refined weekly as data comes in.' },
+  { num: '05', title: 'Scale & Defend', desc: 'Budget increases get directed toward proven segments, while brand protection and competitor strategy adjust to shifts in the market.' },
 ];
 
 const channels = ['Search Ads', 'Performance Max', 'Shopping', 'Display Network', 'YouTube Ads', 'Discovery', 'Demand Gen', 'App Campaigns', 'Local Services', 'Call Ads', 'Merchant Center', 'Google Analytics 4'];
 
 const faqs = [
-  { q: 'Are your strategists Google Ads certified?', a: 'Yes. Our paid media team holds Google Ads Search, Display, Shopping, and Measurement certifications — with ongoing training on PMax, Consent Mode, and platform updates.' },
-  { q: 'Should we use Performance Max or standard Search?', a: 'It depends on your data volume and goals. We typically run Search for control and high-intent capture, with PMax for incremental reach and feed-heavy catalogs — never a blind PMax-only setup.' },
-  { q: 'Our Quality Score is low — can you fix it?', a: 'Low QS usually traces to weak ad relevance, poor landing experience, or bloated account structure. We rebuild around tight keyword-ad-LP alignment — clients often see 20–40% CPC drops.' },
-  { q: 'Do you manage Merchant Center and feeds?', a: 'Yes for e-commerce clients. Feed diagnostics, title optimization, and disapproval resolution are part of Shopping management — broken feeds kill ROAS faster than bad bids.' },
-  { q: 'How is Google Ads different from your full PPC service?', a: 'Google Ads is platform-deep: Search, Shopping, PMax, YouTube. Full PPC management adds Microsoft, Meta, LinkedIn, and cross-channel budget orchestration.' },
+  { q: 'How much should a business budget for Google Ads?', a: 'Budgets vary widely by industry and competition, but most businesses start testing with $1,000 to $3,000 per month to gather enough data for meaningful optimization.' },
+  { q: 'How is Quality Score calculated in Google Ads?', a: 'Quality Score is based on expected click-through rate, ad relevance, and landing page experience, directly affecting how much you pay per click.' },
+  { q: 'How long before Google Ads campaigns start performing well?', a: 'Most campaigns need 4 to 6 weeks of data before optimization meaningfully improves performance and lowers cost-per-click.' },
+  { q: 'What\'s the difference between Search ads and Display ads?', a: 'Search ads appear directly in search results based on user queries, while Display ads appear as visual banners across websites within Google\'s ad network.' },
+  { q: 'Can Google Ads work well alongside SEO, or are they competing strategies?', a: 'They work best together. Google Ads delivers immediate visibility while SEO builds long-term organic traffic, and the two often share keyword insights that strengthen both.' },
 ];
 
 export default function GoogleAds() {
@@ -53,7 +53,7 @@ export default function GoogleAds() {
     <div ref={pageRef} className="mkt-page">
       <Head>
         <title head-key="title">Google Ads | LogicWorks — Search, Shopping & Performance Max</title>
-        <meta head-key="description" name="description" content="LogicWorks manages Google Ads — Search, Shopping, Performance Max, and YouTube with certified experts, Quality Score optimization, and conversion tracking done right." />
+        <meta head-key="description" name="description" content="Search, Shopping, Performance Max, and YouTube campaigns run by certified specialists who treat Quality Score, tracking, and ROAS as genuinely non-negotiable." />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/google-ads" />
       </Head>
 
@@ -63,7 +63,7 @@ export default function GoogleAds() {
         <div className="con mkt-hero-inner">
           <div className="mkt-eyebrow">Paid Media</div>
           <h1 className="mkt-hero-title" id="gads-title">GOOGLE<br /><span>ADS</span></h1>
-          <p className="mkt-hero-sub">Search, Shopping, Performance Max, and YouTube campaigns run by certified specialists who treat Quality Score, tracking, and ROAS as non-negotiables.</p>
+          <p className="mkt-hero-sub">Search, Shopping, Performance Max, and YouTube campaigns run by certified specialists who treat Quality Score, tracking, and ROAS as genuinely non-negotiable.</p>
           <div className="mkt-hero-actions">
             <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Google Ads Audit{arrowIcon}</Link>
             <Link href="/ppc-management" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Full PPC Management</Link>
@@ -90,12 +90,12 @@ export default function GoogleAds() {
             <div className="reveal-l">
               <div className="sec-label">The Problem</div>
               <h2 className="sec-title">GOOGLE ADS IS<br /><em>NOT SET-AND-FORGET</em></h2>
-              <p className="sec-desc" style={{ marginBottom: '20px' }}>Algorithm updates, PMax expansion, and auction competition change weekly. Accounts left on autopilot bleed budget into broad match junk and asset groups with no strategic guardrails.</p>
+              <p className="sec-desc" style={{ marginBottom: '20px' }}>Algorithm updates, PMax expansion, and auction competition all shift on a near-weekly basis. Accounts left on autopilot, as a result, tend to bleed budget into broad match junk and asset groups with zero strategic guardrails.</p>
               <div className="mkt-highlight-box">
-                <p>We manage Google Ads as a profit center — Quality Score up, CPC down, conversions attributed correctly.</p>
+                <p>We manage Google Ads as a profit center instead: Quality Score climbs, CPC drops, and conversions get attributed correctly.</p>
               </div>
               <div className="mkt-check-list">
-                {['Certified Search, Shopping & Display team', 'PMax with guardrails, not black boxes', 'Enhanced conversion & offline import setup', 'Weekly search term and auction reviews'].map((item) => (
+                {['Certified Search, Shopping & Display team', 'PMax with guardrails, not black boxes', 'Enhanced conversion and offline import setup', 'Weekly search term and auction reviews'].map((item) => (
                   <div key={item} className="mkt-check-item">{checkIcon}{item}</div>
                 ))}
               </div>
@@ -104,10 +104,10 @@ export default function GoogleAds() {
             <div className="reveal-r mkt-results-panel">
               <div className="mkt-results-label">Platform Results</div>
               {[
-                { icon: '★', title: '9.2 Avg. Quality Score', desc: 'Relevance-first structure lifts ad rank without raising bids.' },
-                { icon: '↓', title: '52% CPC Reduction', desc: 'Typical savings after audit vs. legacy agency structures.' },
-                { icon: '◎', title: '340+ Accounts', desc: 'Google Ads optimized across B2B, retail, and local verticals.' },
-                { icon: '✓', title: 'Partner Certified', desc: 'Google Ads certified team with direct beta access and training.' },
+                { icon: '★', title: 'Avg. Quality Score', desc: '9.2, with relevance-first structure lifting ad rank without raising bids' },
+                { icon: '↓', title: 'CPC Reduction', desc: '52% typical savings compared to legacy agency structures' },
+                { icon: '◎', title: 'Accounts Managed', desc: '340+ optimized across B2B, retail, and local verticals' },
+                { icon: '✓', title: 'Certification', desc: 'Google Ads certified team with direct beta access and training' },
               ].map((o) => (
                 <div key={o.title} className="mkt-results-item">
                   <div className="mkt-results-icon">{o.icon}</div>
@@ -124,7 +124,7 @@ export default function GoogleAds() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Capabilities</div>
             <h2 className="sec-title">OWN THE<br /><em>GOOGLE AUCTION</em></h2>
-            <p className="sec-desc">Six Google Ads disciplines from Search intent to feed commerce.</p>
+            <p className="sec-desc">Six Google Ads disciplines spanning search intent all the way through feed commerce.</p>
           </div>
           <div className="mkt-solution-grid">
             {solutions.map((s) => (
@@ -143,7 +143,7 @@ export default function GoogleAds() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Use Cases</div>
             <h2 className="sec-title">GOOGLE ADS FOR<br /><em>EVERY GOAL</em></h2>
-            <p className="sec-desc">Campaign types matched to how your customers discover and buy.</p>
+            <p className="sec-desc">Campaign types matched to how your customers actually discover and buy, rather than a one-size-fits-all setup.</p>
           </div>
           <div className="mkt-use-grid">
             {useCases.map((u) => (
@@ -161,7 +161,7 @@ export default function GoogleAds() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Our Process</div>
             <h2 className="sec-title">LAUNCH TO<br /><em>DOMINANCE</em></h2>
-            <p className="sec-desc">Five steps from broken tracking to scaled, profitable Google campaigns.</p>
+            <p className="sec-desc">Five steps that take into account everything from broken tracking to scaled, genuinely profitable Google campaigns.</p>
           </div>
           <div className="mkt-process-track">
             {process.map((s) => (
@@ -186,8 +186,8 @@ export default function GoogleAds() {
         </div>
       </section>
 
-      <MarketingFaq id="gads-faq" title={<>Google Ads<br /><em>QUESTIONS ANSWERED</em></>} desc="What brands ask before moving Google Ads to LogicWorks." faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
-      <MarketingCta eyebrow="Fix Your Google Ads" title={<>LOWER CPC.<br /><em>HIGHER ROAS</em>.</>} sub="Get a free Google Ads audit — account structure, tracking, and wasted spend exposed in 48 hours." btnText="Get Google Ads Audit" note="FREE AUDIT · CERTIFIED TEAM · NO COMMITMENT" />
+      <MarketingFaq id="gads-faq" title={<>FAQs</>} desc="" faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
+      <MarketingCta eyebrow="Fix Your Google Ads" title={<>LOWER CPC.<br /><em>HIGHER ROAS</em>.</>} sub="Get a free Google Ads audit, account structure, tracking, and wasted spend exposed within 48 hours." btnText="Get Google Ads Audit" note="FREE AUDIT · CERTIFIED TEAM · NO COMMITMENT" />
     </div>
   );
 }

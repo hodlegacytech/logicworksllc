@@ -4,47 +4,47 @@ import { Head } from '@inertiajs/react';
 import { useCompanyPage, arrowIcon, CompanyCta } from './shared';
 
 const timeline = [
-  { year: '2015', title: 'Founded', desc: 'LogicWorks launches as a boutique web design studio in New York — built on the conviction that agencies set the bar too low.' },
-  { year: '2017', title: 'SEO Practice', desc: 'Expanded into full-service digital marketing with a dedicated SEO team and performance-driven content engine.' },
-  { year: '2019', title: 'AI Integration', desc: 'Launched AI automation division — among the first agencies to embed machine learning into client workflows.' },
-  { year: '2021', title: 'National Expansion', desc: '200+ clients across 5 US cities. Answer Engine Optimization service launched ahead of the market.' },
-  { year: '2023', title: 'ML Systems', desc: 'Custom machine learning division opens. 400+ clients served. Enterprise AI consulting at scale.' },
-  { year: '2025', title: 'Elite Status', desc: '500+ transformed businesses. 130+ team members. 15+ industries. The mission continues.' },
+  { year: '2015', title: 'Founded', desc: 'LogicWorks launches as a boutique web design studio in New York, built on the conviction that agencies set the bar too low' },
+  { year: '2017', title: 'SEO practice', desc: 'Expanded into full service digital marketing with a dedicated SEO team and a performance driven content engine' },
+  { year: '2019', title: 'AI integration', desc: 'Launched an AI automation division, among the first agencies to embed machine learning directly into client workflows' },
+  { year: '2021', title: 'National expansion', desc: 'Grew to over 200 clients across 5 US cities, with Answer Engine Optimization service launched well ahead of the market' },
+  { year: '2023', title: 'ML systems', desc: 'Opened a custom machine learning division, serving over 400 clients with enterprise AI consulting at scale' },
+  { year: '2025', title: 'Elite status', desc: 'Reached 500 plus transformed businesses, 130 plus team members, and over 15 industries. The mission continues' },
 ];
 
 const values = [
-  { title: 'Obsession Over Obligation', desc: 'We are partners obsessed with your outcomes — not contractors completing tickets. When your metrics move, our team celebrates.' },
-  { title: 'Precision Over Volume', desc: 'Fewer clients at a higher standard. Your account gets senior attention, not junior delegation buried in a portfolio of hundreds.' },
-  { title: 'Transparency Always', desc: 'Monthly reporting with zero spin. Honest assessments of what is working and what needs to change. Trust is our most protected asset.' },
-  { title: 'Innovation Without Exception', desc: 'Every engagement benefits from the latest in AI, automation, and growth methodology. We never coast on yesterday\'s best practice.' },
+  { title: 'Obsession over obligation', desc: 'We are partners obsessed with your outcomes, not contractors completing tickets. When your metrics move, our team genuinely celebrates' },
+  { title: 'Precision over volume', desc: 'Fewer clients held to a higher standard. Your account gets senior attention, never junior delegation buried inside a portfolio of hundreds' },
+  { title: 'Transparency always', desc: 'Monthly reporting with zero spin, honest assessments of what is working and what needs to change. Trust is our most protected asset' },
+  { title: 'Innovation without exception', desc: 'Every engagement benefits from the latest in AI, automation, and growth methodology. We never coast on yesterday\'s best practice' },
 ];
 
 const differentiators = [
-  { num: '01', title: 'Strategy + Creative + Engineering', desc: 'Management consultancy depth, top-tier design craft, and elite engineering rigor — under one roof, one team, one accountable partner.' },
-  { num: '02', title: 'AI-Native From Day One', desc: 'Not bolted-on AI tools. We embed automation, ML, and intelligent systems into every engagement — from SEO to product development.' },
-  { num: '03', title: 'Vertical Expertise That Converts', desc: 'Deep playbooks for healthcare, FinTech, SaaS, legal, e-commerce, and hospitality — not generic templates recycled across industries.' },
+  { num: '01', title: 'Strategy plus creative plus engineering', desc: 'Management consultancy depth, top tier design craft, and elite engineering rigor, all under one roof, one team, one accountable partner' },
+  { num: '02', title: 'AI native from day one', desc: 'Not bolted on AI tools. We embed automation, ML, and intelligent systems into every engagement, from SEO through product development' },
+  { num: '03', title: 'Vertical expertise that converts', desc: 'Deep playbooks for healthcare, FinTech, SaaS, legal, e commerce, and hospitality, never generic templates recycled across industries' },
 ];
 
 const capabilities = [
-  { icon: 'WEB', count: '200+', title: 'Web & Product', desc: 'Portals, apps, e-commerce platforms, and landing pages engineered for conversion and scale.' },
-  { icon: 'AI', count: '80+', title: 'AI & Automation', desc: 'Custom ML models, chatbots, CRM automation, and intelligent workflow systems.' },
-  { icon: 'SEO', count: '150+', title: 'SEO & Growth', desc: 'Technical SEO, AEO, local search, PPC, and content programs that drive measurable pipeline.' },
-  { icon: 'BRD', count: '120+', title: 'Brand & Design', desc: 'Brand strategy, identity systems, UI/UX, and design languages that command premium positioning.' },
+  { icon: 'WEB', count: '200+', title: 'Web and Product', desc: 'Over 200 portals, apps, e commerce platforms, and landing pages engineered for conversion and scale' },
+  { icon: 'AI', count: '80+', title: 'AI and Automation', desc: 'Over 80 custom ML models, chatbots, CRM automation, and intelligent workflow systems' },
+  { icon: 'SEO', count: '150+', title: 'SEO and Growth', desc: 'Over 150 technical SEO, AEO, local search, PPC, and content programs that drive measurable pipeline' },
+  { icon: 'BRD', count: '120+', title: 'Brand and Design', desc: 'Over 120 brand strategy, identity systems, UI and UX, and design languages that command premium positioning' },
 ];
 
 const leadership = [
-  { initials: 'SW', name: 'Salman Waria', role: 'Founder & CEO', gradient: 'linear-gradient(135deg, #1a4bdb, #060d1f)' },
+  { initials: 'SW', name: 'Salman Waria', role: 'Founder and CEO', gradient: 'linear-gradient(135deg, #1a4bdb, #060d1f)' },
   { initials: 'AR', name: 'Alexandra Rivera', role: 'Chief Technology Officer', gradient: 'linear-gradient(135deg, #c8192a, #6b0000)' },
   { initials: 'MJ', name: 'Marcus Johnson', role: 'Chief Marketing Officer', gradient: 'linear-gradient(135deg, #c8922a, #7c5e10)' },
   { initials: 'KP', name: 'Priya Kapoor', role: 'Head of Design', gradient: 'linear-gradient(135deg, #0d1b3e, #1a4bdb)' },
 ];
 
 const locations = [
-  { city: 'New York', label: 'Headquarters', tz: 'EST' },
-  { city: 'San Francisco', label: 'West Coast Hub', tz: 'PST' },
-  { city: 'Austin', label: 'Tech Center', tz: 'CST' },
-  { city: 'Chicago', label: 'Midwest Office', tz: 'CST' },
-  { city: 'Miami', label: 'LATAM Gateway', tz: 'EST' },
+  { city: 'New York', label: 'Headquarters', tz: 'Eastern Time' },
+  { city: 'San Francisco', label: 'West Coast Hub', tz: 'Pacific Time' },
+  { city: 'Austin', label: 'Tech Center', tz: 'Central Time' },
+  { city: 'Chicago', label: 'Midwest Office', tz: 'Central Time' },
+  { city: 'Miami', label: 'LATAM Gateway', tz: 'Eastern Time' },
 ];
 
 export default function About() {
@@ -55,7 +55,7 @@ export default function About() {
     <div ref={pageRef} className="co-page">
       <Head>
         <title head-key="title">About LogicWorks | America&apos;s Elite Digital Agency</title>
-        <meta head-key="description" name="description" content="LogicWorks is America's premier digital agency — 10+ years of excellence, 500+ clients transformed, and an unwavering commitment to results-driven strategy, AI, and design." />
+        <meta head-key="description" name="description" content="Founded on the conviction that most digital agencies set the bar far too low, LogicWorks operates at the intersection of creative excellence and engineering discipline, where business outcomes are simply non negotiable" />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/about" />
       </Head>
 
@@ -64,7 +64,7 @@ export default function About() {
         <div className="con co-hero-inner">
           <div className="co-eyebrow">About LogicWorks</div>
           <h1 className="co-hero-title" id="about-title">We Engineer the Future<br /><span>of Your Business</span></h1>
-          <p className="co-hero-sub">Founded on the conviction that most digital agencies set the bar far too low — LogicWorks operates where creative excellence meets engineering discipline and business outcomes are non-negotiable.</p>
+          <p className="co-hero-sub">Founded on the conviction that most digital agencies set the bar far too low, LogicWorks operates at the intersection of creative excellence and engineering discipline, where business outcomes are simply non negotiable</p>
           <div className="co-hero-actions">
             <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Partner With Us{arrowIcon}</Link>
             <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>See Our Work</Link>
@@ -96,8 +96,8 @@ export default function About() {
             <div className="co-ab-story-copy">
               <div className="sec-label">Our Mission</div>
               <h2 className="sec-title">NOT JUST AN AGENCY.<br /><em>A FORCE MULTIPLIER</em></h2>
-              <p className="co-ab-story-text">LogicWorks exists to give ambitious businesses an unfair advantage. We combine the strategic depth of a management consultancy, the creative power of a top design studio, and the technical rigor of an elite engineering team — under one roof, at one price.</p>
-              <p className="co-ab-story-text">Since 2015, we have helped over 500 businesses across 15+ industries grow faster, rank higher, convert better, and automate smarter. Every engagement is built on transparency, accountability, and a genuine obsession with your success.</p>
+              <p className="co-ab-story-text">LogicWorks exists to give ambitious businesses a genuinely unfair advantage. We combine the strategic depth of a management consultancy, the creative power of a top design studio, and the technical rigor of an elite engineering team, all under one roof, at one price.</p>
+              <p className="co-ab-story-text">Since 2015, we have helped more than 500 businesses across over 15 industries grow faster, rank higher, convert better, and automate smarter. Every engagement, in turn, is built on transparency, accountability, and a genuine obsession with your success.</p>
               <Link href="/contact" className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 700 }}>
                 Start a Conversation{arrowIcon}
               </Link>
@@ -124,7 +124,7 @@ export default function About() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Our Journey</div>
             <h2 className="sec-title">A DECADE OF<br /><em>RELENTLESS GROWTH</em></h2>
-            <p className="sec-desc">From a boutique studio to America&apos;s elite digital agency — every milestone driven by client outcomes, not vanity metrics.</p>
+            <p className="sec-desc">From a boutique studio to one of America&apos;s most respected digital agencies, every milestone here has been driven by client outcomes, never vanity metrics</p>
           </div>
           <div className="co-ab-timeline">
             {timeline.map((item) => (
@@ -144,7 +144,7 @@ export default function About() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Our Values</div>
             <h2 className="sec-title">THE PRINCIPLES THAT<br /><em>DRIVE EVERYTHING</em></h2>
-            <p className="sec-desc">The non-negotiables that shape how we work, how we deliver, and how we treat every client partnership.</p>
+            <p className="sec-desc">The non negotiables that shape how we work, how we deliver, and how we treat every single client partnership</p>
           </div>
           <div className="co-culture-grid">
             {values.map((v) => (
@@ -163,7 +163,7 @@ export default function About() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Why LogicWorks</div>
             <h2 className="sec-title">WHAT SETS US<br /><em>APART</em></h2>
-            <p className="sec-desc">Three structural advantages that most agencies cannot replicate — because they were never built to.</p>
+            <p className="sec-desc">Three structural advantages most agencies simply cannot replicate, because they were never built to in the first place</p>
           </div>
           <div className="co-ab-diff">
             {differentiators.map((d) => (
@@ -182,7 +182,7 @@ export default function About() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">What We Do</div>
             <h2 className="sec-title">FULL-SPECTRUM<br /><em>DIGITAL EXCELLENCE</em></h2>
-            <p className="sec-desc">Four integrated disciplines — one accountable team delivering end-to-end transformation.</p>
+            <p className="sec-desc">Four integrated disciplines, one accountable team delivering end to end transformation</p>
           </div>
           <div className="co-dept-grid">
             {capabilities.map((c) => (
@@ -230,7 +230,7 @@ export default function About() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Global Presence</div>
             <h2 className="sec-title">WHERE WE<br /><em>OPERATE</em></h2>
-            <p className="sec-desc">Five US hubs plus a remote-first team across 15+ countries — delivering around the clock for clients worldwide.</p>
+            <p className="sec-desc">Five US hubs plus a remote first team spanning more than 15 countries, delivering around the clock for clients worldwide</p>
           </div>
           <div className="co-ab-locations">
             {locations.map((loc) => (
@@ -245,9 +245,9 @@ export default function About() {
       </section>
 
       <CompanyCta
-        eyebrow="Join 500+ Businesses"
+        eyebrow="Join 500 Plus Businesses"
         title={<>READY TO WORK WITH<br /><em>THE BEST IN THE BUSINESS</em>?</>}
-        sub="Book a free strategy session with our senior team. No pitch, no pressure — just honest insight into what it takes to dominate your market."
+        sub="Book a free strategy session with our senior team. No pitch, no pressure, just honest insight into what it actually takes to dominate your market."
         btnText="Book Free Strategy Call"
         note="FREE STRATEGY SESSION · SENIOR TEAM · NO COMMITMENT"
       />

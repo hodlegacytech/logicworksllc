@@ -11,37 +11,37 @@ const metrics = [
 ];
 
 const bento = [
-  { icon: 'IVR', title: 'AI-Powered IVR Replacement', desc: 'Replace frustrating phone trees with natural voice conversations — callers speak freely, AI understands intent, and routes or resolves without pressing a single button.', wide: false },
-  { icon: 'AGENT', title: 'Voice AI Agents', desc: 'Outbound and inbound voice agents that handle appointment reminders, payment collections, lead follow-ups, and customer surveys with human-like speech.', wide: false },
-  { icon: 'REAL', title: 'Real-Time Speech Processing', desc: 'Sub-800ms latency with streaming STT, LLM reasoning, and TTS synthesis — conversations feel natural, not robotic, even on complex multi-turn dialogues.', wide: true },
-  { icon: 'MULTI', title: 'Multilingual Voice Support', desc: 'Automatic language detection and response in 40+ languages — serve global customers on a single phone line without separate IVR branches.', wide: false },
-  { icon: 'SENT', title: 'Sentiment & Emotion Detection', desc: 'Real-time analysis of caller tone, frustration, and urgency — triggering priority routing, supervisor alerts, or empathetic response adjustments.', wide: false },
-  { icon: 'REC', title: 'Call Analytics & Transcription', desc: 'Every call transcribed, summarized, and tagged automatically — searchable archives, compliance records, and coaching insights for your team.', wide: false },
+  { icon: 'IVR', title: 'AI powered IVR replacement', desc: 'Frustrating phone trees get replaced with natural voice conversation, where callers speak freely and AI understands intent, routing or resolving without a single button press', wide: false },
+  { icon: 'AGENT', title: 'Voice AI agents', desc: 'Outbound and inbound voice agents handle appointment reminders, payment collections, lead follow ups, and customer surveys with genuinely human like speech', wide: false },
+  { icon: 'REAL', title: 'Real time speech processing', desc: 'Sub 800 millisecond latency through streaming speech to text, LLM reasoning, and text to speech synthesis makes conversations feel natural rather than robotic', wide: true },
+  { icon: 'MULTI', title: 'Multilingual voice support', desc: 'Automatic language detection and response across more than 40 languages serve global customers on a single phone line, without separate IVR branches', wide: false },
+  { icon: 'SENT', title: 'Sentiment and emotion detection', desc: 'Real time analysis of caller tone, frustration, and urgency triggers priority routing, supervisor alerts, or more empathetic response adjustments', wide: false },
+  { icon: 'REC', title: 'Call analytics and transcription', desc: 'Every call gets transcribed, summarized, and tagged automatically, building searchable archives, compliance records, and coaching insights for your team', wide: false },
 ];
 
 const useCases = [
-  { num: '01', title: 'Customer Service Hotlines', desc: 'Replace tier-1 phone support with AI voice agents that handle order status, billing inquiries, and account changes — escalating only complex cases.' },
-  { num: '02', title: 'Healthcare Scheduling', desc: 'HIPAA-compliant voice AI for appointment booking, prescription refill requests, and pre-visit screening — reducing front-desk call volume dramatically.' },
-  { num: '03', title: 'Sales & Lead Qualification', desc: 'Outbound voice campaigns that qualify leads, book demos, and nurture prospects — scaling SDR outreach without scaling headcount.' },
-  { num: '04', title: 'Smart Devices & IoT', desc: 'Embedded voice interfaces for products, kiosks, and smart environments — hands-free control with custom wake words and domain-specific vocabulary.' },
+  { num: '01', title: 'Customer service hotlines', desc: 'Tier 1 phone support gets replaced by AI voice agents handling order status, billing inquiries, and account changes, escalating only the complex cases' },
+  { num: '02', title: 'Healthcare scheduling', desc: 'HIPAA compliant voice AI handles appointment booking, prescription refill requests, and pre visit screening, dramatically cutting front desk call volume' },
+  { num: '03', title: 'Sales and lead qualification', desc: 'Outbound voice campaigns qualify leads, book demos, and nurture prospects, scaling SDR outreach without scaling headcount' },
+  { num: '04', title: 'Smart devices and IoT', desc: 'Embedded voice interfaces for products, kiosks, and smart environments offer hands free control with custom wake words and domain specific vocabulary' },
 ];
 
 const timeline = [
-  { num: '01', title: 'Call Flow Audit', desc: 'Analyze call recordings, IVR paths, and agent scripts to map automation opportunities.' },
-  { num: '02', title: 'Voice Persona Design', desc: 'Define voice tone, personality, conversation scripts, and escalation rules.' },
-  { num: '03', title: 'Build & Train', desc: 'Configure STT/TTS pipelines, train on domain vocabulary, and benchmark latency.' },
-  { num: '04', title: 'Telephony Integration', desc: 'Connect to Twilio, Vonage, or SIP trunks — deploy on existing phone numbers.' },
-  { num: '05', title: 'Monitor & Tune', desc: 'Review call analytics, improve recognition accuracy, and expand conversation coverage.' },
+  { num: '01', title: 'Call flow audit', desc: 'Analyze call recordings, IVR paths, and agent scripts to map automation opportunities' },
+  { num: '02', title: 'Voice persona design', desc: 'Define voice tone, personality, conversation scripts, and escalation rules' },
+  { num: '03', title: 'Build and train', desc: 'Configure speech to text and text to speech pipelines, train on domain vocabulary, and benchmark latency' },
+  { num: '04', title: 'Telephony integration', desc: 'Connect to Twilio, Vonage, or SIP trunks, then deploy directly onto existing phone numbers' },
+  { num: '05', title: 'Monitor and tune', desc: 'Review call analytics, improve recognition accuracy, and expand conversation coverage over time' },
 ];
 
 const stack = ['Twilio', 'Deepgram', 'ElevenLabs', 'OpenAI Realtime', 'Amazon Polly', 'Vonage', 'WebRTC', 'Python', 'Node.js', 'AWS Connect', 'Genesys', 'Five9'];
 
 const faqs = [
-  { q: 'Will callers know they are talking to AI?', a: 'We recommend transparent disclosure — "Hi, I\'m LogicWorks AI assistant" — which builds trust. Voice quality is natural enough that many callers prefer AI for quick tasks over hold times with human agents.' },
-  { q: 'Can voice AI handle accents and background noise?', a: 'Modern STT engines achieve 95–98% accuracy across accents with noise cancellation. We fine-tune on your specific caller demographics and test extensively before launch.' },
-  { q: 'How does it integrate with our phone system?', a: 'We integrate via Twilio, Vonage, SIP trunks, or directly with platforms like Genesys, Five9, and AWS Connect. Your existing phone numbers stay the same — AI handles calls before or instead of human queues.' },
-  { q: 'Is voice AI HIPAA or PCI compliant?', a: 'Yes. We implement encrypted call streams, PII redaction in transcripts, audit logging, and BAA agreements for healthcare. Payment card data is never processed by voice AI — callers are routed to secure payment lines.' },
-  { q: 'What is the typical ROI timeline?', a: 'Most clients see positive ROI within 3–4 months through call deflection savings. A 100-agent call center saving 30% of tier-1 volume typically recovers implementation cost in under 90 days.' },
+  { q: 'What can voice AI actually be used for in a business setting?', a: 'Common applications include automated phone answering, appointment scheduling, customer support triage, and voice-activated internal tools for hands-free workflows.' },
+  { q: 'How natural do voice AI conversations sound compared to a few years ago?', a: 'Significantly more natural. Modern voice AI handles tone, pacing, and conversational flow far better than older robotic-sounding systems.' },
+  { q: 'Can voice AI integrate with our existing phone systems?', a: 'Yes. Most voice AI solutions are built to integrate with standard business phone systems and call routing software without requiring new hardware.' },
+  { q: 'Will customers be able to tell they\'re speaking with voice AI instead of a person?', a: 'Often not immediately, though most businesses disclose this upfront for transparency, particularly in industries where that disclosure is expected or required.' },
+  { q: 'How long does it take to deploy a voice AI system for customer service?', a: 'Most deployments take 6 to 10 weeks, covering call flow design, voice training, integration, and testing against real customer scenarios.' },
 ];
 
 export default function VoiceAi() {
@@ -53,7 +53,7 @@ export default function VoiceAi() {
     <div ref={pageRef} className="ai-tech-page">
       <Head>
         <title head-key="title">Voice AI Solutions | LogicWorks — Intelligent Voice Interfaces</title>
-        <meta head-key="description" name="description" content="LogicWorks builds Voice AI solutions — IVR replacement, voice agents, real-time speech processing, and multilingual phone automation with sub-800ms latency." />
+        <meta head-key="description" name="description" content="We replace rigid phone trees with natural conversations that understand, resolve, and route intelligently, so callers stop pressing buttons and start actually getting answers." />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/voice-ai" />
       </Head>
 
@@ -62,8 +62,8 @@ export default function VoiceAi() {
         <div className="ai-tech-hero-grid" aria-hidden="true" />
         <div className="con ai-tech-hero-inner">
           <div className="ai-tech-eyebrow"><span className="ai-tech-eyebrow-dot" />Conversational AI</div>
-          <h1 className="ai-tech-hero-title" id="voice-title">VOICE AI<br /><span>SOLUTIONS</span></h1>
-          <p className="ai-tech-hero-sub">Frictionless voice interfaces for customer service, IVR replacement, and smart device integration — natural conversations with sub-800ms latency, 24/7 phone coverage, and enterprise-grade compliance.</p>
+          <h1 className="ai-tech-hero-title" id="voice-title">VOICE <span>AI</span></h1>
+          <p className="ai-tech-hero-sub">We replace rigid phone trees with natural conversations that understand, resolve, and route intelligently, so callers stop pressing buttons and start actually getting answers.</p>
           <div className="ai-tech-hero-actions">
             <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Build Voice AI{arrowIcon}</Link>
             <Link href="/ai-solutions" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>All AI Services</Link>
@@ -90,21 +90,21 @@ export default function VoiceAi() {
             <div className="reveal-l">
               <div className="sec-label">The Problem</div>
               <h2 className="sec-title">PHONE TREES<br /><em>KILL CUSTOMER TRUST</em></h2>
-              <p className="sec-desc" style={{ marginBottom: '20px' }}>Press 1, press 2, hold for 20 minutes — legacy IVR systems frustrate callers and burn agent time on repetitive inquiries. Voice AI replaces rigid phone trees with natural conversations that understand, resolve, and route intelligently.</p>
+              <p className="sec-desc" style={{ marginBottom: '20px' }}>Press 1, press 2, hold for 20 minutes, legacy IVR systems frustrate callers and burn agent time on repetitive inquiries that should never have reached a person in the first place. Voice AI replaces those rigid phone trees with natural conversations that actually understand intent.</p>
               <div className="ai-tech-check-list">
-                {['Natural language IVR — no button pressing', 'Sub-800ms response latency for real conversations', 'Multilingual support on a single phone line', 'Automatic transcription and call analytics'].map((item) => (
+                {['Natural language IVR with no button pressing required', 'Sub 800 millisecond response latency for real conversation', 'Multilingual support running on a single phone line', 'Automatic transcription and call analytics'].map((item) => (
                   <div key={item} className="ai-tech-check-item">{checkIcon}{item}</div>
                 ))}
               </div>
-              <div className="ai-tech-tag-row">{['IVR Replacement', 'Voice Agents', 'STT/TTS', 'Multilingual', 'Analytics'].map((t) => <span key={t} className="ai-tech-tag">{t}</span>)}</div>
+              <div className="ai-tech-tag-row">{['IVR replacement', 'voice agents', 'STT and TTS', 'multilingual', 'analytics'].map((t) => <span key={t} className="ai-tech-tag">{t}</span>)}</div>
             </div>
             <div className="reveal-r ai-tech-outcome-panel">
               <div className="ai-tech-outcome-label">Expected Outcomes</div>
               {[
-                { icon: '↓', title: '65% Call Deflection', desc: 'Tier-1 inquiries resolved by voice AI without reaching an agent.' },
-                { icon: '⚡', title: 'Sub-800ms Latency', desc: 'Real-time speech processing that feels like talking to a person.' },
-                { icon: '🎯', title: '98% Recognition Accuracy', desc: 'Fine-tuned STT handles accents, jargon, and domain vocabulary.' },
-                { icon: '📞', title: '24/7 Phone Coverage', desc: 'No more closed signs — every call answered, every time.' },
+                { icon: '↓', title: '65% call deflection', desc: 'Tier 1 inquiries get resolved by voice AI without ever reaching an agent' },
+                { icon: '⚡', title: 'Sub 800ms latency', desc: 'Real time speech processing that feels genuinely like talking to a person' },
+                { icon: '🎯', title: '98% recognition accuracy', desc: 'Fine tuned speech to text handles accents, jargon, and domain vocabulary' },
+                { icon: '📞', title: '24/7 phone coverage', desc: 'No more closed signs, every call gets answered, every time' },
               ].map((o) => (
                 <div key={o.title} className="ai-tech-outcome-item">
                   <div className="ai-tech-outcome-icon">{o.icon}</div>
@@ -121,12 +121,12 @@ export default function VoiceAi() {
           <div className="ai-tech-sec-hd reveal">
             <div className="sec-label">Capabilities</div>
             <h2 className="sec-title">VOICE AI THAT<br /><em>SOUNDS HUMAN</em></h2>
-            <p className="sec-desc">Six modules powering natural voice experiences from phone lines to smart devices.</p>
+            <p className="sec-desc">Six modules power natural voice experiences from phone lines all the way to smart devices.</p>
           </div>
           <div className="ai-tech-bento">
             {bento.map((b) => (
               <article key={b.title} className={`ai-tech-bento-card${b.wide ? ' ai-tech-bento-card--wide' : ''}`}>
-                <div className="ai-tech-bento-icon">{b.icon}</div>
+                {/* <div className="ai-tech-bento-icon">{b.icon}</div> */}
                 <h3 className="ai-tech-bento-title">{b.title}</h3>
                 <p className="ai-tech-bento-desc">{b.desc}</p>
               </article>
@@ -140,7 +140,6 @@ export default function VoiceAi() {
           <div className="ai-tech-sec-hd reveal">
             <div className="sec-label">Use Cases</div>
             <h2 className="sec-title">VOICE AI FOR<br /><em>EVERY INDUSTRY</em></h2>
-            <p className="sec-desc">From call centers to smart devices — voice interfaces that scale without scaling staff.</p>
           </div>
           <div className="ai-tech-use-grid">
             {useCases.map((u) => (
@@ -158,7 +157,6 @@ export default function VoiceAi() {
           <div className="ai-tech-sec-hd reveal">
             <div className="sec-label">Implementation</div>
             <h2 className="sec-title">LIVE IN<br /><em>5 PHASES</em></h2>
-            <p className="sec-desc">From call audit to production voice agents — structured rollout on your existing phone infrastructure.</p>
           </div>
           <div className="ai-tech-timeline">
             {timeline.map((s) => (
@@ -183,8 +181,8 @@ export default function VoiceAi() {
         </div>
       </section>
 
-      <AiTechFaq id="voice-faq" title={<>Voice AI<br /><em>QUESTIONS ANSWERED</em></>} desc="What contact center and operations leaders ask before deploying voice AI." faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
-      <AiTechCta eyebrow="Answer Every Call" title={<>YOUR PHONE LINE<br /><em>NEVER CLOSES</em>.</>} sub="Book a free voice AI demo and hear a custom voice agent handle your top call scenarios live." btnText="Build Voice AI" note="FREE VOICE DEMO · CUSTOM AGENT · NO COMMITMENT" />
+      <AiTechFaq id="voice-faq" title={<>FAQs</>} desc="" faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
+      <AiTechCta eyebrow="Answer Every Call" title={<>YOUR PHONE LINE<br /><em>NEVER CLOSES</em>.</>} sub="Book a free voice AI demo and hear a custom voice agent handle your top call scenarios live." btnText="Build Voice AI" note="" />
     </div>
   );
 }

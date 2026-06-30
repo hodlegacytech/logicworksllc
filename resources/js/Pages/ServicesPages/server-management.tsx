@@ -9,37 +9,37 @@ gsap.registerPlugin(ScrollTrigger);
 const HERO_COLOR = '#0d1b3e';
 
 const capabilities = [
-  { badge: '24/7', title: 'Round-the-Clock Monitoring', desc: 'Proactive server monitoring with instant alerts for CPU spikes, memory leaks, disk usage, and service failures — issues caught before users notice.' },
-  { badge: 'Patch', title: 'Security Patching & Updates', desc: 'OS-level security patches, kernel updates, and package upgrades applied on a scheduled cadence with zero-downtime rolling updates where possible.' },
-  { badge: 'Perf', title: 'Performance Tuning', desc: 'Database query optimization, cache configuration, load balancer tuning, and resource allocation adjustments to keep servers running at peak efficiency.' },
-  { badge: 'Incident', title: 'Rapid Incident Response', desc: 'Dedicated on-call engineers with SLA-backed response times — critical incidents addressed within 15 minutes, not hours.' },
-  { badge: 'Backup', title: 'Disaster Recovery', desc: 'Automated backup verification, off-site replication, and documented recovery runbooks tested quarterly to guarantee business continuity.' },
-  { badge: 'Scale', title: 'Capacity Planning', desc: 'Traffic trend analysis and proactive scaling recommendations so your infrastructure grows ahead of demand — never behind it.' },
+  { badge: '24/7', title: 'Round-the-Clock Monitoring', desc: 'Our 24/7 server monitoring services catch CPU spikes, memory leaks, disk usage, and service failures through instant alerts, often before users ever notice.' },
+  { badge: 'Patch', title: 'Security Patching & Updates', desc: 'OS-level security patches, kernel updates, and package upgrades are applied on a scheduled cadence, with zero-downtime rolling updates wherever possible.' },
+  { badge: 'Perf', title: 'Performance Tuning', desc: 'Database query optimization, cache configuration, load balancer tuning, and resource allocation adjustments that keep servers running at peak efficiency.' },
+  { badge: 'Incident', title: 'Rapid Incident Response', desc: 'Dedicated on-call engineers with SLA-backed response times mean critical incidents get addressed within 15 minutes, not hours.' },
+  { badge: 'Backup', title: 'Disaster Recovery', desc: 'Automated backup verification, off-site replication, and documented recovery runbooks are tested quarterly to guarantee genuine business continuity.' },
+  { badge: 'Scale', title: 'Capacity Planning', desc: 'Traffic trend analysis, and proactive scaling recommendations mean your infrastructure grows ahead of demand, never behind it.' },
 ];
 
 const serverTypes = [
   { icon: '01', title: 'Linux VPS & Dedicated', desc: 'Ubuntu, CentOS, and Debian server management with Nginx, Apache, and custom stack configuration and hardening.' },
-  { icon: '02', title: 'Cloud Infrastructure', desc: 'AWS EC2, Google Compute, and Azure VM management — auto-scaling groups, load balancers, and cloud-native service optimization.' },
-  { icon: '03', title: 'Database Servers', desc: 'MySQL, PostgreSQL, MongoDB, and Redis administration — replication setup, query optimization, and backup management.' },
+  { icon: '02', title: 'Cloud Infrastructure', desc: 'AWS EC2, Google Compute, and Azure VM management, including auto-scaling groups, load balancers, and cloud-native service optimization.' },
+  { icon: '03', title: 'Database Servers', desc: 'MySQL, PostgreSQL, MongoDB, and Redis administration, covering replication setup, query optimization, and backup management.' },
   { icon: '04', title: 'Application Servers', desc: 'Node.js, PHP-FPM, and Python application server management with process monitoring, log aggregation, and restart automation.' },
 ];
 
 const processSteps = [
-  { num: '01', title: 'Server Audit', desc: 'Full infrastructure assessment — OS version, security posture, performance baseline, and vulnerability scan.' },
-  { num: '02', title: 'Onboarding', desc: 'Monitoring agent deployment, alert configuration, access setup, and documentation of current server architecture.' },
+  { num: '01', title: 'Server Audit', desc: 'A full infrastructure assessment covering OS version, security posture, performance baseline, and a vulnerability scan.' },
+  { num: '02', title: 'Onboarding', desc: 'Monitoring agent deployment, alert configuration, access setup, and documentation of your current server architecture.' },
   { num: '03', title: 'Hardening', desc: 'Firewall rules, SSH hardening, fail2ban, unnecessary service removal, and security baseline enforcement.' },
   { num: '04', title: 'Optimize', desc: 'Performance tuning, cache configuration, log rotation, and resource allocation optimization.' },
-  { num: '05', title: 'Ongoing Mgmt', desc: '24/7 monitoring, scheduled patching, monthly reports, and proactive capacity recommendations.' },
+  { num: '05', title: 'Ongoing Mgmt', desc: '24/7 monitoring, scheduled patching, monthly reports, and proactive capacity recommendations going forward.' },
 ];
 
 const techStack = ['Linux', 'AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'Nginx', 'MySQL', 'PostgreSQL', 'Redis', 'Datadog', 'PagerDuty'];
 
 const faqs = [
-  { q: 'What response time do you guarantee for critical incidents?', a: 'Critical incidents (complete server outage) receive a 15-minute initial response guarantee on our Enterprise plan. Standard plans guarantee 1-hour response for critical and 4-hour for non-critical issues.' },
-  { q: 'Do you manage servers we don\'t host with you?', a: 'Yes. We manage servers on any provider — AWS, DigitalOcean, Linode, Hetzner, or your own data center — as long as we have secure administrative access.' },
-  { q: 'How often do you apply security patches?', a: 'Critical security patches are applied within 24 hours of release. Standard patches follow a weekly maintenance window agreed with your team to minimize disruption.' },
-  { q: 'Will server management cause downtime?', a: 'We use rolling updates, maintenance windows, and redundancy configurations to minimize downtime. Planned maintenance is scheduled in advance with your approval.' },
-  { q: 'How is server management priced?', a: 'Plans start at $199/month per server for standard monitoring and patching. Multi-server and enterprise environments are scoped individually with volume discounts.' },
+  { q: 'What does server management services typically include?', a: 'Software updates, security patching, performance monitoring, backup management, and troubleshooting, keeping servers running smoothly without requiring in-house expertise.' },
+  { q: 'Why are 24/7 server monitoring services important for business websites?', a: 'Continuous monitoring catches issues like traffic spikes, security threats, or hardware failures immediately, often resolving problems before customers ever notice downtime.' },
+  { q: 'Can server management services help prevent security breaches?', a: 'Yes. Regular patching, firewall configuration, and intrusion detection are core parts of professional server management that significantly reduce breach risk.' },
+  { q: 'How quickly can a server management team respond to an outage?', a: 'With proper 24/7 server monitoring services in place, most issues are detected and addressed within minutes, often before a full outage even occurs.' },
+  { q: 'Do I need server management services if my site is already on managed hosting?', a: 'Managed hosting typically covers basic server needs, but businesses running custom applications or high-traffic sites often benefit from dedicated server management for deeper optimization.' },
 ];
 
 const checkIcon = (
@@ -66,7 +66,7 @@ export default function ServerManagement() {
     <div ref={pageRef} className="svc-page">
       <Head>
         <title head-key="title">Server Management | LogicWorks — 24/7 Managed Server Operations</title>
-        <meta head-key="description" name="description" content="LogicWorks server management — 24/7 proactive monitoring, security patching, performance tuning, and rapid incident response so your infrastructure never goes dark." />
+        <meta head-key="description" name="description" content="24/7 proactive monitoring, patching, and rapid-response server management, so your infrastructure stays secure, fast, and always online." />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/server-management" />
       </Head>
 
@@ -76,11 +76,11 @@ export default function ServerManagement() {
         <div className="con" style={{ position: 'relative', zIndex: 2 }}>
           <div className="svc-hero-animate">
             <span className="inner-hero-label">Infrastructure</span>
-            <h1 className="inner-hero-title" id="server-title">SERVER<br />MANAGEMENT</h1>
-            <p className="inner-hero-sub">24/7 proactive monitoring, patching, and rapid-response server management — so your infrastructure stays secure, fast, and always online.</p>
+            <h1 className="inner-hero-title" id="server-title">SERVER MANAGEMENT<br />SERVICES</h1>
+            <p className="inner-hero-sub">24/7 proactive monitoring, patching, and rapid-response server management, so your infrastructure stays secure, fast, and always online.</p>
             <div className="svc-hero-actions">
               <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Free Server Audit{arrowIcon}</Link>
-              <Link to="/hosting-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Hosting Plans</Link>
+              <Link href="/hosting-services" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>View Hosting Plans</Link>
             </div>
           </div>
         </div>
@@ -92,10 +92,10 @@ export default function ServerManagement() {
             <div className="reveal-l">
               <div className="sec-label">Why Server Management</div>
               <h2 className="sec-title">YOUR SERVERS.<br /><em>OUR OBSESSION</em></h2>
-              <p className="sec-desc" style={{ marginBottom: '20px' }}>Unmanaged servers are ticking time bombs — unpatched vulnerabilities, silent performance degradation, and 3am outages that cost you revenue and reputation. Professional server management eliminates that risk entirely.</p>
-              <p className="sec-desc">LogicWorks acts as your dedicated infrastructure team — monitoring, patching, optimizing, and responding so you never have to wake up to a server emergency.</p>
+              <p className="sec-desc" style={{ marginBottom: '20px' }}>Unmanaged servers are essentially ticking time bombs: unpatched vulnerabilities, silent performance degradation, and 3 am outages that cost you both revenue and reputation. Professional server management services eliminate that risk almost entirely.</p>
+              <p className="sec-desc">LogicWorks acts as your dedicated infrastructure team, monitoring, patching, optimizing, and responding so you never have to wake up to a server emergency again.</p>
               <div className="svc-check-list">
-                {['15-minute critical incident response SLA', 'Weekly security patching with zero-downtime updates', 'Monthly performance and capacity reports', 'Disaster recovery tested quarterly'].map((item) => (
+                {['15-minute critical incident response SLA', 'Weekly security patching with zero-downtime updates', 'Monthly performance and capacity reports', 'Disaster recovery is tested quarterly'].map((item) => (
                   <div key={item} className="svc-check-item">{checkIcon}{item}</div>
                 ))}
               </div>
@@ -122,21 +122,21 @@ export default function ServerManagement() {
 
       <section className="svc-sec svc-sec--alt">
         <div className="con">
-          <div className="svc-sec-hd-c reveal"><div className="sec-label">Core Capabilities</div><h2 className="sec-title">PROACTIVE OPS.<br /><em>ZERO SURPRISES</em></h2><p className="sec-desc">Every aspect of server operations managed by specialists — not automated scripts with no human oversight.</p></div>
+          <div className="svc-sec-hd-c reveal"><div className="sec-label">Core Capabilities</div><h2 className="sec-title">PROACTIVE OPS.<br /><em>ZERO SURPRISES</em></h2><p className="sec-desc">Every aspect of server operations is managed by specialists, not by automated scripts running with zero human oversight.</p></div>
           <div className="svc-grid-3 svc-capabilities">{capabilities.map((c) => (<article key={c.title} className="svc-card svc-card--white"><span className="svc-card-badge">{c.badge}</span><h3 className="svc-card-title">{c.title}</h3><p className="svc-card-desc">{c.desc}</p></article>))}</div>
         </div>
       </section>
 
       <section className="svc-sec">
         <div className="con">
-          <div className="svc-sec-hd-c reveal"><div className="sec-label">Server Environments</div><h2 className="sec-title">WE MANAGE<br /><em>EVERY STACK</em></h2><p className="sec-desc">From single VPS instances to multi-region cloud clusters — our engineers manage it all.</p></div>
+          <div className="svc-sec-hd-c reveal"><div className="sec-label">Server Environments</div><h2 className="sec-title">WE MANAGE<br /><em>EVERY STACK</em></h2><p className="sec-desc">From single VPS instances to multi-region cloud clusters, our engineers manage all of it directly.</p></div>
           <div className="svc-grid-4">{serverTypes.map((t) => (<article key={t.title} className="svc-card reveal"><div className="svc-use-icon">{t.icon}</div><h3 className="svc-card-title">{t.title}</h3><p className="svc-card-desc">{t.desc}</p></article>))}</div>
         </div>
       </section>
 
       <section className="svc-sec svc-sec--alt">
         <div className="con">
-          <div className="svc-sec-hd-c reveal"><div className="sec-label">Our Process</div><h2 className="sec-title">ONBOARDED &amp;<br /><em>PROTECTED IN 5 STEPS</em></h2><p className="sec-desc">From initial audit to fully managed operations — a seamless transition with zero disruption.</p></div>
+          <div className="svc-sec-hd-c reveal"><div className="sec-label">Our Process</div><h2 className="sec-title">ONBOARDING &amp;<br /><em>PROTECTING IN 5 STEPS</em></h2><p className="sec-desc">From the initial audit to fully managed operations, the transition stays seamless with essentially zero disruption.</p></div>
           <div className="svc-process-grid">{processSteps.map((s) => (<div key={s.num} className="svc-process-step"><div className="svc-process-num">{s.num}</div><h3 className="svc-process-title">{s.title}</h3><p className="svc-process-desc">{s.desc}</p></div>))}</div>
         </div>
       </section>
@@ -150,7 +150,7 @@ export default function ServerManagement() {
 
       <section className="faq-sec svc-sec" aria-labelledby="server-faq-title">
         <div className="con">
-          <div className="sec-hd-c reveal"><div className="sec-label">FAQ</div><h2 className="sec-title" id="server-faq-title">SERVER MANAGEMENT<br /><em>QUESTIONS ANSWERED</em></h2><p className="sec-desc">What IT teams and business owners ask before outsourcing server management.</p></div>
+          <div className="sec-hd-c reveal"><div className="sec-label">FAQ</div><h2 className="sec-title" id="server-faq-title">FAQs</h2></div>
           <div className="faq-list">{faqs.map((faq, i) => { const open = openFaq === i; return (
             <div key={faq.q} className={`faq-item${open ? ' on' : ''}`}>
               <div className="faq-q" role="button" tabIndex={0} aria-expanded={open} onClick={() => setOpenFaq(open ? null : i)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setOpenFaq(open ? null : i); } }}>
@@ -166,12 +166,12 @@ export default function ServerManagement() {
         <div className="con" style={{ position: 'relative', zIndex: 1 }}>
           <span className="cta-eyebrow">Sleep Better Tonight</span>
           <h2 className="cta-title">UNMANAGED SERVERS ARE<br /><em>A LIABILITY</em>.</h2>
-          <p className="cta-sub">Get a free server audit — we&apos;ll identify vulnerabilities, performance bottlenecks, and single points of failure in your current setup.</p>
+          <p className="cta-sub">Get a free server audit. We&apos;ll identify vulnerabilities, performance bottlenecks, and single points of failure in your current setup.</p>
           <div className="cta-btns">
             <Link href="/contact" className="btn btn-white" style={{ padding: '18px 36px', fontSize: '1.05rem', fontWeight: 800 }}>Get Free Server Audit{arrowIcon}</Link>
             <a href="tel:+18005644299" className="btn btn-ghost-white" style={{ padding: '18px 36px', fontSize: '1.05rem' }}>Call Now</a>
           </div>
-          <p className="cta-note">FREE AUDIT · 15-MIN CRITICAL RESPONSE · 24/7 MONITORING</p>
+          {/* <p className="cta-note">FREE AUDIT · 15-MIN CRITICAL RESPONSE · 24/7 MONITORING</p> */}
         </div>
       </section>
     </div>

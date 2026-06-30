@@ -11,37 +11,37 @@ const metrics = [
 ];
 
 const solutions = [
-  { num: '01', title: 'Pixel & Tag Governance', desc: 'Meta Pixel, Google tag, LinkedIn Insight, and server-side CAPI configured with event match quality scores that actually train algorithms.' },
-  { num: '02', title: 'Audience Segmentation', desc: 'Cart abandoners, product viewers, time-on-site tiers, and CRM lists synced for suppression and VIP offers — no one-size-fits-all blast.' },
-  { num: '03', title: 'Dynamic Product Ads', desc: 'Catalog-linked creative that shows the exact SKU a visitor viewed — price, image, and promo updated in real time from your feed.' },
-  { num: '04', title: 'Sequential Messaging', desc: 'Story-based retargeting flows: awareness reminder → social proof → urgency → offer — timed to your average consideration window.' },
-  { num: '05', title: 'Cross-Network Retargeting', desc: 'Coordinated Google Display, Meta, and programmatic remarketing with frequency caps so prospects see you — not stalk you.' },
-  { num: '06', title: 'Incrementality Testing', desc: 'Holdout tests and conversion lift studies to prove retargeting adds revenue — not just claims last-click credit.' },
+  { num: '01', title: 'Pixel & Tag Governance', desc: 'Meta Pixel, Google Tag, LinkedIn Insight, and server-side CAPI are configured with event match quality scores that actually train the algorithms properly.' },
+  { num: '02', title: 'Audience Segmentation', desc: 'Cart abandoners, product viewers, time-on-site tiers, and CRM lists synced for suppression and VIP offers, never a one-size-fits-all blast.' },
+  { num: '03', title: 'Dynamic Product Ads', desc: 'Catalog-linked creative that shows the exact SKU a visitor viewed, with price, image, and promo updated in real time straight from your feed.' },
+  { num: '04', title: 'Sequential Messaging', desc: 'Story-based retargeting flows, awareness reminder, social proof, urgency, then the offer, timed carefully to your average consideration window.' },
+  { num: '05', title: 'Cross-Network Retargeting', desc: 'Coordinated Google Display, Meta, and programmatic remarketing with frequency caps in place, so prospects see you rather than feel stalked by you.' },
+  { num: '06', title: 'Incrementality Testing', desc: 'Holdout tests and conversion lift studies that prove retargeting actually adds revenue, rather than simply claiming last-click credit.' },
 ];
 
 const useCases = [
   { icon: 'CART', title: 'E-Commerce Abandonment', desc: 'Recover carts and browse abandoners with dynamic ads, free-shipping tests, and urgency creative timed to your median purchase delay.' },
   { icon: 'B2B', title: 'B2B Consideration Cycles', desc: 'Retarget content downloaders and demo no-shows with case studies and ROI calculators across LinkedIn and display.' },
-  { icon: 'SVC', title: 'High-Ticket Services', desc: 'Multi-touch sequences for legal, finance, and home services — trust-building creative before the hard CTA.' },
-  { icon: 'SUB', title: 'Subscription & Trials', desc: 'Win back expired trials and lapsed subscribers with offer ladders and feature reminders tied to churn reasons.' },
+  { icon: 'SVC', title: 'High-Ticket Services', desc: 'Multi-touch sequences for legal, finance, and home services, building trust through creative before the harder CTA ever appears.' },
+  { icon: 'SUB', title: 'Subscription & Trials', desc: 'Win back expired trials and lapsed subscribers through offer ladders and feature reminders tied directly to churn reasons.' },
 ];
 
 const process = [
-  { num: '01', title: 'Data & Pixel Audit', desc: 'Verify events, parameters, and consent flows — fix tracking gaps before building audiences.' },
-  { num: '02', title: 'Segment Design', desc: 'Map visitor behaviors to audience tiers with exclusion rules for converters and existing customers.' },
-  { num: '03', title: 'Creative Production', desc: 'Static, carousel, and dynamic templates built per segment — brand-safe and platform-compliant.' },
-  { num: '04', title: 'Launch & Frequency', desc: 'Campaigns live with caps, dayparting, and bid strategies tuned to view-through windows.' },
-  { num: '05', title: 'Test & Expand', desc: 'Offer tests, creative refreshes, and lookalike seeds from your highest-value retarget converters.' },
+  { num: '01', title: 'Data & Pixel Audit', desc: 'Verify events, parameters, and consent flows, fixing tracking gaps before any audiences get built.' },
+  { num: '02', title: 'Segment Design', desc: 'Map visitor behaviors to audience tiers, with exclusion rules in place for converters and existing customers.' },
+  { num: '03', title: 'Creative Production', desc: 'Static, carousel, and dynamic templates built per segment, kept brand-safe and platform-compliant throughout.' },
+  { num: '04', title: 'Launch & Frequency', desc: 'Campaigns go live with caps, dayparting, and bid strategies tuned specifically to view-through windows.' },
+  { num: '05', title: 'Test & Expand', desc: 'Offer tests, creative refreshes, and lookalike seeds drawn from your highest-value retarget converters.' },
 ];
 
 const channels = ['Meta Retargeting', 'Google Display RM', 'YouTube Remarketing', 'LinkedIn Matched', 'Programmatic DSP', 'TikTok Retarget', 'CAPI / Server-Side', 'CRM Audiences', 'Dynamic Product Ads', 'Email Sync', 'Cart Scripts', 'GA4 Audiences'];
 
 const faqs = [
-  { q: 'Will retargeting annoy our customers?', a: 'Frequency caps, exclusion lists, and segment-specific creative prevent ad fatigue. We cap impressions per user per week and suppress buyers — so retargeting feels relevant, not creepy.' },
-  { q: 'How soon can audiences go live?', a: 'With existing pixels and traffic volume, audiences are typically live within 7 days. New pixel installs need 2–4 weeks of data collection before lookalikes and broad retarget scale.' },
-  { q: 'Do you need access to our product catalog?', a: 'For dynamic product ads, yes — we connect Merchant Center, Shopify, or custom feeds. Static retargeting works without a feed but converts lower for e-commerce.' },
-  { q: 'What ROAS should we expect from retargeting?', a: 'Retargeting usually delivers 2–5x ROAS depending on traffic quality and offer strength. It rarely stands alone — it amplifies prospecting and converts warm intent your top-of-funnel already paid for.' },
-  { q: 'Can you retarget without third-party cookies?', a: 'Yes. First-party data, server-side tagging, CRM uploads, and platform logged-in users sustain retargeting post-cookie deprecation — we build for that reality now.' },
+  { q: 'What is retargeting, and how does it work?', a: 'Retargeting shows ads specifically to people who have already visited your website or engaged with your brand, using tracking pixels to follow them across other sites and platforms.' },
+  { q: 'How effective is retargeting compared to regular display advertising?', a: 'Retargeting typically converts significantly higher than cold display advertising, since it\'s reaching an audience already familiar with your brand.' },
+  { q: 'Is retargeting considered intrusive by most users?', a: 'When frequency is managed properly, most users don\'t find it intrusive. Problems generally arise only when ads are shown too often without variation.' },
+  { q: 'Can retargeting be done across multiple platforms at once?', a: 'Yes. Most retargeting strategies run simultaneously across Google Display Network, Meta, and sometimes LinkedIn, depending on where your audience spends time.' },
+  { q: 'How long should someone stay in a retargeting audience after visiting a site?', a: 'Most campaigns use a 30 to 90-day window, though this varies based on typical sales cycle length and how often the product or service is purchased.' },
 ];
 
 export default function Retargeting() {
@@ -53,7 +53,7 @@ export default function Retargeting() {
     <div ref={pageRef} className="mkt-page">
       <Head>
         <title head-key="title">Retargeting Campaigns | LogicWorks — Win Back Lost Visitors</title>
-        <meta head-key="description" name="description" content="LogicWorks runs retargeting across Google, Meta, and programmatic — dynamic product ads, audience segmentation, and CAPI tracking that recovers 68%+ of abandoned carts." />
+        <meta head-key="description" name="description" content="Win back visitors who already showed intent. Precision remarketing across Google, Meta, and programmatic, with dynamic creative and real frequency discipline." />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/retargeting" />
       </Head>
 
@@ -63,7 +63,7 @@ export default function Retargeting() {
         <div className="con mkt-hero-inner">
           <div className="mkt-eyebrow">Paid Media</div>
           <h1 className="mkt-hero-title" id="retarget-title">RETARGETING<br /><span>CAMPAIGNS</span></h1>
-          <p className="mkt-hero-sub">Win back visitors who already showed intent — precision remarketing across Google, Meta, and programmatic with dynamic creative and frequency discipline.</p>
+          <p className="mkt-hero-sub">Win back visitors who already showed intent. Precision remarketing across Google, Meta, and programmatic, with dynamic creative and real frequency discipline.</p>
           <div className="mkt-hero-actions">
             <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Get Retargeting Audit{arrowIcon}</Link>
             <Link href="/ppc-management" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Full PPC Management</Link>
@@ -90,9 +90,9 @@ export default function Retargeting() {
             <div className="reveal-l">
               <div className="sec-label">The Problem</div>
               <h2 className="sec-title">97% LEAVE<br /><em>WITHOUT CONVERTING</em></h2>
-              <p className="sec-desc" style={{ marginBottom: '20px' }}>You paid to get them there. Retargeting is how you finish the job — but sloppy pixels, generic banners, and no frequency caps burn budget and brand trust at once.</p>
+              <p className="sec-desc" style={{ marginBottom: '20px' }}>You already paid to get them there. Retargeting is how you finish the job, but sloppy pixels, generic banners, and the absence of frequency caps tend to burn budget and brand trust at the same time.</p>
               <div className="mkt-highlight-box">
-                <p>We turn abandoned sessions into revenue with segmented audiences, dynamic creative, and tracking built for a cookieless world.</p>
+                <p>We turn abandoned sessions into revenue instead, using segmented audiences, dynamic creatives, and tracking built specifically for a cookieless world.</p>
               </div>
               <div className="mkt-check-list">
                 {['Server-side and CAPI conversion tracking', 'Dynamic product and offer-matched ads', 'Cross-network frequency management', 'Incrementality-tested retarget ROAS'].map((item) => (
@@ -104,10 +104,10 @@ export default function Retargeting() {
             <div className="reveal-r mkt-results-panel">
               <div className="mkt-results-label">Recovery Metrics</div>
               {[
-                { icon: '🛒', title: '68% Cart Recovery', desc: 'Abandoned checkout sequences with offer and urgency testing.' },
-                { icon: '↑', title: '3.8x Retarget ROAS', desc: 'Warm audiences outperform cold prospecting on efficiency.' },
-                { icon: '↓', title: '45% Lower CPV', desc: 'Segmented creative vs. generic remarketing blast campaigns.' },
-                { icon: '⏱', title: '7-Day Audience Live', desc: 'Fast deployment when pixels and traffic are already healthy.' },
+                { icon: '🛒', title: 'Cart Recovery', desc: '68% through abandoned checkout sequences with offer and urgency testing' },
+                { icon: '↑', title: 'Retarget ROAS', desc: '3.8x, since warm audiences consistently outperform cold prospecting' },
+                { icon: '↓', title: 'CPV Reduction', desc: '45% lower versus generic remarketing blast campaigns' },
+                { icon: '⏱', title: 'Audience Live Time', desc: '7 days for fast deployment when pixels and traffic are already healthy' },
               ].map((o) => (
                 <div key={o.title} className="mkt-results-item">
                   <div className="mkt-results-icon">{o.icon}</div>
@@ -124,7 +124,7 @@ export default function Retargeting() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Capabilities</div>
             <h2 className="sec-title">RETARGETING<br /><em>THAT CLOSES</em></h2>
-            <p className="sec-desc">Six modules from tracking infrastructure to incrementality proof.</p>
+            <p className="sec-desc">Six modules covering everything from tracking infrastructure to incrementality proof.</p>
           </div>
           <div className="mkt-solution-grid">
             {solutions.map((s) => (
@@ -143,7 +143,7 @@ export default function Retargeting() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Use Cases</div>
             <h2 className="sec-title">RECOVER<br /><em>LOST REVENUE</em></h2>
-            <p className="sec-desc">Retargeting playbooks tuned to purchase cycle and deal size.</p>
+            <p className="sec-desc">Retargeting playbooks tuned specifically to purchase cycle length and deal size.</p>
           </div>
           <div className="mkt-use-grid">
             {useCases.map((u) => (
@@ -161,7 +161,7 @@ export default function Retargeting() {
           <div className="mkt-sec-hd reveal">
             <div className="sec-label">Our Process</div>
             <h2 className="sec-title">TRACK TO<br /><em>CONVERT</em></h2>
-            <p className="sec-desc">Five phases from pixel audit to scaled remarketing programs.</p>
+            <p className="sec-desc">Five phases that move from a pixel audit to a fully scaled remarketing program.</p>
           </div>
           <div className="mkt-process-track">
             {process.map((s) => (
@@ -186,8 +186,8 @@ export default function Retargeting() {
         </div>
       </section>
 
-      <MarketingFaq id="retarget-faq" title={<>Retargeting<br /><em>QUESTIONS ANSWERED</em></>} desc="What growth teams ask before launching remarketing with LogicWorks." faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
-      <MarketingCta eyebrow="Recover Lost Revenue" title={<>THEY ALMOST<br /><em>BOUGHT</em>.</>} sub="Book a free retargeting audit — we'll map your audiences, tracking gaps, and recovery potential." btnText="Get Retargeting Audit" note="FREE AUDIT · PIXEL REVIEW · NO COMMITMENT" />
+      <MarketingFaq id="retarget-faq" title={<>FAQs</>} desc="" faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
+      <MarketingCta eyebrow="Recover Lost Revenue" title={<>THEY ALMOST<br /><em>BOUGHT</em>.</>} sub="Book a free retargeting audit. We'll map your audiences, tracking gaps, and recovery potential." btnText="Get Retargeting Audit" note="" />
     </div>
   );
 }

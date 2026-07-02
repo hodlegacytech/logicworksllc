@@ -64,7 +64,7 @@ export default function About() {
         <div className="con co-hero-inner">
           <div className="co-eyebrow">About LogicWorks</div>
           <h1 className="co-hero-title" id="about-title">We Engineer the Future<br /><span>of Your Business</span></h1>
-          <p className="co-hero-sub">Founded on the conviction that most digital agencies set the bar far too low, LogicWorks operates at the intersection of creative excellence and engineering discipline, where business outcomes are simply non negotiable</p>
+          <p className="co-hero-sub">Founded on the conviction that most digital agencies set the bar far too low, LogicWorks operates at the intersection of creative excellence and engineering discipline, where business outcomes are simply non negotiable.</p>
           <div className="co-hero-actions">
             <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Partner With Us{arrowIcon}</Link>
             <Link href="/case-studies" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>See Our Work</Link>

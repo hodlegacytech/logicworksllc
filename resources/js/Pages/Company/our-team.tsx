@@ -4,33 +4,33 @@ import { Head } from '@inertiajs/react';
 import { useCompanyPage, arrowIcon, CompanyCta } from './shared';
 
 const leadership = [
-  { initials: 'SW', name: 'Salman Waria', role: 'Founder & CEO', bio: 'Visionary strategist and technologist. Built LogicWorks from a boutique consultancy into a premier digital agency across a decade of relentless execution.', gradient: 'linear-gradient(135deg, #1a4bdb, #060d1f)' },
-  { initials: 'AR', name: 'Alexandra Rivera', role: 'Chief Technology Officer', bio: 'Former Google and Microsoft engineer. Architects AI systems and engineering standards. Holds three patents in machine learning applications.', gradient: 'linear-gradient(135deg, #c8192a, #6b0000)' },
-  { initials: 'MJ', name: 'Marcus Johnson', role: 'Chief Marketing Officer', bio: 'Fifteen years in performance marketing. Managed over $200M in ad spend across Google, Meta, and programmatic with industry-beating ROAS.', gradient: 'linear-gradient(135deg, #c8922a, #7c5e10)' },
-  { initials: 'KP', name: 'Priya Kapoor', role: 'Head of Design', bio: 'Award-winning designer with a background in cognitive psychology. Every interface is built on behavioral science, not aesthetic preference alone.', gradient: 'linear-gradient(135deg, #0d1b3e, #1a4bdb)' },
+  { initials: 'SW', name: 'Salman Waria', role: 'Founder and CEO', bio: 'A visionary strategist and technologist who built LogicWorks from a boutique consultancy into a premier digital agency across a decade of relentless execution', gradient: 'linear-gradient(135deg, #1a4bdb, #060d1f)' },
+  { initials: 'AR', name: 'Alexandra Rivera', role: 'Chief Technology Officer', bio: 'A former Google and Microsoft engineer who architects AI systems and engineering standards, holding three patents in machine learning applications', gradient: 'linear-gradient(135deg, #c8192a, #6b0000)' },
+  { initials: 'MJ', name: 'Marcus Johnson', role: 'Chief Marketing Officer', bio: 'Fifteen years deep in performance marketing, having managed over 200 million dollars in ad spend across Google, Meta, and programmatic with industry beating ROAS', gradient: 'linear-gradient(135deg, #c8922a, #7c5e10)' },
+  { initials: 'KP', name: 'Priya Kapoor', role: 'Head of Design', bio: 'An award winning designer with a background in cognitive psychology, building every interface on behavioral science rather than aesthetic preference alone', gradient: 'linear-gradient(135deg, #0d1b3e, #1a4bdb)' },
 ];
 
 const extendedTeam = [
-  { initials: 'DC', name: 'David Chen', role: 'VP Engineering', bio: 'Full-stack architect leading 40+ engineers. Previously scaled platforms serving 10M+ users at two venture-backed startups.', gradient: 'linear-gradient(135deg, #0891b2, #0d1b3e)' },
-  { initials: 'EV', name: 'Elena Volkov', role: 'Head of AI & ML', bio: 'PhD in machine learning. Leads custom model development, NLP pipelines, and AI strategy consulting for enterprise clients.', gradient: 'linear-gradient(135deg, #7c3aed, #1a4bdb)' },
-  { initials: 'JO', name: 'James Okonkwo', role: 'Director of SEO', bio: 'Twelve years in organic search. Built ranking engines that generated $50M+ in attributed revenue for clients across regulated industries.', gradient: 'linear-gradient(135deg, #166534, #0d1b3e)' },
-  { initials: 'SM', name: 'Sarah Mitchell', role: 'Head of Client Success', bio: '98% client retention track record. Ensures every engagement delivers measurable outcomes with transparent reporting and proactive strategy.', gradient: 'linear-gradient(135deg, #c8192a, #0d1b3e)' },
-  { initials: 'RT', name: 'Ryan Torres', role: 'Lead UX Strategist', bio: 'Conversion-focused UX researcher. Specializes in funnel optimization and accessibility compliance for healthcare and finance verticals.', gradient: 'linear-gradient(135deg, #2563eb, #060d1f)' },
-  { initials: 'NP', name: 'Nina Patel', role: 'Director of Paid Media', bio: 'Google Premier Partner and Meta Blueprint certified. Manages $30M+ annual ad spend with average 3.4x ROAS across client portfolios.', gradient: 'linear-gradient(135deg, #c8922a, #c8192a)' },
+  { initials: 'DC', name: 'David Chen', role: 'VP Engineering', bio: 'A full stack architect leading over 40 engineers, having previously scaled platforms serving more than 10 million users at two venture backed startups', gradient: 'linear-gradient(135deg, #0891b2, #0d1b3e)' },
+  { initials: 'EV', name: 'Elena Volkov', role: 'Head of AI and ML', bio: 'Holds a PhD in machine learning and leads custom model development, NLP pipelines, and AI strategy consulting for enterprise clients', gradient: 'linear-gradient(135deg, #7c3aed, #1a4bdb)' },
+  { initials: 'JO', name: 'James Okonkwo', role: 'Director of SEO', bio: 'Twelve years in organic search, having built ranking engines that generated over 50 million dollars in attributed revenue for clients across regulated industries', gradient: 'linear-gradient(135deg, #166534, #0d1b3e)' },
+  { initials: 'SM', name: 'Sarah Mitchell', role: 'Head of Client Success', bio: 'Carries a 98 percent client retention track record, ensuring every engagement delivers measurable outcomes through transparent reporting and proactive strategy', gradient: 'linear-gradient(135deg, #c8192a, #0d1b3e)' },
+  { initials: 'RT', name: 'Ryan Torres', role: 'Lead UX Strategist', bio: 'A conversion focused UX researcher specializing in funnel optimization and accessibility compliance across healthcare and finance verticals', gradient: 'linear-gradient(135deg, #2563eb, #060d1f)' },
+  { initials: 'NP', name: 'Nina Patel', role: 'Director of Paid Media', bio: 'A Google Premier Partner and Meta Blueprint certified specialist managing over 30 million dollars in annual ad spend with an average 3.4x ROAS', gradient: 'linear-gradient(135deg, #c8922a, #c8192a)' },
 ];
 
 const departments = [
-  { icon: 'ENG', count: '45+', title: 'Engineering & AI', desc: 'Full-stack developers, ML engineers, and DevOps specialists building scalable digital products.' },
-  { icon: 'DSN', count: '28+', title: 'Design & Brand', desc: 'Senior designers, brand strategists, and UX researchers crafting experiences that convert.' },
-  { icon: 'MKT', count: '35+', title: 'Marketing & Growth', desc: 'SEO specialists, paid media experts, and content strategists driving measurable pipeline.' },
-  { icon: 'CS', count: '22+', title: 'Strategy & Success', desc: 'Account directors, project managers, and analysts ensuring flawless delivery and ROI.' },
+  { icon: 'ENG', count: '45+', title: 'Engineering and AI', desc: 'Over 45 full stack developers, ML engineers, and DevOps specialists building scalable digital products' },
+  { icon: 'DSN', count: '28+', title: 'Design and Brand', desc: 'Over 28 senior designers, brand strategists, and UX researchers crafting experiences that actually convert' },
+  { icon: 'MKT', count: '35+', title: 'Marketing and Growth', desc: 'Over 35 SEO specialists, paid media experts, and content strategists driving measurable pipeline' },
+  { icon: 'CS', count: '22+', title: 'Strategy and Success', desc: 'Over 22 account directors, project managers, and analysts ensuring flawless delivery and real ROI' },
 ];
 
 const culture = [
-  { title: 'Obsession Over Obligation', desc: 'We are partners obsessed with your outcomes — not contractors completing tickets. When your metrics move, our team celebrates.' },
-  { title: 'Precision Over Volume', desc: 'Fewer clients at a higher standard. Your account gets senior attention, not junior delegation buried in a portfolio of hundreds.' },
-  { title: 'Transparency Always', desc: 'Monthly reporting with zero spin. Honest assessments of what is working and what needs to change. Trust is our most protected asset.' },
-  { title: 'Innovation Without Exception', desc: 'Every engagement benefits from the latest in AI, automation, and growth methodology. We never coast on yesterday\'s best practice.' },
+  { title: 'Obsession over obligation', desc: 'We are partners obsessed with your outcomes, not contractors completing tickets. When your metrics move, our team genuinely celebrates' },
+  { title: 'Precision over volume', desc: 'Fewer clients held to a higher standard. Your account gets senior attention, never junior delegation buried inside a portfolio of hundreds' },
+  { title: 'Transparency always', desc: 'Monthly reporting with zero spin, honest assessments of what is working and what needs to change. Trust is our most protected asset' },
+  { title: 'Innovation without exception', desc: 'Every engagement benefits from the latest in AI, automation, and growth methodology. We never coast on yesterday\'s best practice' },
 ];
 
 export default function OurTeam() {
@@ -41,7 +41,7 @@ export default function OurTeam() {
     <div ref={pageRef} className="co-page">
       <Head>
         <title head-key="title">Our Team | LogicWorks — Elite Designers, Engineers & Strategists</title>
-        <meta head-key="description" name="description" content="Meet the LogicWorks team — 130+ elite designers, engineers, AI architects, and growth strategists united by one mission: your market dominance." />
+        <meta head-key="description" name="description" content="A collective of elite designers, engineers, AI architects, and growth strategists, all united by one mission, giving ambitious businesses a genuinely unfair digital advantage" />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/our-team" />
       </Head>
 
@@ -50,7 +50,7 @@ export default function OurTeam() {
         <div className="con co-hero-inner">
           <div className="co-eyebrow">Company</div>
           <h1 className="co-hero-title" id="team-title">The Minds Behind<br /><span>Your Dominance</span></h1>
-          <p className="co-hero-sub">A collective of elite designers, engineers, AI architects, and growth strategists united by one mission — giving ambitious businesses an unfair digital advantage.</p>
+          <p className="co-hero-sub">A collective of elite designers, engineers, AI architects, and growth strategists, all united by one mission, giving ambitious businesses a genuinely unfair digital advantage</p>
           <div className="co-hero-actions">
             <Link href="/contact" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>Work With Our Team{arrowIcon}</Link>
             <Link href="/careers" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Join Us</Link>
@@ -81,7 +81,7 @@ export default function OurTeam() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Leadership</div>
             <h2 className="sec-title">EXECUTIVE<br /><em>LEADERSHIP</em></h2>
-            <p className="sec-desc">The strategists and builders who set the standard for every engagement — with decades of combined experience across technology, marketing, and design.</p>
+            <p className="sec-desc">The strategists and builders who set the standard for every single engagement, carrying decades of combined experience across technology, marketing, and design</p>
           </div>
           <div className="co-leader-grid">
             {leadership.map((m) => (
@@ -105,7 +105,7 @@ export default function OurTeam() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Senior Team</div>
             <h2 className="sec-title">DEPARTMENT<br /><em>LEADERS</em></h2>
-            <p className="sec-desc">Directors and leads who bring deep vertical expertise to every client account — hands-on, accessible, and accountable.</p>
+            <p className="sec-desc">Directors and leads who bring genuine vertical expertise to every client account, hands on, accessible, and accountable throughout</p>
           </div>
           <div className="co-leader-grid">
             {extendedTeam.map((m) => (
@@ -129,12 +129,12 @@ export default function OurTeam() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Departments</div>
             <h2 className="sec-title">130+ SPECIALISTS<br /><em>ONE MISSION</em></h2>
-            <p className="sec-desc">Cross-functional teams organized by discipline — collaborating seamlessly on every client engagement.</p>
+            <p className="sec-desc">Cross functional teams organized by discipline, collaborating seamlessly on every single client engagement.</p>
           </div>
           <div className="co-dept-grid">
             {departments.map((d) => (
               <article key={d.title} className="co-dept-card">
-                <div className="co-dept-icon">{d.icon}</div>
+                {/* <div className="co-dept-icon">{d.icon}</div> */}
                 <div className="co-dept-count">{d.count}</div>
                 <h3 className="co-dept-title">{d.title}</h3>
                 <p className="co-dept-desc">{d.desc}</p>
@@ -149,7 +149,7 @@ export default function OurTeam() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Culture</div>
             <h2 className="sec-title">WHAT DRIVES<br /><em>OUR TEAM</em></h2>
-            <p className="sec-desc">The principles that shape how we work, how we deliver, and how we treat every client partnership.</p>
+            <p className="sec-desc">The principles that shape how we work, how we deliver, and how we treat every single client partnership</p>
           </div>
           <div className="co-culture-grid">
             {culture.map((c) => (
@@ -177,9 +177,9 @@ export default function OurTeam() {
       <CompanyCta
         eyebrow="Work With the Best"
         title={<>READY TO PARTNER WITH<br /><em>SENIOR TALENT</em>?</>}
-        sub="Book a free strategy session with our leadership team. No pitch, no pressure — just honest insight into what it takes to dominate your market."
+        sub="Book a free strategy session with our leadership team. No pitch, no pressure, just honest insight into what it actually takes to dominate your market."
         btnText="Book Free Strategy Call"
-        note="FREE STRATEGY SESSION · SENIOR TEAM · NO COMMITMENT"
+        note=""
       />
     </div>
   );

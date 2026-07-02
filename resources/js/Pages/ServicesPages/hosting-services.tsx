@@ -101,15 +101,19 @@ export default function HostingServices() {
               </div>
               <div className="svc-tag-row">{['WordPress', 'React/Node', 'E-Commerce', 'Enterprise', 'Cloud'].map((t) => <span key={t} className="svc-tag">{t}</span>)}</div>
             </div>
-            <div className="reveal-r svc-panel">
-              <div className="svc-panel-label">Infrastructure Metrics</div>
-              {[{ label: 'Uptime SLA', pct: 99, color: 'var(--blue)' }, { label: 'Avg. Page Load Speed', pct: 96, color: 'var(--gold)' }, { label: 'Security Incident Rate', pct: 99, color: 'var(--red)' }, { label: 'Migration Success Rate', pct: 100, color: 'var(--navy-mid)' }].map((bar) => (
-                <div key={bar.label} className="svc-bar-stat">
-                  <div className="svc-bar-row"><span className="svc-bar-label">{bar.label}</span><span className="svc-bar-pct" style={{ color: bar.color }}>{bar.pct}%</span></div>
-                  <div className="svc-bar-track"><div className="svc-bar-fill" style={{ width: `${bar.pct}%`, background: bar.color }} /></div>
+            <div className="reveal-r ind-outcome-panel">
+              <div className="ind-outcome-label">Infrastructure Metrics</div>
+              {[
+                { icon: '↑', title: 'Uptime SLA', desc: '99.99% guaranteed' },
+                { icon: '◎', title: 'Avg. Page Load Speed', desc: '96% improvement over typical shared hosting' },
+                { icon: '⏱', title: 'Security Incident Rate', desc: '99% reduction through proactive hardening' },
+                { icon: '✓', title: 'Migration Success Rate', desc: '100% across every managed transition' },
+              ].map((o) => (
+                <div key={o.title} className="ind-outcome-item">
+                  {/* <div className="ind-outcome-icon">{o.icon}</div> */}
+                  <div className="ind-outcome-text"><strong>{o.title}</strong><span>{o.desc}</span></div>
                 </div>
               ))}
-              <div className="svc-highlight-box"><div className="svc-highlight-val">99.99%</div><div className="svc-highlight-lbl">Guaranteed Uptime SLA</div></div>
             </div>
           </div>
           <div className="svc-stat-grid reveal">

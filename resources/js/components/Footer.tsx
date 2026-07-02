@@ -76,7 +76,7 @@ export default function Footer() {
           {[
             { title: 'Web Services', links: [['Web Design & Dev', '/web-design-development'], ['Web Portals', '/web-portals'], ['Web Applications', '/web-apps'], ['Mobile Apps', '/mobile-apps'], ['E-Commerce', '/ecommerce-development'], ['Hosting Services', '/hosting-services'], ['Server Management', '/server-management']] },
             { title: 'AI & Technology', links: [['AI-Powered CRMs', '/ai-powered-crm'], ['AI Automation', '/ai-automation'], ['Machine Learning', '/machine-learning-systems'], ['AI Assistants', '/ai-assistants'], ['AI Chatbots', '/ai-chatbots'], ['NLP Solutions', '/nlp-solutions'], ['Data Analytics', '/data-analytics']] },
-            { title: 'Digital Marketing', links: [['SEO Services', '/seo-services'], ['AEO Services', '/aeo-services'], ['Local SEO', '/local-seo'], ['PPC Management', '/ppc-management'], ['Social Media Marketing', '/social-media-marketing'], ['Social Media Mgmt', '/social-media-management'], ['Content Marketing', '/content-marketing']] },
+            { title: 'Digital Marketing', links: [['SEO Services', '/seo-services'], ['AEO Services', '/aeo-services'], ['Local SEO', '/local-seo'], ['PPC Management', '/ppc-management'], ['Social Media Marketing', '/social-media-marketing'], ['Online Reputation Mgmt', '/online-reputation-management'], ['Content Marketing', '/content-marketing']] },
             { title: 'Company', links: [['About LogicWorks', '/about'], ['Our Team', '/our-team'], ['Case Studies', '/case-studies'], ['Blog & Insights', '/blog'], ['Careers', '/careers'], ['Contact Us', '/contact'], ['Branding & Design', '/branding']] },
           ].map((col) => (
             <div key={col.title}>

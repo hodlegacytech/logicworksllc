@@ -117,8 +117,9 @@ Route::get('/retargeting', function () {
 Route::get('/social-media-marketing', function () {
     return Inertia::render('Marketing/social-media-marketing');
 });
-Route::get('/social-media-management', function () {
-    return Inertia::render('Marketing/social-media-management');
+Route::redirect('/social-media-management', '/online-reputation-management', 301);
+Route::get('/online-reputation-management', function () {
+    return Inertia::render('Marketing/online-reputation-management');
 });
 Route::get('/content-marketing', function () {
     return Inertia::render('Marketing/content-marketing');

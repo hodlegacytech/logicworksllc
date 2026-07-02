@@ -100,7 +100,7 @@ export const navLinks: NavLink[] = [
           heading: 'Social Media',
           items: [
             { label: 'Social Media Marketing', href: '/social-media-marketing', desc: 'Campaigns that go viral' },
-            { label: 'Social Media Management', href: '/social-media-management', desc: 'Daily posting & growth' },
+            { label: 'Online Reputation Management', href: '/online-reputation-management', desc: 'Reviews & brand reputation' },
             { label: 'Content Marketing', href: '/content-marketing', desc: 'SEO content that ranks' },
           ],
         },

@@ -100,29 +100,29 @@ const roles = [
 ];
 
 const perks = [
-  { icon: 'REM', title: 'Remote-First', desc: 'Work from anywhere. Core hours overlap for collaboration — no mandatory office presence.' },
-  { icon: 'PAY', title: 'Top-Tier Compensation', desc: 'Competitive salary benchmarked to top markets, plus performance bonuses and equity for senior roles.' },
-  { icon: 'HLT', title: 'Full Health Coverage', desc: 'Medical, dental, and vision insurance for you and your dependents — no waiting period.' },
-  { icon: 'PTO', title: 'Unlimited PTO', desc: 'Take the time you need. We measure output, not hours logged. Minimum 15 days encouraged.' },
-  { icon: 'LRN', title: '$3K Learning Budget', desc: 'Annual allowance for courses, certifications, books, and conferences in your discipline.' },
-  { icon: 'HW', title: 'Latest Hardware', desc: 'MacBook Pro, external monitors, and any tools you need to do your best work — shipped to your door.' },
-  { icon: 'CONF', title: 'Conference Allowance', desc: 'Attend industry events like MozCon, React Summit, or NeurIPS — we cover travel and tickets.' },
-  { icon: 'FAM', title: 'Parental Leave', desc: '16 weeks paid parental leave for all new parents, plus flexible return-to-work scheduling.' },
+  { icon: 'REM', title: 'Remote first', desc: 'Work from anywhere. Core hours overlap for collaboration, with no mandatory office presence required' },
+  { icon: 'PAY', title: 'Top tier compensation', desc: 'Competitive salary benchmarked to top markets, plus performance bonuses and equity for senior roles' },
+  { icon: 'HLT', title: 'Full health coverage', desc: 'Medical, dental, and vision insurance for you and your dependents, with no waiting period at all' },
+  { icon: 'PTO', title: 'Unlimited PTO', desc: 'Take the time you need. We measure output, not hours logged, with a minimum of 15 days encouraged' },
+  { icon: 'LRN', title: '3K dollar learning budget', desc: 'An annual allowance for courses, certifications, books, and conferences in your discipline' },
+  { icon: 'HW', title: 'Latest hardware', desc: 'A MacBook Pro, external monitors, and any tools you need to do your best work, shipped to your door' },
+  { icon: 'CONF', title: 'Conference allowance', desc: 'Attend industry events like MozCon, React Summit, or NeurIPS, with travel and tickets fully covered' },
+  { icon: 'FAM', title: 'Parental leave', desc: '16 weeks paid parental leave for all new parents, plus flexible return to work scheduling' },
 ];
 
 const values = [
-  { title: 'High-Impact Work Only', desc: 'Every project moves the needle for real businesses — Fortune 500s, Series B startups, and category leaders. No busywork, no filler accounts.' },
-  { title: 'Senior Talent, Always', desc: 'You will work alongside directors and principals, not junior teams learning on client dime. We hire experts and treat them like experts.' },
-  { title: 'Cutting-Edge Stack', desc: 'AI, automation, modern frameworks, and the latest growth methodology — you will never be stuck maintaining legacy code from 2015.' },
-  { title: 'Clear Growth Paths', desc: 'Transparent promotion criteria, mentorship from leadership, and real ownership opportunities as the agency scales globally.' },
+  { title: 'High impact work only', desc: 'Every project moves the needle for real businesses, including Fortune 500s, Series B startups, and category leaders. No busywork, no filler accounts' },
+  { title: 'Senior talent, always', desc: 'You work alongside directors and principals, never junior teams still learning on a client\'s dime. We hire experts and treat them like experts' },
+  { title: 'Cutting edge stack', desc: 'AI, automation, modern frameworks, and the latest growth methodology. You will never be stuck maintaining legacy code from 2015' },
+  { title: 'Clear growth paths', desc: 'Transparent promotion criteria, mentorship from leadership, and real ownership opportunities as the agency keeps scaling globally' },
 ];
 
 const process = [
-  { step: '01', title: 'Apply', desc: 'Submit your resume and portfolio or work samples. We review every application within 5 business days.' },
-  { step: '02', title: 'Intro Call', desc: '30-minute conversation about your experience, career goals, and what you are looking for in your next role.' },
-  { step: '03', title: 'Skills Assessment', desc: 'Role-specific evaluation — technical challenge, design critique, or strategy case study depending on the position.' },
-  { step: '04', title: 'Team Interview', desc: 'Meet the people you would work with daily. Culture fit matters as much as skill fit at LogicWorks.' },
-  { step: '05', title: 'Offer', desc: 'Competitive offer package delivered within 48 hours of final interview. We move fast for candidates we want.' },
+  { step: '01', title: 'Apply', desc: 'Submit your resume and portfolio or work samples. We review every application within 5 business days' },
+  { step: '02', title: 'Intro call', desc: 'A 30 minute conversation about your experience, career goals, and what you are looking for in your next role' },
+  { step: '03', title: 'Skills assessment', desc: 'A role specific evaluation, whether a technical challenge, design critique, or strategy case study depending on the position' },
+  { step: '04', title: 'Team interview', desc: 'Meet the people you would actually work with daily. Culture fit matters just as much as skill fit at LogicWorks' },
+  { step: '05', title: 'Offer', desc: 'A competitive offer package delivered within 48 hours of your final interview. We move fast for candidates we genuinely want' },
 ];
 
 export default function Careers() {
@@ -138,7 +138,7 @@ export default function Careers() {
     <div ref={pageRef} className="co-page">
       <Head>
         <title head-key="title">Careers at LogicWorks — Join Elite Builders, Strategists & Visionaries</title>
-        <meta head-key="description" name="description" content="Join LogicWorks — we're hiring senior engineers, designers, marketers, and strategists. Remote-first, top-tier compensation, high-impact client work." />
+        <meta head-key="description" name="description" content="Join the agency reshaping digital. We hire elite builders, strategists, and visionaries who want genuinely high impact work, not another ticket queue to grind through." />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/careers" />
       </Head>
 
@@ -147,7 +147,7 @@ export default function Careers() {
         <div className="con co-hero-inner">
           <div className="co-eyebrow">Company</div>
           <h1 className="co-hero-title" id="careers-title">Build What&apos;s<br /><span>Next With Us</span></h1>
-          <p className="co-hero-sub">Join the agency reshaping digital. We hire elite builders, strategists, and visionaries who want high-impact work — not another ticket queue.</p>
+          <p className="co-hero-sub">Join the agency reshaping digital. We hire elite builders, strategists, and visionaries who want genuinely high impact work, not another ticket queue to grind through.</p>
           <div className="co-hero-actions">
             <a href="#open-roles" className="btn btn-white" style={{ padding: '16px 32px', fontSize: '1rem', fontWeight: 800 }}>View Open Roles{arrowIcon}</a>
             <Link href="/our-team" className="btn btn-ghost-white" style={{ padding: '16px 32px', fontSize: '1rem' }}>Meet the Team</Link>
@@ -178,7 +178,7 @@ export default function Careers() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Why Join</div>
             <h2 className="sec-title">NOT YOUR AVERAGE<br /><em>AGENCY JOB</em></h2>
-            <p className="sec-desc">We built LogicWorks for people who outgrew their last role — and want work that matches their ambition.</p>
+            <p className="sec-desc">We built LogicWorks for people who have already outgrown their last role and want work that genuinely matches their ambition</p>
           </div>
           <div className="co-career-values">
             {values.map((v) => (
@@ -245,12 +245,12 @@ export default function Careers() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Benefits</div>
             <h2 className="sec-title">PERKS THAT<br /><em>ACTUALLY MATTER</em></h2>
-            <p className="sec-desc">We invest in our people the way we invest in client outcomes — generously, intentionally, and without fine print.</p>
+            <p className="sec-desc">We invest in our people the same way we invest in client outcomes, generously, intentionally, and without fine print anywhere</p>
           </div>
           <div className="co-career-perks">
             {perks.map((p) => (
               <article key={p.title} className="co-career-perk">
-                <div className="co-career-perk-icon">{p.icon}</div>
+                {/* <div className="co-career-perk-icon">{p.icon}</div> */}
                 <h3 className="co-career-perk-title">{p.title}</h3>
                 <p className="co-career-perk-desc">{p.desc}</p>
               </article>
@@ -264,7 +264,7 @@ export default function Careers() {
           <div className="co-sec-hd reveal">
             <div className="sec-label">Process</div>
             <h2 className="sec-title">HOW WE<br /><em>HIRE</em></h2>
-            <p className="sec-desc">Transparent, respectful, and fast. Most candidates complete our process in under two weeks.</p>
+            <p className="sec-desc">Transparent, respectful, and fast. Most candidates complete the entire process in under two weeks</p>
           </div>
           <div className="co-career-process">
             {process.map((p) => (

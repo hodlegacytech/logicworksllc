@@ -1,6 +1,6 @@
 // components/Layout.tsx
 import React from "react";
-import { usePage } from "@inertiajs/react";
+import { Head, usePage } from "@inertiajs/react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Loader from "./Loader";
@@ -23,6 +23,9 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <>
+      <Head>
+        <meta head-key="robots" name="robots" content="noindex, nofollow" />
+      </Head>
       <Loader />
       <CustomCursor />
       <BackToTop />

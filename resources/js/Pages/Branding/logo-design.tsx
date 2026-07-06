@@ -52,9 +52,9 @@ export default function LogoDesign() {
   return (
     <div ref={pageRef} className="brd-page">
       <Head>
-        <title head-key="title">Logo Design | LogicWorks — Iconic, Scalable & Timeless Logos</title>
-        <meta head-key="description" name="description" content="As a logo design company built on restraint and craft, we create marks that carry weight, designed by senior designers who understand exactly what a logo has to do, from a stranger's first glance to a brand's lasting legacy." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/logo-design" />
+        <title head-key="title">Logo Design Company | Custom Logo Design Services</title>
+        <meta head-key="description" name="description" content="Create a memorable brand identity with our logo design company. We deliver custom logo design services, brand guidelines, and scalable logo systems for every business." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/logo-design" />
       </Head>
 
       <section className="brd-hero" aria-labelledby="logo-design-title">

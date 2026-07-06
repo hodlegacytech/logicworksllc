@@ -159,13 +159,13 @@ export default function UiUxDesign() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">UI/UX Design | LogicWorks — User-Research-Driven Product Design</title>
+        <title head-key="title">UI/UX Design Company | User-Centered Design Services</title>
         <meta
           head-key="description"
           name="description"
-          content="As a ui/ux design company grounded in user research, we balance beauty and function on every screen, placing each pixel with intent and validating every flow against how people actually behave, not how a deck assumes they will."
+          content="Partner with a UI/UX design company to create intuitive, user-focused digital experiences. We deliver UX research, UI design, prototypes, and scalable design systems."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ui-ux-design" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ui-ux-design" />
       </Head>
 
       <section

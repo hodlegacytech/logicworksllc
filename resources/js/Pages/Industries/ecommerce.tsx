@@ -53,9 +53,9 @@ export default function Ecommerce() {
   return (
     <div ref={pageRef} className="ind-page" style={accentStyle}>
       <Head>
-        <title head-key="title">E-Commerce & Retail | LogicWorks — Platform Builds & CRO</title>
-        <meta head-key="description" name="description" content="End to end e commerce excellence covering platform builds, SEO, paid ads, and CRO, the kind that turns browsers into buyers and one time purchasers into genuinely loyal customers." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/industries/ecommerce" />
+        <title head-key="title">Ecommerce Development & CRO Services | Shopify & Growth | LogicWorks LLC</title>
+        <meta head-key="description" name="description" content="Scale your online store with LogicWorks LLC ecommerce solutions. Shopify development, CRO, SEO, ads, and automation to increase conversions and revenue." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/industries/ecommerce" />
       </Head>
 
       <section className="ind-inner-hero" aria-labelledby="ecommerce-title">

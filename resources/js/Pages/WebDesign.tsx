@@ -104,9 +104,9 @@ export default function WebDesign() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">Premium Web Design & Development Company | LogicWorks</title>
-        <meta head-key="description" name="description" content="We don't just design pages; we build digital experiences that stop the scroll and turn clicks into customers. Hand-coded. Flawlessly detailed. Exceptionally fast." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/web-design-development" />
+        <title head-key="title">Web Design & Development Company | Custom Websites That Convert</title>
+        <meta head-key="description" name="description" content="Boost your business with a premium web design & development company. We build fast, custom WordPress, React, Next.js, and eCommerce websites that drive conversions." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/web-design-development" />
       </Head>
 
       <section

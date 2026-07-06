@@ -159,13 +159,13 @@ export default function LandingPages() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">Landing Pages | LogicWorks — High-Converting CRO Landing Page Design</title>
+        <title head-key="title">Landing Page Development Company | High-Converting Landing Pages</title>
         <meta
           head-key="description"
           name="description"
-          content="As a landing page development company built around one metric, revenue, we design pages that turn paid traffic into paying customers. A/B tested. CRO-obsessed. Loading in under two seconds, every single time."
+          content="Increase conversions with our landing page development company. We build fast, CRO-focused landing pages for PPC, lead generation, SaaS, product launches, and webinars."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/landing-pages" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/landing-pages" />
       </Head>
 
       {/* Hero */}

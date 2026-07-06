@@ -159,13 +159,13 @@ export default function WebPortals() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">Web Portal Development Company | LogicWorks</title>
+        <title head-key="title">Web Portal Development Company | Custom Enterprise Portals</title>
         <meta
           head-key="description"
           name="description"
-          content="As a leading web portal development company, we engineer enterprise-grade platforms that consolidate fragmented data, streamline operations, and give every stakeholder a single, secure place to work."
+          content="Build secure, scalable web portals with our web portal development company. We create custom employee, customer, partner, and enterprise portals with seamless integrations."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/web-portals" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/web-portals" />
       </Head>
 
       {/* Hero */}

@@ -53,9 +53,9 @@ export default function Education() {
   return (
     <div ref={pageRef} className="ind-page" style={accentStyle}>
       <Head>
-        <title head-key="title">Education & EdTech | LogicWorks — Enrollment Funnels & LMS</title>
-        <meta head-key="description" name="description" content="Student enrollment funnels, LMS integrations, and digital marketing for schools, universities, and EdTech platforms, turning genuine interest into enrolled students and engaged learners." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/industries/education" />
+        <title head-key="title">Education & EdTech Marketing Services | Enrollment Funnels & SEO | LogicWorks LLC</title>
+        <meta head-key="description" name="description" content="Increase student enrollment with LogicWorks LLC education solutions. Enrollment funnels, LMS integration, EdTech SEO, and digital marketing for schools and universities." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/industries/education" />
       </Head>
 
       <section className="ind-inner-hero" aria-labelledby="education-title">

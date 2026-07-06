@@ -789,7 +789,7 @@ export default function Home() {
         <title head-key="title">LogicWorks | Elite Digital Agency — Web Design, AI, SEO & More</title>
         <meta head-key="description" name="description" content="LogicWorks is America's premier digital agency delivering cutting-edge web design, AI-powered CRMs, mobile apps, SEO, AEO, branding, and automation solutions that drive measurable growth." />
         <meta head-key="keywords" name="keywords" content="digital agency, web design, AI automation, machine learning, SEO, AEO, mobile apps, branding, PPC, social media marketing, LogicWorks" />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/" />
         <meta head-key="og:type" property="og:type" content="website" />
         <meta head-key="og:title" property="og:title" content="LogicWorks | Elite Digital Agency" />
         <meta head-key="og:description" property="og:description" content="We engineer digital experiences that captivate, convert, and dominate." />
@@ -798,7 +798,7 @@ export default function Home() {
           "@type": "ProfessionalService",
           "name": "LogicWorks",
           "description": "Elite digital agency specializing in web design, AI automation, SEO, AEO, mobile apps, branding, and machine learning systems.",
-          "url": "https://logicworks.com",
+          "url": "https://logicworksllc.com",
         })}</script>
       </Head>
       {/* <TrustBar /> */}

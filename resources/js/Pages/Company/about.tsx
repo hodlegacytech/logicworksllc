@@ -54,9 +54,9 @@ export default function About() {
   return (
     <div ref={pageRef} className="co-page">
       <Head>
-        <title head-key="title">About LogicWorks | America&apos;s Elite Digital Agency</title>
-        <meta head-key="description" name="description" content="Founded on the conviction that most digital agencies set the bar far too low, LogicWorks operates at the intersection of creative excellence and engineering discipline, where business outcomes are simply non negotiable" />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/about" />
+        <title head-key="title">About LogicWorks LLC | AI, SEO & Digital Engineering Agency</title>
+        <meta head-key="description" name="description" content="Learn about LogicWorks LLC, a full-service AI and digital engineering agency specializing in SEO, automation, web development, and growth strategy for 500+ businesses." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/about" />
       </Head>
 
       <section className="co-hero" aria-labelledby="about-title">

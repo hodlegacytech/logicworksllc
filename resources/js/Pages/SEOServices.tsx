@@ -92,13 +92,13 @@ export default function SEOServices() {
   return (
     <div ref={pageRef}>
       <Head>
-        <title head-key="title">SEO & AEO Services | LogicWorks — Rank #1 on Google & AI Search</title>
+        <title head-key="title">SEO Services Company | Rank #1 on Google & AI Search</title>
         <meta
           head-key="description"
           name="description"
-          content="As a search engine optimization company built for the AI era, we cover traditional SEO, AEO for AI search, and Local SEO for geographic dominance."
+          content="Boost rankings with our SEO services company. We offer technical SEO, on-page SEO, link building, local SEO, and AEO for Google, ChatGPT, and AI search visibility."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/seo-services" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/seo-services" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Service',

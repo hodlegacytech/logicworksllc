@@ -52,9 +52,9 @@ export default function AiChatbots() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">AI Chatbot Development | LogicWorks — Intelligent Customer Engagement</title>
-        <meta head-key="description" name="description" content="We deploy AI chatbots that deliver instant, accurate, brand consistent support at essentially infinite scale, deflecting tickets, capturing leads, and keeping customers genuinely satisfied around the clock." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ai-chatbots" />
+        <title head-key="title">AI Chatbot Development Services | 24/7 Customer Support Bots | LogicWorks LLC</title>
+        <meta head-key="description" name="description" content="Build intelligent AI chatbots with LogicWorks LLC that handle support, capture leads, and answer questions instantly. Deliver 24/7 customer engagement at scale." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ai-chatbots" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="chatbots-title">

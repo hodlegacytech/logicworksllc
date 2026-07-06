@@ -121,13 +121,13 @@ export default function SocialMediaMarketing() {
   return (
     <div ref={pageRef} className="mkt-page">
       <Head>
-        <title head-key="title">Social Media Marketing | LogicWorks — Paid Social Campaigns That Convert</title>
+        <title head-key="title">Social Media Marketing Company | Paid Social Ads That Convert</title>
         <meta
           head-key="description"
           name="description"
-          content="As a social media marketing company built around revenue rather than vanity metrics, we run paid campaigns engineered to stop the scroll, capture qualified leads, and drive measurable pipeline across Meta, TikTok, LinkedIn, and YouTube."
+          content="Grow your business with a social media marketing company focused on ROI. We run paid social campaigns on Meta, TikTok, LinkedIn & YouTube that drive leads and sales."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/social-media-marketing" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/social-media-marketing" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="smm-title">

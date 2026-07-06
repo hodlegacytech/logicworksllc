@@ -52,9 +52,9 @@ export default function ContentMarketing() {
   return (
     <div ref={pageRef} className="mkt-page">
       <Head>
-        <title head-key="title">Content Marketing | LogicWorks — SEO Content That Ranks & Converts</title>
-        <meta head-key="description" name="description" content="Our content marketing services produce SEO-optimized work that ranks, resonates, and converts, spanning blog posts, whitepapers, video scripts, and editorial strategy that compounds into organic growth over time." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/content-marketing" />
+        <title head-key="title">Content Marketing Services | SEO Content That Drives Leads</title>
+        <meta head-key="description" name="description" content="Grow organic traffic with our content marketing services. We create SEO blogs, whitepapers, and content strategies that rank, convert, and generate leads." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/content-marketing" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="cm-title">

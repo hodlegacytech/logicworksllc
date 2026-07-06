@@ -52,9 +52,9 @@ export default function AiPoweredCrm() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">AI-Powered CRM | LogicWorks — Intelligent Sales Automation</title>
-        <meta head-key="description" name="description" content="Custom CRM platforms infused with machine intelligence score leads, automate follow ups, and unlock a level of sales productivity that simply was not possible before. Your team closes more deals, faster." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ai-powered-crm" />
+        <title head-key="title">AI Powered CRM Systems | Lead Scoring & Sales Automation</title>
+        <meta head-key="description" name="description" content="Boost sales with AI-powered CRM systems from LogicWorksllc. Automate lead scoring, follow-ups, pipeline forecasting, and CRM workflows to close more deals faster." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ai-powered-crm" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="crm-title">

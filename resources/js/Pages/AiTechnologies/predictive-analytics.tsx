@@ -52,9 +52,9 @@ export default function PredictiveAnalytics() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">Predictive Analytics | LogicWorks — ML Forecasting & Churn Prediction</title>
-        <meta head-key="description" name="description" content="We forecast demand, detect churn, and surface your highest value opportunities through ML models built to see around corners and act before your competitors ever do." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/predictive-analytics" />
+        <title head-key="title">Predictive Analytics Services | AI Forecasting & ML Insights | LogicWorks LLC</title>
+        <meta head-key="description" name="description" content="Drive smarter decisions with LogicWorks LLC predictive analytics services. Forecast demand, reduce churn, and optimize revenue using advanced machine learning models." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/predictive-analytics" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="predictive-title">

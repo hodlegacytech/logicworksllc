@@ -137,9 +137,9 @@ export default function Careers() {
   return (
     <div ref={pageRef} className="co-page">
       <Head>
-        <title head-key="title">Careers at LogicWorks — Join Elite Builders, Strategists & Visionaries</title>
-        <meta head-key="description" name="description" content="Join the agency reshaping digital. We hire elite builders, strategists, and visionaries who want genuinely high impact work, not another ticket queue to grind through." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/careers" />
+        <title head-key="title">Careers at LogicWorks LLC | AI, SEO & Engineering Jobs</title>
+        <meta head-key="description" name="description" content="Join LogicWorks LLC and build the future of AI, SEO, and digital engineering. Work with elite engineers, designers, and strategists in a high-impact, remote-first environment." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/careers" />
       </Head>
 
       <section className="co-hero" aria-labelledby="careers-title">

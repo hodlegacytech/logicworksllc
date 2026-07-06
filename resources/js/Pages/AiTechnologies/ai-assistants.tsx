@@ -52,9 +52,9 @@ export default function AiAssistants() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">AI Assistants | LogicWorks — Intelligent Virtual Agents</title>
-        <meta head-key="description" name="description" content="Intelligent virtual agents qualify leads, answer questions, and book appointments around the clock, so your team can focus on the conversations that actually matter rather than repetitive inquiries." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ai-assistants" />
+        <title head-key="title">AI Assistants for Business | 24/7 Lead Qualification & Automation</title>
+        <meta head-key="description" name="description" content="Deploy AI assistants that qualify leads, answer queries, and book appointments 24/7. Automate customer support and sales workflows with intelligent conversational AI from LogicWorksllc." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ai-assistants" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="assistants-title">

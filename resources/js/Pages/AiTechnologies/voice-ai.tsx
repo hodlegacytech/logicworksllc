@@ -52,9 +52,9 @@ export default function VoiceAi() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">Voice AI Solutions | LogicWorks — Intelligent Voice Interfaces</title>
-        <meta head-key="description" name="description" content="We replace rigid phone trees with natural conversations that understand, resolve, and route intelligently, so callers stop pressing buttons and start actually getting answers." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/voice-ai" />
+        <title head-key="title">Voice AI Solutions | AI Phone Agents & IVR Replacement | LogicWorks LLC</title>
+        <meta head-key="description" name="description" content="Transform customer calls with LogicWorks LLC Voice AI. Replace IVR systems with natural voice agents that handle inquiries, route calls, and deliver 24/7 support." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/voice-ai" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="voice-title">

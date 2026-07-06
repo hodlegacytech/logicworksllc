@@ -52,9 +52,9 @@ export default function LocalSeo() {
   return (
     <div ref={pageRef} className="mkt-page">
       <Head>
-        <title head-key="title">Local SEO | LogicWorks — Dominate Your Local Market</title>
-        <meta head-key="description" name="description" content="Own your local market. We handle Google Business Profile optimization, citation building, and geo-targeted content that puts you in the map pack when nearby customers are actually searching." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/local-seo" />
+        <title head-key="title">Local SEO Services Company | Google Maps Ranking Experts</title>
+        <meta head-key="description" name="description" content="Rank in Google Maps with our local SEO services. We optimize Google Business Profile, citations, reviews, and geo-targeted content to increase local visibility and calls." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/local-seo" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="local-seo-title">

@@ -23,9 +23,7 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <>
-      <Head>
-        <meta head-key="robots" name="robots" content="noindex, nofollow" />
-      </Head>
+    
       <Loader />
       <CustomCursor />
       <BackToTop />

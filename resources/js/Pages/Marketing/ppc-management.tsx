@@ -130,13 +130,13 @@ export default function PpcManagement() {
   return (
     <div ref={pageRef} className="mkt-page">
       <Head>
-        <title head-key="title">PPC Management | LogicWorks — Cross-Channel Paid Media & ROAS</title>
+        <title head-key="title">PPC Management Company | ROI-Focused Paid Media Services</title>
         <meta
           head-key="description"
           name="description"
-          content="As a pay-per-click marketing company, we manage cross-channel paid media with surgical precision, tracking every dollar, optimizing every campaign, and tying every report to revenue your CFO actually trusts."
+          content="Maximize ROI with our PPC management company. We optimize Google, Meta, LinkedIn & programmatic ads with full-funnel tracking, CRO, and revenue-focused reporting."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ppc-management" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ppc-management" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="ppc-title">

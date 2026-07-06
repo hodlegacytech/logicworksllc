@@ -22,7 +22,7 @@ export const navLinks: NavLink[] = [
           items: [
             { label: 'Mobile Apps', href: '/mobile-apps', desc: 'iOS & Android development' },
             { label: 'E-Commerce', href: '/ecommerce-development', desc: 'Shopify, WooCommerce & custom' },
-            { label: 'UI/UX Design', href: '/ui-ux-design', desc: 'User-first experiences' },
+            // { label: 'UI/UX Design', href: '/ui-ux-design', desc: 'User-first experiences' },
           ],
         },
         {

@@ -53,9 +53,9 @@ export default function Saas() {
   return (
     <div ref={pageRef} className="ind-page" style={accentStyle}>
       <Head>
-        <title head-key="title">SaaS & Technology | LogicWorks — Product-Led Growth & B2B SEO</title>
-        <meta head-key="description" name="description" content="Product led growth websites, developer first SEO, and B2B demand generation for tech companies, from seed stage startups all the way to enterprise platforms scaling past 10 million in ARR." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/industries/saas" />
+        <title head-key="title">SaaS Growth & PLG Marketing Services | B2B SEO & Demand Gen | LogicWorks LLC</title>
+        <meta head-key="description" name="description" content="Scale your SaaS with LogicWorks LLC. Product-led growth websites, B2B SEO, and demand generation strategies that increase trials, demos, and revenue." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/industries/saas" />
       </Head>
 
       <section className="ind-inner-hero" aria-labelledby="saas-title">

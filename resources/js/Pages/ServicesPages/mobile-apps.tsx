@@ -159,13 +159,13 @@ export default function MobileApps() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">Mobile App Development | LogicWorks — iOS, Android & React Native</title>
+        <title head-key="title">Mobile App Development Company | iOS, Android & React Native</title>
         <meta
           head-key="description"
           name="description"
-          content="As a mob app design & development company, we build native iOS and Android apps alongside cross-platform React Native products engineered to acquire, engage, and retain users at scale."
+          content="Build high-performance mobile apps with our mobile app development company. We create custom iOS, Android, and React Native apps designed for growth, engagement, and scalability."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/mobile-apps" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/mobile-apps" />
       </Head>
 
       <section

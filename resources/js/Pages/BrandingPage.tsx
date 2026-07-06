@@ -37,7 +37,7 @@ export default function BrandingPage() {
       <Head>
         <title head-key="title">Branding & Brand Design | LogicWorks — Logo, Identity & Strategy</title>
         <meta head-key="description" name="description" content="LogicWorks builds brands that feel inevitable — strategy, logo design, visual identity, brand guidelines, and UI/UX design that makes you unforgettable in your market." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/branding" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/branding" />
       </Head>
 
       <section className="inner-hero" aria-labelledby="brand-title" style={{ background: 'linear-gradient(135deg, #060d1f 0%, #1a1a2e 60%, #16213e 100%)' }}>

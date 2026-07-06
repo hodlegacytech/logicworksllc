@@ -53,9 +53,9 @@ export default function Hospitality() {
   return (
     <div ref={pageRef} className="ind-page" style={accentStyle}>
       <Head>
-        <title head-key="title">Hospitality & Tourism | LogicWorks — Direct Booking & Reputation</title>
-        <meta head-key="description" name="description" content="Direct booking engines, reputation management, and local SEO for hotels, restaurants, and travel brands, built to reduce OTA commissions and fill rooms straight from your own channels." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/industries/hospitality" />
+        <title head-key="title">Hospitality Digital Marketing | Direct Bookings & Local SEO | LogicWorks LLC</title>
+        <meta head-key="description" name="description" content="Increase direct bookings with LogicWorks LLC hospitality solutions. Reduce OTA commissions with booking engines, local SEO, reputation management, and hotel marketing systems." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/industries/hospitality" />
       </Head>
 
       <section className="ind-inner-hero" aria-labelledby="hospitality-title">

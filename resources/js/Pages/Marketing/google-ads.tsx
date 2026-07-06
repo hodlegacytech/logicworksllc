@@ -52,9 +52,9 @@ export default function GoogleAds() {
   return (
     <div ref={pageRef} className="mkt-page">
       <Head>
-        <title head-key="title">Google Ads | LogicWorks — Search, Shopping & Performance Max</title>
-        <meta head-key="description" name="description" content="Search, Shopping, Performance Max, and YouTube campaigns run by certified specialists who treat Quality Score, tracking, and ROAS as genuinely non-negotiable." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/google-ads" />
+        <title head-key="title">Google Ads Management Agency | PPC, Search, Shopping & PMax Optimization</title>
+        <meta head-key="description" name="description" content="Professional Google Ads management for Search, Shopping, PMax, and YouTube campaigns. Improve ROAS, reduce CPC, and scale profitable paid media with certified specialists." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/google-ads" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="gads-title">

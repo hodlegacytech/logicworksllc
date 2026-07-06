@@ -52,9 +52,9 @@ export default function Retargeting() {
   return (
     <div ref={pageRef} className="mkt-page">
       <Head>
-        <title head-key="title">Retargeting Campaigns | LogicWorks — Win Back Lost Visitors</title>
-        <meta head-key="description" name="description" content="Win back visitors who already showed intent. Precision remarketing across Google, Meta, and programmatic, with dynamic creative and real frequency discipline." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/retargeting" />
+        <title head-key="title">Retargeting Agency | Google Display & Meta Remarketing Services</title>
+        <meta head-key="description" name="description" content="Bring back high-intent visitors with data-driven retargeting campaigns. Improve ROAS using Google Display, Meta Ads, dynamic remarketing, and server-side tracking." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/retargeting" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="retarget-title">

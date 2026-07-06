@@ -52,9 +52,9 @@ export default function DataAnalytics() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">Data Analytics | LogicWorks — Business Intelligence & Dashboards</title>
-        <meta head-key="description" name="description" content="We transform raw data into genuine strategic intelligence through unified pipelines, executive dashboards, and insights that turn every department into a data driven decision machine." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/data-analytics" />
+        <title head-key="title">Data Analytics Services | Business Intelligence & Dashboards</title>
+        <meta head-key="description" name="description" content="Turn raw data into actionable insights with LogicWorksllc data analytics services. Build real-time dashboards, unify data sources, and drive smarter business decisions." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/data-analytics" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="analytics-title">

@@ -53,9 +53,9 @@ export default function Legal() {
   return (
     <div ref={pageRef} className="ind-page" style={accentStyle}>
       <Head>
-        <title head-key="title">Legal & Law Firm Marketing | LogicWorks — Attorney SEO & PPC</title>
-        <meta head-key="description" name="description" content="Attorney SEO, local domination, PPC, and authority websites that establish real credibility and generate qualified case inquiries, so your firm wins the clients that actually matter." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/industries/legal" />
+        <title head-key="title">Legal Marketing Services | Attorney SEO & Law Firm Growth</title>
+        <meta head-key="description" name="description" content="Grow your law firm with LogicWorks LLC legal marketing services. Attorney SEO, PPC, local domination, and optimized intake systems that generate qualified case inquiries." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/industries/legal" />
       </Head>
 
       <section className="ind-inner-hero" aria-labelledby="legal-title">

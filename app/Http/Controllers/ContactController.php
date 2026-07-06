@@ -25,7 +25,7 @@ class ContactController extends Controller
             return back()
                 ->withInput()
                 ->withErrors([
-                    'form' => 'We could not send your message right now. Please try again or email us directly at hello@logicworks.com.',
+                    'form' => 'We could not send your message right now. Please try again or email us directly at info@logicworksllc.com.',
                 ]);
         }
 

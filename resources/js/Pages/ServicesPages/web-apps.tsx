@@ -159,13 +159,13 @@ export default function WebApps() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">Web Applications | LogicWorks — Custom SaaS & App Development</title>
+        <title head-key="title">Web App Development Company | Custom Web Application Services</title>
         <meta
           head-key="description"
           name="description"
-          content="As a web app development company built for growth, we engineer SaaS platforms and custom applications on architecture designed to outlast your roadmap, not just your next funding round."
+          content="Partner with a leading web app development company to build scalable SaaS platforms and custom web applications using React, Next.js, cloud infrastructure, and DevOps."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/web-apps" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/web-apps" />
         <meta head-key="keywords" name="keywords" content="Web Applications" />
       </Head>
 

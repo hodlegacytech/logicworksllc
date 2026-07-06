@@ -51,7 +51,7 @@ export default function TermsOfServicePage() {
           name="description"
           content="LogicWorks Terms of Service — the terms and conditions governing your use of our website, digital properties, and professional agency services."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/terms-of-service" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/terms-of-service" />
       </Head>
 
       <section

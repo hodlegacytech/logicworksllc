@@ -118,7 +118,7 @@ export default function CaseStudies() {
       <Head>
         <title head-key="title">Case Studies | LogicWorks — Real Results Across Every Vertical</title>
         <meta head-key="description" name="description" content="Explore LogicWorks case studies — real businesses, measurable results across healthcare, SaaS, e-commerce, real estate, legal, FinTech, and hospitality." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/case-studies" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/case-studies" />
       </Head>
 
       <section className="co-hero" aria-labelledby="cases-title">

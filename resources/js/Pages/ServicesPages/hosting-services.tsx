@@ -65,9 +65,9 @@ export default function HostingServices() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">Hosting Services | LogicWorks — Managed Cloud Hosting & CDN</title>
-        <meta head-key="description" name="description" content="99.99% uptime, blazing-fast CDN delivery, and enterprise-grade security. Our managed hosting services keep your digital assets fast, secure, and always online." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/hosting-services" />
+        <title head-key="title">Managed Web Hosting Services | Secure & High-Performance Hosting</title>
+        <meta head-key="description" name="description" content="Managed web hosting with cloud infrastructure, CDN, automated backups, SSL, and 24/7 monitoring. Improve website speed, uptime, and security with expert hosting support." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/hosting-services" />
       </Head>
 
       <section className="inner-hero" aria-labelledby="hosting-title" style={{ background: `linear-gradient(135deg, #060d1f 0%, #091840 60%, ${HERO_COLOR} 100%)` }}>

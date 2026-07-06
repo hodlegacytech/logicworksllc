@@ -181,7 +181,10 @@ export default function Navbar() {
           </ul>
           <div className="nav-right">
             <div className="nav-phone" aria-label="Call us">
-              <IconPhone />+1234567890
+             <a href="tel:+3109575211">
+              <IconPhone />
+              <span>(310) 957-5211</span>
+             </a>
             </div>
             <Link href="/contact" className="btn btn-primary nav-cta-btn" onClick={closeAllMenus}>
               Get Free Quote <IconArrow />

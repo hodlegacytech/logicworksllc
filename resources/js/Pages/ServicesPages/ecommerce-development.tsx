@@ -159,13 +159,13 @@ export default function EcommerceDevelopment() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">E-Commerce Development | LogicWorks — Shopify, WooCommerce & Custom Stores</title>
+        <title head-key="title">E-Commerce Development Company | Custom Shopify & WooCommerce</title>
         <meta
           head-key="description"
           name="description"
-          content="Through custom eCommerce development on Shopify, WooCommerce, or a fully bespoke stack, we engineer stores built to maximize conversion rate, average order value, and lifetime customer revenue."
+          content="TGrow your online store with our eCommerce development company. We build custom Shopify, WooCommerce, and headless stores optimized for conversions, speed, and revenue."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/ecommerce-development" />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ecommerce-development" />
       </Head>
 
       <section

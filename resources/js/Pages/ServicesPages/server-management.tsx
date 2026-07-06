@@ -65,9 +65,9 @@ export default function ServerManagement() {
   return (
     <div ref={pageRef} className="svc-page">
       <Head>
-        <title head-key="title">Server Management | LogicWorks — 24/7 Managed Server Operations</title>
-        <meta head-key="description" name="description" content="24/7 proactive monitoring, patching, and rapid-response server management, so your infrastructure stays secure, fast, and always online." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/server-management" />
+        <title head-key="title">Server Management Services | 24/7 Monitoring & Infrastructure Support</title>
+        <meta head-key="description" name="description" content="Keep your servers secure, optimized, and always online with expert server management services. Get 24/7 monitoring, security patching, performance tuning, backups, and rapid incident response." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/server-management" />
       </Head>
 
       <section className="inner-hero" aria-labelledby="server-title" style={{ background: `linear-gradient(135deg, #060d1f 0%, #091840 60%, ${HERO_COLOR} 100%)` }}>

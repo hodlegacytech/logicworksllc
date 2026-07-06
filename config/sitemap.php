@@ -8,12 +8,12 @@ return [
     |--------------------------------------------------------------------------
     |
     | Edit resources/sitemap.xml directly — paste <url> blocks in XML format.
-    | Use {{APP_URL}} in <loc> tags, or write the full URL (e.g. https://logicworks.com/about).
+    | Use {{APP_URL}} in <loc> tags, or write the full URL (e.g. https://logicworksllc.com/about).
     |
     */
 
     'file' => resource_path('sitemap.xml'),
 
-    'base_url' => env('APP_URL', 'https://logicworks.com'),
+    'base_url' => env('APP_URL', 'https://logicworksllc.com'),
 
 ];

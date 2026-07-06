@@ -53,9 +53,9 @@ export default function RealEstate() {
   return (
     <div ref={pageRef} className="ind-page" style={accentStyle}>
       <Head>
-        <title head-key="title">Real Estate Digital Marketing | LogicWorks — IDX & Lead Generation</title>
-        <meta head-key="description" name="description" content="IDX integrated websites, lead generation funnels, and local SEO that put your listings in front of buyers and sellers well before your competition ever gets the chance." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/industries/real-estate" />
+        <title head-key="title">Real Estate Digital Marketing | IDX Websites & Lead Generation | LogicWorks LLC</title>
+        <meta head-key="description" name="description" content="Generate more real estate leads with LogicWorks LLC. IDX websites, MLS integration, local SEO, and automated funnels designed to capture buyers and sellers faster." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/industries/real-estate" />
       </Head>
 
       <section className="ind-inner-hero" aria-labelledby="realestate-title">

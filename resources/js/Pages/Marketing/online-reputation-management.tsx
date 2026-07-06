@@ -52,9 +52,9 @@ export default function OnlineReputationManagement() {
   return (
     <div ref={pageRef} className="mkt-page">
       <Head>
-        <title head-key="title">Online Reputation Management | LogicWorks — Protect Your Brand Online</title>
-        <meta head-key="description" name="description" content="Review monitoring, response strategy, and a real plan for what shows up when someone searches your name. As an online reputation management company, we handle the entire job of protecting how your brand looks online." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/online-reputation-management" />
+        <title head-key="title">Online Reputation Management Company | Brand Trust & Reviews</title>
+        <meta head-key="description" name="description" content="Protect your brand with our online reputation management services. We monitor reviews, manage search results, and improve brand trust, sentiment, and visibility." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/online-reputation-management" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="orm-title">

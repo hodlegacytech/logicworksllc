@@ -53,9 +53,9 @@ export default function Healthcare() {
   return (
     <div ref={pageRef} className="ind-page" style={accentStyle}>
       <Head>
-        <title head-key="title">Healthcare Digital Solutions | LogicWorks — HIPAA-Compliant</title>
-        <meta head-key="description" name="description" content="HIPAA compliant websites, patient portals, AI scheduling, and healthcare SEO engineered to keep appointment books full, without ever putting patient trust or regulatory compliance at risk." />
-        <link head-key="canonical" rel="canonical" href="https://logicworks.com/industries/healthcare" />
+        <title head-key="title">Healthcare Digital Solutions | HIPAA Websites & Patient Growth | LogicWorks LLC</title>
+        <meta head-key="description" name="description" content="Grow your practice with LogicWorks LLC healthcare digital solutions. HIPAA-compliant websites, patient portals, medical SEO, and AI tools to increase bookings." />
+        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/industries/healthcare" />
       </Head>
 
       <section className="ind-inner-hero" aria-labelledby="healthcare-title">

@@ -331,7 +331,7 @@ function Services() {
           <p className="sec-desc">From the first pixel to the last dollar of ROI — military precision, creative fire, measurable results.</p>
         </div>
         <div className="srv-bento">
-          <article className="srv-card srv-dark srv-c6">
+          <Link href="/web-design-development" className="srv-card srv-dark srv-c6">
             <div className="srv-icon si-d">{IC.code}</div>
             <h3 className="srv-title">Web Design & Development</h3>
             <p className="srv-desc">We don't build websites — we engineer digital experiences that captivate on first look and convert with every click. Custom-coded, pixel-perfect, blazing fast.</p>
@@ -340,57 +340,57 @@ function Services() {
             </div>
             <div className="srv-tags">{['UX Research', 'Responsive', 'WCAG 2.2', 'CRO'].map((t) => <span key={t} className="srv-tag">{t}</span>)}</div>
             <SrvArrow />
-          </article>
-          <article className="srv-card srv-c srv-c4">
+          </Link>
+          <Link href="/ai-automation" className="srv-card srv-c srv-c4">
             <div className="srv-icon si-b">{IC.bolt}</div>
             <h3 className="srv-title">AI Automation</h3>
             <p className="srv-desc">Replace repetitive tasks with intelligent systems that work 24/7, make zero errors, and scale infinitely without adding headcount.</p>
             <div className="srv-tags">{['RPA', 'n8n / Make', 'Workflows'].map((t) => <span key={t} className="srv-tag">{t}</span>)}</div>
             <SrvArrow />
-          </article>
-          <article className="srv-card srv-c">
+          </Link>
+          <Link href="/machine-learning-systems" className="srv-card srv-c">
             <div className="srv-icon si-r">{IC.brain}</div>
             <h3 className="srv-title">Machine Learning</h3>
             <p className="srv-desc">Custom ML models trained on your data to predict, classify, and optimize at superhuman speed and scale.</p>
             <div className="srv-tags">{['Predictive', 'NLP', 'Vision AI'].map((t) => <span key={t} className="srv-tag">{t}</span>)}</div>
             <SrvArrow />
-          </article>
-          <article className="srv-card srv-c4">
+          </Link>
+          <Link href="/seo-services" className="srv-card srv-c4">
             <div className="srv-icon si-b">{IC.search}</div>
             <h3 className="srv-title">SEO & AEO</h3>
             <p className="srv-desc">Rank on Google AND dominate AI answer engines. We optimize for traditional SERPs and the new era of AI-generated search responses.</p>
             <div className="srv-tags">{['On-Page', 'Link Building', 'AEO', 'Schema'].map((t) => <span key={t} className="srv-tag">{t}</span>)}</div>
             <SrvArrow />
-          </article>
-          <article className="srv-card srv-c4">
+          </Link>
+          <Link href="/social-media-marketing" className="srv-card srv-c4">
             <div className="srv-icon si-g">{IC.fb}</div>
             <h3 className="srv-title">Social Media Marketing</h3>
             <p className="srv-desc">Campaigns engineered to go viral. Daily management, growth strategy, and paid social that turns followers into loyal buyers.</p>
             <div className="srv-tags">{['Meta Ads', 'TikTok', 'LinkedIn'].map((t) => <span key={t} className="srv-tag">{t}</span>)}</div>
             <SrvArrow />
-          </article>
-          <article className="srv-card srv-c4">
+          </Link>
+          <Link href="/ppc-management" className="srv-card srv-c4">
             <div className="srv-icon si-r">{IC.dollar}</div>
             <h3 className="srv-title">PPC Advertising</h3>
             <p className="srv-desc">Every dollar works harder. Google Ads, Bing, and programmatic campaigns with razor-sharp targeting and obsessive ROI tracking.</p>
             <div className="srv-tags">{['Google Ads', 'Retargeting', 'A/B Testing'].map((t) => <span key={t} className="srv-tag">{t}</span>)}</div>
             <SrvArrow />
-          </article>
-          <article className="srv-card srv-c4">
+          </Link>
+          <Link href="/ai-powered-crm" className="srv-card srv-c4">
             <div className="srv-icon si-b">{IC.users}</div>
             <h3 className="srv-title">AI-Powered CRMs</h3>
             <p className="srv-desc">Custom CRM systems infused with AI to score leads, automate follow-ups, and give your team superhuman productivity.</p>
             <div className="srv-tags">{['Lead Scoring', 'Pipelines', 'AI Insights'].map((t) => <span key={t} className="srv-tag">{t}</span>)}</div>
             <SrvArrow />
-          </article>
-          <article className="srv-card srv-c4">
+          </Link>
+          <Link href="/mobile-apps" className="srv-card srv-c4">
             <div className="srv-icon si-g">{IC.mobile}</div>
             <h3 className="srv-title">Mobile App Development</h3>
             <p className="srv-desc">Native iOS & Android, or cross-platform React Native apps. Performance-first, UX-obsessed, App Store optimized from day one.</p>
             <div className="srv-tags">{['iOS', 'Android', 'React Native'].map((t) => <span key={t} className="srv-tag">{t}</span>)}</div>
             <SrvArrow />
-          </article>
-          <article className="srv-card srv-c8" style={{ background: 'linear-gradient(135deg,#fafbff,rgba(26,75,219,.03))' }}>
+          </Link>
+          <Link href="/branding" className="srv-card srv-c8" style={{ background: 'linear-gradient(135deg,#fafbff,rgba(26,75,219,.03))' }}>
             <div className="srv-brand-grid">
               <div>
                 <div className="srv-icon si-r">{IC.star}</div>
@@ -409,14 +409,14 @@ function Services() {
               </div>
             </div>
             <SrvArrow />
-          </article>
-          <article className="srv-card srv-c4">
+          </Link>
+          <Link href="/hosting-services" className="srv-card srv-c4">
             <div className="srv-icon si-b">{IC.server}</div>
             <h3 className="srv-title">Hosting & Server Management</h3>
             <p className="srv-desc">Lightning-fast, 99.99% uptime hosting with proactive server management, daily backups, and 24/7 monitoring.</p>
             <div className="srv-tags">{['99.99% Uptime', 'CDN', 'SSL'].map((t) => <span key={t} className="srv-tag">{t}</span>)}</div>
             <SrvArrow />
-          </article>
+          </Link>
         </div>
       </div>
     </section>
@@ -775,7 +775,7 @@ function CTASection() {
             Call Us Now
           </a>
         </div>
-        <p className="cta-note">NO CONTRACTS. NO OBLIGATIONS. JUST RESULTS-FOCUSED CONVERSATION.</p>
+        {/* <p className="cta-note">NO CONTRACTS. NO OBLIGATIONS. JUST RESULTS-FOCUSED CONVERSATION.</p> */}
       </div>
     </section>
   );
@@ -786,7 +786,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title head-key="title">LogicWorks | Elite Digital Agency — Web Design, AI, SEO & More</title>
+        <title head-key="title">LogicWorks LLC | Elite Digital Agency — Web Design, AI, SEO & More</title>
         <meta head-key="description" name="description" content="LogicWorks is America's premier digital agency delivering cutting-edge web design, AI-powered CRMs, mobile apps, SEO, AEO, branding, and automation solutions that drive measurable growth." />
         <meta head-key="keywords" name="keywords" content="digital agency, web design, AI automation, machine learning, SEO, AEO, mobile apps, branding, PPC, social media marketing, LogicWorks" />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/" />

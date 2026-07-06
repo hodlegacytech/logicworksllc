@@ -12,24 +12,25 @@ export function scrollToTopInstant() {
   document.body.scrollTop = 0;
 }
 
-function resetScrollOnNavigation() {
+function cleanupScrollTriggers() {
   ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-  scrollToTopInstant();
 }
 
 export function useScrollToTop() {
   const { url } = usePage();
 
   useEffect(() => {
-    const onStart = (event: Event) => {
-      const visit = (event as CustomEvent<{ visit: { preserveScroll?: unknown } }>).detail?.visit;
-      if (visit && !shouldResetScroll(visit.preserveScroll)) return;
-      resetScrollOnNavigation();
+    const onStart = () => {
+      // Kill GSAP triggers only — don't scroll yet or the current page jumps to top.
+      cleanupScrollTriggers();
     };
 
     const onFinish = (event: Event) => {
       const visit = (event as CustomEvent<{ visit: { preserveScroll?: unknown } }>).detail?.visit;
-      if (visit && !shouldResetScroll(visit.preserveScroll)) return;
+      if (visit && !shouldResetScroll(visit.preserveScroll)) {
+        requestAnimationFrame(() => ScrollTrigger.refresh());
+        return;
+      }
       requestAnimationFrame(() => {
         scrollToTopInstant();
         ScrollTrigger.refresh();

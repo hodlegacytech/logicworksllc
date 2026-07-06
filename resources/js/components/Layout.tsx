@@ -29,7 +29,7 @@ export default function Layout({ children }: LayoutProps) {
       <BackToTop />
      <div className="ann-bar" role="banner">
         <span className="ann-bar-msg ann-bar-msg--full">
-          🇺🇸 <strong>America&apos;s #1 Elite Digital Agency</strong> — Now accepting Q3 2025 partnerships.{' '}
+          🇺🇸 <strong>America&apos;s #1 Elite Digital Agency</strong> — Now accepting Q3 2026 partnerships.{' '}
           <a href="/contact">Book your free strategy call →</a>
         </span>
         <span className="ann-bar-msg ann-bar-msg--short">

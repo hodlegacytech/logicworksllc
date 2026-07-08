@@ -52,7 +52,7 @@ body {
   font-family: var(--ff-body);
   background: var(--white);
   color: var(--text);
-  overflow-x: hidden !important;
+  overflow-x: clip;
   line-height: 1.6;
 
 }
@@ -7973,16 +7973,27 @@ footer {
   display: grid;
   grid-template-columns: 260px 1fr;
   gap: 72px;
-  align-items: start;
+  align-items: stretch;
+}
+
+.legal-toc {
+  min-height: 0;
 }
 
 .legal-toc-inner {
-  position: sticky;
-  top: calc(var(--nav-h) + var(--ann-h) + 24px);
   background: var(--off-white);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
   padding: 28px 24px;
+}
+
+@media (min-width: 769px) {
+  .legal-toc-inner {
+    position: sticky;
+    top: calc(var(--ann-h) + var(--nav-h) + 24px);
+    max-height: calc(100vh - var(--ann-h) - var(--nav-h) - 48px);
+    overflow-y: auto;
+  }
 }
 
 .legal-toc-label {
@@ -8134,6 +8145,40 @@ footer {
   margin-bottom: 0;
 }
 
+.legal-table-wrap {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--ff-body);
+  font-size: .9rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.legal-table th,
+.legal-table td {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.legal-table thead th {
+  background: #f0f2f6;
+  font-family: var(--ff-head);
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.legal-table tbody td:first-child {
+  font-weight: 600;
+  color: var(--navy-mid);
+}
+
 /* CONTACT PAGE */
 .contact-page-sec {
   background: var(--off-white);
@@ -8152,6 +8197,23 @@ footer {
 .contact-split-grid > * {
   min-width: 0;
   max-width: 100%;
+}
+
+.contact-map-wrap {
+  margin-top: 72px;
+  width: 100%;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(6, 13, 31, .06);
+}
+
+.contact-map-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 0;
 }
 
 .contact-form {
@@ -8907,6 +8969,14 @@ footer {
     gap: 32px !important;
   }
 
+  .contact-map-wrap {
+    margin-top: 48px;
+  }
+
+  .contact-map-wrap iframe {
+    height: 320px;
+  }
+
   .contact-form {
     padding: 28px 20px;
   }
@@ -9063,6 +9133,8 @@ footer {
 
   .legal-toc-inner {
     position: static;
+    max-height: none;
+    overflow-y: visible;
   }
 
   .legal-sec {

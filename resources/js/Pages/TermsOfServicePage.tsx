@@ -69,7 +69,7 @@ export default function TermsOfServicePage() {
               TERMS OF SERVICE
             </h1>
             <p className="inner-hero-sub" style={{ marginBottom: '20px' }}>
-              Please read these terms carefully before using the LogicWorks website or engaging our
+              Please read these terms carefully before using the LogicWorks LLC website or engaging our
               professional digital agency services.
             </p>
             <p className="legal-updated">Last updated: {LAST_UPDATED}</p>
@@ -584,7 +584,7 @@ export default function TermsOfServicePage() {
                 </p>
                 <h3>17.2 Binding Arbitration</h3>
                 <p>
-                  If the Parties are unable to resolve the dispute through informal negotiation within thirty (30) calendar days, the dispute shall be submitted to binding arbitration administered by the <b>American Arbitration Association (AAA)</b> in accordance with its Commercial Arbitration Rules. The arbitration shall be conducted by a single neutral arbitrator in the <b>State of Texas</b>. The arbitrator&apos;s award shall be final and binding and may be entered as a judgment in any court of competent jurisdiction.
+                  If the Parties are unable to resolve the dispute through informal negotiation within thirty (30) calendar days, the dispute shall be submitted to binding arbitration administered by the <b>American Arbitration Association (AAA)</b> in accordance with its Commercial Arbitration Rules. The arbitration shall be conducted by a single neutral arbitrator in the <b>State of Virginia</b>. The arbitrator&apos;s award shall be final and binding and may be entered as a judgment in any court of competent jurisdiction.
                 </p>
                 <h3>17.3 Waiver of Class Action</h3>
                 <p>
@@ -592,7 +592,7 @@ export default function TermsOfServicePage() {
                 </p>
                 <h3>17.4 Governing Law</h3>
                 <p>
-                  This Agreement shall be governed by and construed in accordance with the laws of the <b>State of Texas, United States of America</b>, without regard to its conflict of laws provisions. To the extent any matter is not subject to arbitration, the Parties consent to the exclusive jurisdiction of the state and federal courts located within <b>Texas</b>.
+                  This Agreement shall be governed by and construed in accordance with the laws of the <b>State of Virginia, United States of America</b>, without regard to its conflict of laws provisions. To the extent any matter is not subject to arbitration, the Parties consent to the exclusive jurisdiction of the state and federal courts located within <b>Virginia</b>.
                 </p>
               </section>
 
@@ -630,7 +630,7 @@ export default function TermsOfServicePage() {
                   <p>Legal Department: <a href="mailto:legal@logicworksllc.com">legal@logicworksllc.com</a></p>
                   <p>General Support: <a href="mailto:support@logicworksllc.com">support@logicworksllc.com</a></p>
                   <p>Website: <a href="https://www.logicworksllc.com/">www.logicworksllc.com</a></p>
-                  <p>Jurisdiction: State of Texas, United States of America</p>
+                  <p>Jurisdiction: State of Virginia, United States of America</p>
                 </div>
                 <h3>Client Acknowledgment</h3>
                 <p>
@@ -642,7 +642,7 @@ export default function TermsOfServicePage() {
                   <li>I/We acknowledge that no guarantees of specific marketing results, rankings, traffic, AI performance, or revenue have been made by the Company.</li>
                   <li>I/We acknowledge our responsibility to provide all required materials, Credentials, and third-party access in a timely manner, and that failure to do so does not entitle us to a refund.</li>
                   <li>I/We acknowledge the mandatory pre-dispute notification requirement before initiating any chargeback or payment reversal, and the consequences of breach of this obligation.</li>
-                  <li>I/We acknowledge that this Agreement is governed by the laws of the State of Texas and that disputes shall be resolved through binding arbitration.</li>
+                  <li>I/We acknowledge that this Agreement is governed by the laws of the State of Virginia and that disputes shall be resolved through binding arbitration.</li>
                 </ul>
               </section>
             </article>

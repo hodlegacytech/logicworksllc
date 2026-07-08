@@ -95,7 +95,7 @@ export default function PrivacyPolicyPage() {
               </div>
             </aside>
 
-            <article className="legal-body reveal-r">
+            <article className="legal-body">
               <section id="introduction" className="legal-section">
                 <h2>1. Introduction</h2>
                 <p>

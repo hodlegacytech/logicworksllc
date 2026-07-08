@@ -99,7 +99,7 @@ export default function TermsOfServicePage() {
               </div>
             </aside>
 
-            <article className="legal-body reveal-r">
+            <article className="legal-body">
               <section id="preamble" className="legal-section">
                 <h2>Section 1 — Preamble &amp; Acceptance of Terms</h2>
                 <h3>⚠ Important Notice — Please Read Before Proceeding</h3>

@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
       <section className="legal-sec">
         <div className="con">
           <div className="legal-layout">
-            <aside className="legal-toc reveal-l" aria-label="Table of contents">
+            <aside className="legal-toc" aria-label="Table of contents">
               <div className="legal-toc-inner">
                 <div className="legal-toc-label">On this page</div>
                 <nav>
@@ -95,7 +95,7 @@ export default function PrivacyPolicyPage() {
               </div>
             </aside>
 
-            <article className="legal-body reveal-r">
+            <article className="legal-body">
               <section id="introduction" className="legal-section">
                 <h2>1. Introduction</h2>
                 <p>

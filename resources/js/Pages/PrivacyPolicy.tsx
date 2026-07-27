@@ -105,7 +105,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <p>
                   This Privacy Policy describes how we collect, use, disclose, and safeguard personal
-                  information when you visit <strong>logicworks.com</strong> (the &quot;Site&quot;), submit forms,
+                  information when you visit <strong>logicworks.ai</strong> (the &quot;Site&quot;), submit forms,
                   communicate with us, or engage our services (collectively, the &quot;Services&quot;).
                 </p>
                 <p>
@@ -333,7 +333,7 @@ export default function PrivacyPolicyPage() {
                   <p><strong>LogicWorks — Privacy Team</strong></p>
                   <p>
                     Email:{' '}
-                    <a href="mailto:privacy@logicworks.com">privacy@logicworks.com</a>
+                    <a href="mailto:privacy@logicworks.ai">privacy@logicworks.ai</a>
                   </p>
                   <p>
                     Phone:{' '}
@@ -341,7 +341,7 @@ export default function PrivacyPolicyPage() {
                   </p>
                   <p>
                     Web:{' '}
-                    <Link href="/contact">logicworks.com/contact</Link>
+                    <Link href="/contact">logicworks.ai/contact</Link>
                   </p>
                 </div>
               </section>

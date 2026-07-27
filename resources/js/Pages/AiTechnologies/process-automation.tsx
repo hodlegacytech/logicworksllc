@@ -52,9 +52,9 @@ export default function ProcessAutomation() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">Process Automation Services | RPA & Workflow Automation | LogicWorks LLC</title>
-        <meta head-key="description" name="description" content="Streamline operations with LogicWorks LLC process automation services. Reduce costs, eliminate manual tasks, and scale efficiency with intelligent RPA and workflows." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/process-automation" />
+        <title head-key="title">Process Automation Services | RPA & Workflow Automation | LogicWorks AI</title>
+        <meta head-key="description" name="description" content="Streamline operations with LogicWorks AI process automation services. Reduce costs, eliminate manual tasks, and scale efficiency with intelligent RPA and workflows." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/process-automation" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="automation-title">

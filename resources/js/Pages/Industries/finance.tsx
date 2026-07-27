@@ -53,9 +53,9 @@ export default function Finance() {
   return (
     <div ref={pageRef} className="ind-page" style={accentStyle}>
       <Head>
-        <title head-key="title">Finance & FinTech Digital Solutions | Compliant Websites & Growth | LogicWorks LLC</title>
-        <meta head-key="description" name="description" content="Build secure, compliant finance and FinTech platforms with LogicWorks LLC. Optimize conversions with FINRA-ready websites, UX design, SEO, and lead generation systems." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/industries/finance" />
+        <title head-key="title">Finance & FinTech Digital Solutions | Compliant Websites & Growth | LogicWorks AI</title>
+        <meta head-key="description" name="description" content="Build secure, compliant finance and FinTech platforms with LogicWorks AI. Optimize conversions with FINRA-ready websites, UX design, SEO, and lead generation systems." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/industries/finance" />
       </Head>
 
       <section className="ind-inner-hero" aria-labelledby="finance-title">

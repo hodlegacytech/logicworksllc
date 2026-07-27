@@ -165,7 +165,7 @@ export default function MobileApps() {
           name="description"
           content="Build high-performance mobile apps with our mobile app development company. We create custom iOS, Android, and React Native apps designed for growth, engagement, and scalability."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/mobile-apps" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/mobile-apps" />
       </Head>
 
       <section

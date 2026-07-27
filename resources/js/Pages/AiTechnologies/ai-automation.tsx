@@ -52,9 +52,9 @@ export default function AiAutomation() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">AI Automation Services | Workflow & Process Automation | LogicWorks LLC</title>
-        <meta head-key="description" name="description" content="Eliminate repetitive work with LogicWorks LLC AI automation services. Streamline workflows, automate processes, reduce costs, and scale operations with intelligent systems." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ai-automation" />
+        <title head-key="title">AI Automation Services | Workflow & Process Automation | LogicWorks AI</title>
+        <meta head-key="description" name="description" content="Eliminate repetitive work with LogicWorks AI AI automation services. Streamline workflows, automate processes, reduce costs, and scale operations with intelligent systems." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/ai-automation" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="auto-title">

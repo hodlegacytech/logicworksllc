@@ -54,7 +54,7 @@ export default function AiAssistants() {
       <Head>
         <title head-key="title">AI Assistants for Business | 24/7 Lead Qualification & Automation</title>
         <meta head-key="description" name="description" content="Deploy AI assistants that qualify leads, answer queries, and book appointments 24/7. Automate customer support and sales workflows with intelligent conversational AI from LogicWorksllc." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ai-assistants" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/ai-assistants" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="assistants-title">

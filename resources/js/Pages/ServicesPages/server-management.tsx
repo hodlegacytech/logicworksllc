@@ -67,7 +67,7 @@ export default function ServerManagement() {
       <Head>
         <title head-key="title">Server Management Services | 24/7 Monitoring & Infrastructure Support</title>
         <meta head-key="description" name="description" content="Keep your servers secure, optimized, and always online with expert server management services. Get 24/7 monitoring, security patching, performance tuning, backups, and rapid incident response." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/server-management" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/server-management" />
       </Head>
 
       <section className="inner-hero" aria-labelledby="server-title" style={{ background: `linear-gradient(135deg, #060d1f 0%, #091840 60%, ${HERO_COLOR} 100%)` }}>

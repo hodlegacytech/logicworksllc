@@ -106,7 +106,7 @@ export default function WebDesign() {
       <Head>
         <title head-key="title">Web Design & Development Company | Custom Websites That Convert</title>
         <meta head-key="description" name="description" content="Boost your business with a premium web design & development company. We build fast, custom WordPress, React, Next.js, and eCommerce websites that drive conversions." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/web-design-development" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/web-design-development" />
       </Head>
 
       <section

@@ -54,7 +54,7 @@ export default function AeoServices() {
       <Head>
         <title head-key="title">AEO Services Company | AI Search & Answer Engine Optimization</title>
         <meta head-key="description" name="description" content="Get found in AI search results with our AEO services. We optimize for Google SGE, ChatGPT, Perplexity, and Bing Copilot using schema, entities, and content strategy." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/aeo-services" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/aeo-services" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="aeo-title">

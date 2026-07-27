@@ -63,9 +63,9 @@ export default function ContactPage() {
   return (
     <div ref={pageRef} className="contact-page">
       <Head>
-        <title head-key="title">Contact LogicWorks | Get Your Free Strategy Session</title>
-        <meta head-key="description" name="description" content="Contact LogicWorks for a free digital strategy session. USA-based senior consultants ready to audit your digital presence and map your path to market dominance." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/contact" />
+        <title head-key="title">Contact LogicWorks AI | Get Your Free Strategy Session</title>
+        <meta head-key="description" name="description" content="Contact LogicWorks AI for a free digital strategy session. USA-based senior consultants ready to audit your digital presence and map your path to market dominance." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/contact" />
       </Head>
 
       <section className="inner-hero contact-hero" aria-labelledby="contact-title" style={{ background: 'linear-gradient(135deg, #060d1f 0%, #091840 60%, #1a4bdb 100%)' }}>
@@ -158,7 +158,7 @@ export default function ContactPage() {
             <div className="contact-sidebar">
               {[
                 { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.37 3.37 2 2 0 0 1 3.64 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16z"/></svg>, label: 'Phone', value: '(310) 957-5211', sub: 'Mon–Fri 8am–8pm EST' },
-                { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>, label: 'Email', value: 'info@logicworksllc.com', sub: 'Response within 2 hours' },
+                { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>, label: 'Email', value: 'info@logicworks.ai', sub: 'Response within 2 hours' },
                 { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>, label: 'Headquarters', value: 'United States of America', sub: 'Serving clients globally' },
                 { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>, label: 'Response Time', value: '< 2 Business Hours', sub: 'Guaranteed on all inquiries' },
               ].map((info) => (

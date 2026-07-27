@@ -206,7 +206,7 @@ export function IndustryInnerPage({ config }: { config: IndustryPageConfig }) {
       <Head>
         <title head-key="title">{config.metaTitle}</title>
         <meta head-key="description" name="description" content={config.metaDescription} />
-        <link head-key="canonical" rel="canonical" href={`https://logicworksllc.com${config.canonical}`} />
+        <link head-key="canonical" rel="canonical" href={`https://logicworks.ai${config.canonical}`} />
       </Head>
 
       <section className="ind-inner-hero" aria-labelledby="ind-inner-title">

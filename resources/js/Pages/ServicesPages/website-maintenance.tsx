@@ -67,7 +67,7 @@ export default function WebsiteMaintenance() {
       <Head>
         <title head-key="title">Website Maintenance Services | Security, Updates & Performance</title>
         <meta head-key="description" name="description" content="Keep your website secure, fast, and up to date with LogicWorks' website maintenance services. We provide security monitoring, backups, performance optimization, updates, and ongoing support." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/website-maintenance" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/website-maintenance" />
       </Head>
 
       <section className="inner-hero" aria-labelledby="maint-title" style={{ background: `linear-gradient(135deg, #060d1f 0%, #091840 60%, ${HERO_COLOR} 100%)` }}>

@@ -54,7 +54,7 @@ export default function OnlineReputationManagement() {
       <Head>
         <title head-key="title">Online Reputation Management Company | Brand Trust & Reviews</title>
         <meta head-key="description" name="description" content="Protect your brand with our online reputation management services. We monitor reviews, manage search results, and improve brand trust, sentiment, and visibility." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/online-reputation-management" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/online-reputation-management" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="orm-title">

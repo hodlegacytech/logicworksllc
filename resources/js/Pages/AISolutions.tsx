@@ -39,7 +39,7 @@ export default function AISolutions() {
       <Head>
         <title head-key="title">AI & Technology Solutions | LogicWorks — Machine Learning, Automation & More</title>
         <meta head-key="description" name="description" content="Custom AI automation, machine learning systems, AI chatbots, CRM intelligence, and predictive analytics from LogicWorks — America's elite AI agency." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ai-solutions" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/ai-solutions" />
       </Head>
 
       <section className="inner-hero" aria-labelledby="ai-page-title" style={{ background: 'linear-gradient(135deg, #060d1f 0%, #091840 50%, #0d1b3e 100%)' }}>

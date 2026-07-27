@@ -54,7 +54,7 @@ export default function BrandGuidelines() {
       <Head>
         <title head-key="title">Brand Guidelines | LogicWorks — Comprehensive Brand Standards</title>
         <meta head-key="description" name="description" content="LogicWorks brand guidelines deliver comprehensive standards documents — logo rules, color systems, typography, templates, and voice guides that ensure consistency across every touchpoint." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/brand-guidelines" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/brand-guidelines" />
       </Head>
 
       <section className="brd-hero" aria-labelledby="brand-guidelines-title">

@@ -67,7 +67,7 @@ export default function HostingServices() {
       <Head>
         <title head-key="title">Managed Web Hosting Services | Secure & High-Performance Hosting</title>
         <meta head-key="description" name="description" content="Managed web hosting with cloud infrastructure, CDN, automated backups, SSL, and 24/7 monitoring. Improve website speed, uptime, and security with expert hosting support." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/hosting-services" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/hosting-services" />
       </Head>
 
       <section className="inner-hero" aria-labelledby="hosting-title" style={{ background: `linear-gradient(135deg, #060d1f 0%, #091840 60%, ${HERO_COLOR} 100%)` }}>

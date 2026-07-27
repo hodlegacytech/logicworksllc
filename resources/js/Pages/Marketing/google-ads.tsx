@@ -54,7 +54,7 @@ export default function GoogleAds() {
       <Head>
         <title head-key="title">Google Ads Management Agency | PPC, Search, Shopping & PMax Optimization</title>
         <meta head-key="description" name="description" content="Professional Google Ads management for Search, Shopping, PMax, and YouTube campaigns. Improve ROAS, reduce CPC, and scale profitable paid media with certified specialists." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/google-ads" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/google-ads" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="gads-title">

@@ -54,7 +54,7 @@ export default function DigitalMarketing() {
       <Head>
         <title head-key="title">Digital Marketing | LogicWorks — Full-Spectrum Growth Strategy</title>
         <meta head-key="description" name="description" content="LogicWorks digital marketing delivers integrated SEO, paid media, social, content, and CRO — unified strategy that drives measurable revenue across every channel." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/digital-marketing" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/digital-marketing" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="digital-marketing-title">

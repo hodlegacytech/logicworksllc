@@ -165,7 +165,7 @@ export default function LandingPages() {
           name="description"
           content="Increase conversions with our landing page development company. We build fast, CRO-focused landing pages for PPC, lead generation, SaaS, product launches, and webinars."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/landing-pages" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/landing-pages" />
       </Head>
 
       {/* Hero */}

@@ -40,9 +40,9 @@ export default function OurTeam() {
   return (
     <div ref={pageRef} className="co-page">
       <Head>
-        <title head-key="title">Our Team | AI Engineers, Designers & Growth Experts | LogicWorks LLC</title>
-        <meta head-key="description" name="description" content="Meet the LogicWorks LLC team of AI engineers, designers, and growth strategists. 130+ specialists delivering SEO, automation, and digital transformation at scale." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/our-team" />
+        <title head-key="title">Our Team | AI Engineers, Designers & Growth Experts | LogicWorks AI</title>
+        <meta head-key="description" name="description" content="Meet the LogicWorks AI team of AI engineers, designers, and growth strategists. 130+ specialists delivering SEO, automation, and digital transformation at scale." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/our-team" />
       </Head>
 
       <section className="co-hero" aria-labelledby="team-title">

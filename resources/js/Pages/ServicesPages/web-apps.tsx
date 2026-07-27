@@ -165,7 +165,7 @@ export default function WebApps() {
           name="description"
           content="Partner with a leading web app development company to build scalable SaaS platforms and custom web applications using React, Next.js, cloud infrastructure, and DevOps."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/web-apps" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/web-apps" />
         <meta head-key="keywords" name="keywords" content="Web Applications" />
       </Head>
 

@@ -52,9 +52,9 @@ export default function AiConsulting() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">AI Strategy Consulting Services | AI Roadmaps & ROI Planning | LogicWorks LLC</title>
-        <meta head-key="description" name="description" content="Accelerate AI adoption with LogicWorks LLC AI strategy consulting. Build a clear roadmap, identify high-ROI use cases, and implement AI solutions with confidence." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ai-consulting" />
+        <title head-key="title">AI Strategy Consulting Services | AI Roadmaps & ROI Planning | LogicWorks AI</title>
+        <meta head-key="description" name="description" content="Accelerate AI adoption with LogicWorks AI AI strategy consulting. Build a clear roadmap, identify high-ROI use cases, and implement AI solutions with confidence." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/ai-consulting" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="consult-title">

@@ -52,9 +52,9 @@ export default function NlpSolutions() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">NLP Solutions & LLM Integration Services | Language AI | LogicWorks LLC</title>
-        <meta head-key="description" name="description" content="Unlock business insights with LogicWorks LLC NLP solutions. Use LLMs, RAG pipelines, and text analytics to extract, classify, and process unstructured language data." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/nlp-solutions" />
+        <title head-key="title">NLP Solutions & LLM Integration Services | Language AI | LogicWorks AI</title>
+        <meta head-key="description" name="description" content="Unlock business insights with LogicWorks AI NLP solutions. Use LLMs, RAG pipelines, and text analytics to extract, classify, and process unstructured language data." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/nlp-solutions" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="nlp-title">

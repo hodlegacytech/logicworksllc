@@ -52,9 +52,9 @@ export default function MachineLearningSystems() {
   return (
     <div ref={pageRef} className="ai-tech-page">
       <Head>
-        <title head-key="title">Machine Learning Systems Development | AI Prediction & MLOps | LogicWorks LLC</title>
-        <meta head-key="description" name="description" content="Build custom machine learning systems with LogicWorks LLC. Train models on your data for prediction, forecasting, and classification with scalable MLOps and high accuracy." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/machine-learning-systems" />
+        <title head-key="title">Machine Learning Systems Development | AI Prediction & MLOps | LogicWorks AI</title>
+        <meta head-key="description" name="description" content="Build custom machine learning systems with LogicWorks AI. Train models on your data for prediction, forecasting, and classification with scalable MLOps and high accuracy." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/machine-learning-systems" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="ml-title">

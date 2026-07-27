@@ -165,7 +165,7 @@ export default function WebPortals() {
           name="description"
           content="Build secure, scalable web portals with our web portal development company. We create custom employee, customer, partner, and enterprise portals with seamless integrations."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/web-portals" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/web-portals" />
       </Head>
 
       {/* Hero */}

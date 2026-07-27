@@ -54,9 +54,9 @@ export default function About() {
   return (
     <div ref={pageRef} className="co-page">
       <Head>
-        <title head-key="title">About LogicWorks LLC | AI, SEO & Digital Engineering Agency</title>
-        <meta head-key="description" name="description" content="Learn about LogicWorks LLC, a full-service AI and digital engineering agency specializing in SEO, automation, web development, and growth strategy for 500+ businesses." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/about" />
+        <title head-key="title">About LogicWorks AI | AI, SEO & Digital Engineering Agency</title>
+        <meta head-key="description" name="description" content="Learn about LogicWorks AI, a full-service AI and digital engineering agency specializing in SEO, automation, web development, and growth strategy for 500+ businesses." />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/about" />
       </Head>
 
       <section className="co-hero" aria-labelledby="about-title">

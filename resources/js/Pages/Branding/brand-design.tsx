@@ -54,7 +54,7 @@ export default function BrandDesign() {
       <Head>
         <title head-key="title">Brand Design | LogicWorks — Visual Identity & Design Systems</title>
         <meta head-key="description" name="description" content="LogicWorks brand design services deliver visual identity systems — logos, color palettes, typography, UI components, and brand guidelines that make you unforgettable." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/brand-design" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/brand-design" />
       </Head>
 
       <section className="brd-hero" aria-labelledby="brand-design-title">

@@ -45,7 +45,7 @@ export default function Industries() {
       <Head>
         <title head-key="title">Industries We Serve | LogicWorks — Vertical Digital Expertise</title>
         <meta head-key="description" name="description" content="LogicWorks delivers specialized digital solutions across 15+ industries — healthcare, real estate, finance, legal, e-commerce, SaaS, education, and hospitality with proven vertical expertise." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/industries" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/industries" />
       </Head>
 
       <section className="ind-hero" aria-labelledby="industries-title">

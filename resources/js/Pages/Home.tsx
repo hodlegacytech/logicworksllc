@@ -786,7 +786,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title head-key="title">LogicWorks LLC | Elite Digital Agency — Web Design, AI, SEO & More</title>
+        <title head-key="title">LogicWorks AI | Elite Digital Agency — Web Design, AI, SEO & More</title>
         <meta head-key="description" name="description" content="LogicWorks is America's premier digital agency delivering cutting-edge web design, AI-powered CRMs, mobile apps, SEO, AEO, branding, and automation solutions that drive measurable growth." />
         <meta head-key="keywords" name="keywords" content="digital agency, web design, AI automation, machine learning, SEO, AEO, mobile apps, branding, PPC, social media marketing, LogicWorks" />
         <link head-key="canonical" rel="canonical" href="https://logicworks.com/" />

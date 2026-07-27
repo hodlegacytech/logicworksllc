@@ -54,7 +54,7 @@ export default function DataAnalytics() {
       <Head>
         <title head-key="title">Data Analytics Services | Business Intelligence & Dashboards</title>
         <meta head-key="description" name="description" content="Turn raw data into actionable insights with LogicWorksllc data analytics services. Build real-time dashboards, unify data sources, and drive smarter business decisions." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/data-analytics" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/data-analytics" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="analytics-title">

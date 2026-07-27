@@ -165,7 +165,7 @@ export default function EcommerceDevelopment() {
           name="description"
           content="TGrow your online store with our eCommerce development company. We build custom Shopify, WooCommerce, and headless stores optimized for conversions, speed, and revenue."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ecommerce-development" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/ecommerce-development" />
       </Head>
 
       <section

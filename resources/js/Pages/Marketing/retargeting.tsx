@@ -54,7 +54,7 @@ export default function Retargeting() {
       <Head>
         <title head-key="title">Retargeting Agency | Google Display & Meta Remarketing Services</title>
         <meta head-key="description" name="description" content="Bring back high-intent visitors with data-driven retargeting campaigns. Improve ROAS using Google Display, Meta Ads, dynamic remarketing, and server-side tracking." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/retargeting" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/retargeting" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="retarget-title">

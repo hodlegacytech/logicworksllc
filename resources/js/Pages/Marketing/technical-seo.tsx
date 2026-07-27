@@ -54,7 +54,7 @@ export default function TechnicalSeo() {
       <Head>
         <title head-key="title">Technical SEO Services | Core Web Vitals & Site Optimization</title>
         <meta head-key="description" name="description" content="Improve rankings with technical SEO services. We optimize Core Web Vitals, schema markup, crawlability, site structure, and JavaScript SEO for better visibility." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/technical-seo" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/technical-seo" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="technical-seo-title">

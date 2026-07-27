@@ -54,7 +54,7 @@ export default function BrandingStrategy() {
       <Head>
         <title head-key="title">Branding Strategy | LogicWorks — Positioning & Messaging Architecture</title>
         <meta head-key="description" name="description" content="LogicWorks branding strategy services deliver market positioning, messaging architecture, competitive differentiation, and brand governance that make you the only logical choice." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/branding-strategy" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/branding-strategy" />
       </Head>
 
       <section className="brd-hero" aria-labelledby="branding-strategy-title">

@@ -127,7 +127,7 @@ export default function SocialMediaMarketing() {
           name="description"
           content="Grow your business with a social media marketing company focused on ROI. We run paid social campaigns on Meta, TikTok, LinkedIn & YouTube that drive leads and sales."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/social-media-marketing" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/social-media-marketing" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="smm-title">

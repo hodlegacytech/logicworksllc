@@ -136,7 +136,7 @@ export default function PpcManagement() {
           name="description"
           content="Maximize ROI with our PPC management company. We optimize Google, Meta, LinkedIn & programmatic ads with full-funnel tracking, CRO, and revenue-focused reporting."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ppc-management" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/ppc-management" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="ppc-title">

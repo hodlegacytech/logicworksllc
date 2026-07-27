@@ -136,7 +136,7 @@ export default function Blog() {
       <Head>
         <title head-key="title">Blog & Insights | LogicWorks — AI, SEO, Web Design & Marketing Intelligence</title>
         <meta head-key="description" name="description" content="Strategic intelligence on AI, SEO, web design, and digital marketing from the LogicWorks team — actionable insights for ambitious businesses." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/blog" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/blog" />
       </Head>
 
       <section className="co-hero" aria-labelledby="blog-title">

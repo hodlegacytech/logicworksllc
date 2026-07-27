@@ -165,7 +165,7 @@ export default function UiUxDesign() {
           name="description"
           content="Partner with a UI/UX design company to create intuitive, user-focused digital experiences. We deliver UX research, UI design, prototypes, and scalable design systems."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ui-ux-design" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/ui-ux-design" />
       </Head>
 
       <section

@@ -98,7 +98,7 @@ export default function SEOServices() {
           name="description"
           content="Boost rankings with our SEO services company. We offer technical SEO, on-page SEO, link building, local SEO, and AEO for Google, ChatGPT, and AI search visibility."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/seo-services" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/seo-services" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Service',

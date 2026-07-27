@@ -54,7 +54,7 @@ export default function LogoDesign() {
       <Head>
         <title head-key="title">Logo Design Company | Custom Logo Design Services</title>
         <meta head-key="description" name="description" content="Create a memorable brand identity with our logo design company. We deliver custom logo design services, brand guidelines, and scalable logo systems for every business." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/logo-design" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/logo-design" />
       </Head>
 
       <section className="brd-hero" aria-labelledby="logo-design-title">

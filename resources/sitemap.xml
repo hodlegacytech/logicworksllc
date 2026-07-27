@@ -6,7 +6,7 @@
   Naye pages ke liye neeche <url>...</url> block copy/paste karein.
 
   Domain ke liye {{APP_URL}} use karein (.env ki APP_URL se auto replace hoga)
-  ya full URL likhein: https://logicworksllc.com/about
+  ya full URL likhein: https://logicworks.ai/
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 

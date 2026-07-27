@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
           name="description"
           content="LogicWorks Privacy Policy — how we collect, use, store, and protect your personal information when you visit our website or use our digital agency services."
         />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/privacy-policy" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/privacy-policy" />
       </Head>
 
       <section

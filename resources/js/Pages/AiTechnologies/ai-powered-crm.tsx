@@ -54,7 +54,7 @@ export default function AiPoweredCrm() {
       <Head>
         <title head-key="title">AI Powered CRM Systems | Lead Scoring & Sales Automation</title>
         <meta head-key="description" name="description" content="Boost sales with AI-powered CRM systems from LogicWorksllc. Automate lead scoring, follow-ups, pipeline forecasting, and CRM workflows to close more deals faster." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/ai-powered-crm" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/ai-powered-crm" />
       </Head>
 
       <section className="ai-tech-hero" aria-labelledby="crm-title">

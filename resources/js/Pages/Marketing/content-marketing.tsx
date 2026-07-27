@@ -54,7 +54,7 @@ export default function ContentMarketing() {
       <Head>
         <title head-key="title">Content Marketing Services | SEO Content That Drives Leads</title>
         <meta head-key="description" name="description" content="Grow organic traffic with our content marketing services. We create SEO blogs, whitepapers, and content strategies that rank, convert, and generate leads." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/content-marketing" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/content-marketing" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="cm-title">

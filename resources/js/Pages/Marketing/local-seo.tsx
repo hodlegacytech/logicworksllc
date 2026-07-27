@@ -54,7 +54,7 @@ export default function LocalSeo() {
       <Head>
         <title head-key="title">Local SEO Services Company | Google Maps Ranking Experts</title>
         <meta head-key="description" name="description" content="Rank in Google Maps with our local SEO services. We optimize Google Business Profile, citations, reviews, and geo-targeted content to increase local visibility and calls." />
-        <link head-key="canonical" rel="canonical" href="https://logicworksllc.com/local-seo" />
+        <link head-key="canonical" rel="canonical" href="https://logicworks.ai/local-seo" />
       </Head>
 
       <section className="mkt-hero" aria-labelledby="local-seo-title">

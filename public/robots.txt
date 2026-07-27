@@ -3,4 +3,4 @@ Disallow: /admin
 Disallow: /dashboard
 Disallow: /profile
 
-Sitemap: https://logicworksllc.com/sitemap.xml
+Sitemap: https://logicworks.ai/sitemap.xml

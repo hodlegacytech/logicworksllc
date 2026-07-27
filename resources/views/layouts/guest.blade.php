@@ -30,7 +30,7 @@
                 </div>
 
                 <p class="auth-footer">
-                    &copy; {{ date('Y') }} LogicWorks LLC &mdash;
+                    &copy; {{ date('Y') }} LogicWorks AI &mdash;
                     <a href="{{ url('/') }}">Back to website</a>
                 </p>
             </div>
